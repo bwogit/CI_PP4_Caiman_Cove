@@ -31,7 +31,7 @@ class DrinkMenuItem(models.Model):
     drink_item_name = models.CharField(max_length=50, unique=True)
     drink_description = models.CharField(max_length=200, unique=True)
     drink_price = models.FloatField()
-    drink_item_type = models.IntegerField(choices=DRINK_TYPE, default=3)
+    drink_item_type = models.IntegerField(choices=DRINK_ITEM_TYPE, default=3)
     drink_available = models.BooleanField(default=False)
 
     class Meta:
