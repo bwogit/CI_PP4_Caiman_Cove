@@ -4,11 +4,11 @@ from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 
-@admin.register(FoodMenuItem())
+@admin.register(FoodMenuItem)
 class FoodMenuAdmin(SummernoteModelAdmin):
-    summernote_fields = ('content')
+    summernote_fields = ('food_description')
 
 
-@admin.register(DrinkMenuItem())
+@admin.register(DrinkMenuItem)
 class DrinkMenuAdmin(SummernoteModelAdmin):
-    summernote_fields = ('content')    
+    summernote_fields = ('drink_description')    
