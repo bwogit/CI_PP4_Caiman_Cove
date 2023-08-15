@@ -6,15 +6,15 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(FoodMenuItem)
 class FoodMenuAdmin(SummernoteModelAdmin):
-    list_display = ('food_name', 'food_type', 'price', 'available')
-    search_fields = ('food_name', 'description')
-    list_filter = ('available', 'food_type')
+    list_display = ('food_item_name', 'food_item_type', 'food_price', 'food_available')
+    search_fields = ('food_item_name', 'food_description')
+    list_filter = ('food_available', 'food_item_type')
     summernote_fields = ('food_description')
 
 
 @admin.register(DrinkMenuItem)
 class DrinkMenuAdmin(SummernoteModelAdmin):
-    list_display = ('drink_name', 'drink_type', 'price', 'available')
-    search_fields = ('drink_name', 'description')
-    list_filter = ('available', 'drink_type')
+    list_display = ('drink_item_name', 'drink_item_type', 'drink_price', 'drink_available')
+    search_fields = ('drink_item_name', 'drink_description')
+    list_filter = ('drink_available', 'drink_type')
     summernote_fields = ('drink_description')    
