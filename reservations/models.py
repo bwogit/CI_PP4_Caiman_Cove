@@ -1,4 +1,5 @@
 from django.db import models
+from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
 custom_time_slots = (
@@ -48,3 +49,16 @@ class Reservation(models.Model):
 
 
 class User(models.Model):
+    """
+    a class for the User model
+    """
+    user_id = models.AutoField(primary_key=True)
+    created = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=80)
+    phone = PhoneNumberField()
+    email = models.EmailField(max_length=254, default="example@example.com")
+    
+    class Meta:
+        ordering = ['-created']
+    def __str__(self):
+        return self.user_id
