@@ -14,4 +14,5 @@ class Table(models.Model):
         ordering = ['-capacity']
 
     def __str__(self):
-        return self.table_name
+        return self.table_number
+
