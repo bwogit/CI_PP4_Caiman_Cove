@@ -33,6 +33,23 @@ class Table(models.Model):
     def __str__(self):
         return self.table_number
 
+
+class Customer(models.Model):
+    """
+    a class for the Customer model
+    """
+    customer_id = models.AutoField(primary_key=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    customer_name = models.CharField(max_length=80)
+    phone = PhoneNumberField()
+    email = models.EmailField(max_length=254, default="example@example.com")
+    
+    class Meta:
+        ordering = ['-created_date']
+    def __str__(self):
+        return self.customer_name # Return a meaningful representation, like the customer's name
+
+
 class Reservation(models.Model):
     """
     A class for the reservation model
@@ -61,19 +78,3 @@ class Reservation(models.Model):
 
     def __str__(self):
         return str(self.reservation_id)
-
-
-class Customer(models.Model):
-    """
-    a class for the Customer model
-    """
-    customer_id = models.AutoField(primary_key=True)
-    created_date = models.DateTimeField(auto_now_add=True)
-    customer_name = models.CharField(max_length=80)
-    phone = PhoneNumberField()
-    email = models.EmailField(max_length=254, default="example@example.com")
-    
-    class Meta:
-        ordering = ['-created_date']
-    def __str__(self):
-        return self.customer_name # Return a meaningful representation, like the customer's name
