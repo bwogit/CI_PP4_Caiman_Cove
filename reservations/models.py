@@ -9,6 +9,14 @@ custom_time_slots = (
     # Add more time slots as needed
 )
 
+status_options = (
+    ('Awaiting confirmation', 'Awaiting Confirmation'),
+    ('confirmed', 'Confirmed'),
+    ('rejected', 'Rejected'),
+    ('expired', 'Expired'),
+)
+
+
 
 class Table(models.Model):
     """
@@ -39,7 +47,7 @@ class Reservation(models.Model):
         null=True)
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user", null=True)
-    reservation_status = models.CharField(max_length=25, unique=True)
+    reservation_status = models.CharField(max_length=25, choices=status_options, default='awaiting confirmation',  unique=True)
 
     class Meta:
         ordering = ['-reserved_time_slot']
