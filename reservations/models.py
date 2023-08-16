@@ -45,10 +45,17 @@ class Reservation(models.Model):
     reserved_table = models.ForeignKey(
         Table, on_delete=models.CASCADE, related_name="table_reserved",
         null=True)
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="user", null=True)
+    customer = models.ForeignKey(
+        Customer, on_delete=models.CASCADE, related_name="user", null=True)
     reservation_status = models.CharField(max_length=25, choices=status_options, default='awaiting confirmation',  unique=True)
-
+    customer_capacity = (
+        (1, "1 Customer"),
+        (2, "2 Customers"),
+        (3, "3 Customers"),
+        (4, "4 Customers"),
+        (5, "5 Customers"),
+        (6, "6 Customers"),
+        )
     class Meta:
         ordering = ['-reserved_time_slot']
 
@@ -56,7 +63,7 @@ class Reservation(models.Model):
         return str(self.reservation_id)
 
 
-class User(models.Model):
+class customer(models.Model):
     """
     a class for the User model
     """
