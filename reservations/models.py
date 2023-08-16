@@ -46,7 +46,7 @@ class Reservation(models.Model):
         Table, on_delete=models.CASCADE, related_name="table_reserved",
         null=True)
     customer = models.ForeignKey(
-        Customer, on_delete=models.CASCADE, related_name="user", null=True)
+        Customer, on_delete=models.CASCADE, related_name="customer", null=True)
     reservation_status = models.CharField(max_length=25, choices=status_options, default='awaiting confirmation',  unique=True)
     customer_capacity = (
         (1, "1 Customer"),
@@ -63,17 +63,17 @@ class Reservation(models.Model):
         return str(self.reservation_id)
 
 
-class customer(models.Model):
+class Customer(models.Model):
     """
-    a class for the User model
+    a class for the Customer model
     """
-    user_id = models.AutoField(primary_key=True)
+    customer_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=80)
+    customer_name = models.CharField(max_length=80)
     phone = PhoneNumberField()
     email = models.EmailField(max_length=254, default="example@example.com")
     
     class Meta:
         ordering = ['-created_date']
     def __str__(self):
-        return self.user_id
+        return self.customer_name # Return a meaningful representation, like the customer's name
