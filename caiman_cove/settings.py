@@ -32,7 +32,7 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-bwogit-cipp4caimancove-sq9vicfqokt.ws-eu102.gitpod.io', 'caiman_cove.herokuapp.com', 'localhost', 
-'caiman-cove-3c81faa4aa99.herokuapp.com']
+'caiman-cove-3c81faa4aa99.herokuapp.com','8000-bwogit-cipp4caimancove-sq9vicfqokt.ws-eu103.gitpod.io']
 
 
 # Application definition
