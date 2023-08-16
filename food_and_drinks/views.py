@@ -17,7 +17,7 @@ class FoodMenuListView(ListView):
     model = FoodMenuItem
     template_name = 'food_menu.html'
     context_object_name = 'food_items'
-    queryset = FoodMenuItem.objects.filter(food_available=True)
+    queryset = FoodMenuItem.objects.filter(food_available=True).order_by('-food_item_type')
 
 class DrinkMenuListView(ListView):
     """
