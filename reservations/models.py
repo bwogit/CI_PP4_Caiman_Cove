@@ -53,12 +53,12 @@ class User(models.Model):
     a class for the User model
     """
     user_id = models.AutoField(primary_key=True)
-    created = models.DateTimeField(auto_now_add=True)
+    created_date = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=80)
     phone = PhoneNumberField()
     email = models.EmailField(max_length=254, default="example@example.com")
     
     class Meta:
-        ordering = ['-created']
+        ordering = ['-created_date']
     def __str__(self):
         return self.user_id
