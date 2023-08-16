@@ -1,6 +1,13 @@
 from django.db import models
 
 # Create your models here.
+custom_time_slots = (
+    ('09:00', '09:00 AM'),
+    ('12:00', '12:00 PM'),
+    ('18:00', '06:00 PM'),
+    # Add more time slots as needed
+)
+
 
 class Table(models.Model):
     """
