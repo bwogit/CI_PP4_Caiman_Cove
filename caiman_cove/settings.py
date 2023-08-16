@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'django_summernote',
     'food_and_drinks',
+    'reservations',
 ]
 
 MIDDLEWARE = [
