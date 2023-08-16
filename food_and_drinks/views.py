@@ -1,5 +1,14 @@
+from django.shortcuts import render
 from django.views.generic import ListView
 from .models import FoodMenuItem, DrinkMenuItem
+
+def food_menu(request):
+    return render(request, 'food_menu.html')
+
+
+def drink_menu(request):
+    return render(request, 'drink_menu.html')
+
 
 class FoodMenuListView(ListView):
     """
