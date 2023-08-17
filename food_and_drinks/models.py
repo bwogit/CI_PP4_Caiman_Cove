@@ -13,7 +13,7 @@ class FoodMenuItem(models.Model):
     food_item_name = models.CharField(max_length=50, unique=True)
     food_description = models.CharField(max_length=100, unique=True)
     food_price = models.FloatField()
-    food_item_type = models.IntegerField(choices=FOOD_ITEM_TYPE)
+    food_item_type = models.IntegerField(choices=FOOD_ITEM_TYPE,)
     food_available = models.BooleanField(default=False)
 
     class Meta:
@@ -24,8 +24,8 @@ class FoodMenuItem(models.Model):
 
 
     def clean(self):
-        if self.food_price <= 0:
-            raise ValidationError("Price cannot be negative or equal to 0.")
+        if self.food_price is not None and self.food_price <= 0:
+            raise ValidationError("Price cannot be negative or zero")
 
 
 class DrinkMenuItem(models.Model):
@@ -36,7 +36,7 @@ class DrinkMenuItem(models.Model):
     drink_item_name = models.CharField(max_length=50, unique=True)
     drink_description = models.CharField(max_length=100, unique=True)
     drink_price = models.FloatField()
-    drink_item_type = models.IntegerField(choices=DRINK_ITEM_TYPE)
+    drink_item_type = models.IntegerField(choices=DRINK_ITEM_TYPE,)
     drink_available = models.BooleanField(default=False)
 
     class Meta:
@@ -47,5 +47,5 @@ class DrinkMenuItem(models.Model):
 
     
     def clean(self):
-        if self.drink_price < 0:
-            raise ValidationError("Price cannot be negative.")
+        if self.drink_price is not None and self.drink_price <= 0:
+            raise ValidationError("Price cannot be negative or zero")
