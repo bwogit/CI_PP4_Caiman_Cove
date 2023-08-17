@@ -4,11 +4,11 @@
 <h2>This is the food section</h2>
 <ul>
   {% for food in food_items %}
-    {{<li>
+    <li>
       <h3>{{ food.food_item_name }}</h3>
       <p>{{ food.food_description }}</p>
       <p>Price: {{ food.food_price }}</p>
-    </li>}}
+    </li>
   {% empty %}
     <p>No food available at the moment.</p>
   {% endfor %}

@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.exceptions import ValidationError
 
 # Create your models here.
 FOOD_ITEM_TYPE = ((0, 'Starters'), (1, 'Mains'), (2, 'Desserts'), (3, 'AddItem'))
@@ -22,6 +23,10 @@ class FoodMenuItem(models.Model):
         return self.food_item_name
 
 
+    def clean(self):
+        if self.food_price < 0:
+            raise ValidationError("Price cannot be negative.")
+
 
 class DrinkMenuItem(models.Model):
     """
@@ -41,3 +46,6 @@ class DrinkMenuItem(models.Model):
         return self.drink_item_name
 
     
+    def clean(self):
+        if self.drink_price < 0:
+            raise ValidationError("Price cannot be negative.")
