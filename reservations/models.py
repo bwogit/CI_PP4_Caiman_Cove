@@ -2,6 +2,8 @@ from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.core.validators import MinValueValidator
 from django.core.validators import EmailValidator
+from django.core.exceptions import ValidationError
+from django.utils import timezone
 
 # Create your models here.
 custom_time_slots = (
@@ -56,6 +58,11 @@ class Reservation(models.Model):
     """
     A class for the reservation model
     """
+    def clean(self):
+        if self.reserved_date < timezone.now().date():
+            raise ValidationError("Reserved date must be in the future.")
+
+
     reservation_id = models.AutoField(primary_key=True)
     reservation_time = models.DateTimeField(auto_now_add=True)
     reserved_date = models.DateField()
