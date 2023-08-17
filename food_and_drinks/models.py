@@ -24,8 +24,8 @@ class FoodMenuItem(models.Model):
 
 
     def clean(self):
-        if self.food_price < 0:
-            raise ValidationError("Price cannot be negative.")
+        if self.food_price <= 0:
+            raise ValidationError("Price cannot be negative or equal to 0.")
 
 
 class DrinkMenuItem(models.Model):
