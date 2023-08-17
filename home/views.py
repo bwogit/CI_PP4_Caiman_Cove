@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 
-def home(request):
+def index(request):
     """
     a view to display the homepage
     """
