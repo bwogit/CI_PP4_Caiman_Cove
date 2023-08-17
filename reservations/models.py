@@ -1,5 +1,7 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
+from django.core.validators import MinValueValidator
+
 
 # Create your models here.
 custom_time_slots = (
@@ -25,7 +27,7 @@ class Table(models.Model):
     table_id = models.AutoField(primary_key=True)
     table_number = models.CharField(
         max_length=10, default='New Table', unique=True)
-    capacity = models.PositiveIntegerField()
+    capacity = models.PositiveIntegerField(validators=[MinValueValidator(1)])
 
     class Meta:
         ordering = ['-capacity']
