@@ -1,7 +1,7 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.core.validators import MinValueValidator
-
+from django.core.validators import EmailValidator
 
 # Create your models here.
 custom_time_slots = (
@@ -44,7 +44,7 @@ class Customer(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     customer_name = models.CharField(max_length=80)
     phone = PhoneNumberField()
-    email = models.EmailField(max_length=254, default="example@example.com")
+    email = models.EmailField(max_length=254, default="example@example.com", validators=[EmailValidator()])
     
     class Meta:
         ordering = ['-created_date']
