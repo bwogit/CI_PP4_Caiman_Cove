@@ -15,11 +15,9 @@
         <ul>
           {% for drink in drink_items %}
           {% if drink.drink_item_type == 0 %}
-            <li>
               <h3>{{ drink.drink_item_name }}</h3>
               <p>{{ drink.drink_description }}<p>
               <p>€{{ drink.drink_price }}</p>
-            </li>
           {% endif %}
           {% empty %}
             <li>No cocktails available.</li>
@@ -28,19 +26,19 @@
     </div>
     <div class="row d-flex justify-content-center">
       <div class="col-sm-8">
-          <h2 class="text-center">Wine</span></h2>
+          <h2 class="text-center">Beers</span></h2>
           <hr>
           <ul>
             {% for drink in drink_items %}
             {% if drink.drink_item_type == 1 %}
-              <li>
                 <h3>{{ drink.drink_item_name }}</h3>
                 <p>{{ drink.drink_description }}<p>
                 <p>€{{ drink.drink_price }}</p>
-              </li>
             {% endif %}
             {% empty %}
-              <li>No wines available.</li>
+            {% if forloop.last %}
+              <li>No beers available.</li>
+            {% endif %}
             {% endfor %}
           </ul>
       </div>
@@ -52,14 +50,12 @@
           <ul>
             {% for drink in drink_items %}
             {% if drink.drink_item_type == 2 %}
-              <li>
                 <h3>{{ drink.drink_item_name }}</h3>
                 <p>{{ drink.drink_description }}<p>
                 <p>€{{ drink.drink_price }}</p>
-              </li>
             {% endif %}
             {% empty %}
-              <li>No rhums available.</li>
+              <li>No beers available.</li>
             {% endfor %}
           </ul>
       </div>
