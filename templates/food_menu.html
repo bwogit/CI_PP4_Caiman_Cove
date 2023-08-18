@@ -1,23 +1,65 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %}  
 
 {% block content %}
 <div class="container">
   <div class="row d-flex justify-content-center">
     <div class="col-sm-8">
-        <h2 class="text-center">Food</span></h2>
+        <h2 class="text-center">Food</h2>
         <hr>
     </div>
   </div>
-  <ul>
-    {% for food in food_items %}
-      <li>
-        <h3>{{ food.food_item_name }}</h3>
-        <p>{{ food.food_description }}</p>
-        <p>€{{ food.food_price }}</p>
-      </li>
-    {% empty %}
-    <p>No food available at the moment.</p>
-    {% endfor %}
-  </ul>
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-8">
+        <h2 class="text-center">Starters</h2>
+        <hr>
+        <ul>
+          {% for food in food_items %}
+          {% if food.food_item_type == 0 %}
+              <h3>{{ food.food_item_name }}</h3>
+              <p>{{ food.food_description }}<p>
+              <p>€{{ food.food_price }}</p>
+          {% endif %}
+          {% empty %}
+            <li>No starters available.</li>
+          {% endfor %}
+        </ul>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-8">
+          <h2 class="text-center">Mains</h2>
+          <hr>
+          <ul>
+            {% for food in food_items %}
+            {% if food.food_item_type == 1 %}
+                <h3>{{ food.food_item_name }}</h3>
+                <p>{{ food.food_description }}<p>
+                <p>€{{ food.food_price }}</p>
+            {% endif %}
+            {% empty %}
+            {% if forloop.last %}
+              <li>No mains available.</li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-8">
+          <h2 class="text-center">Desserts</h2>
+          <hr>
+          <ul>
+            {% for food in food_items %}
+            {% if food.food_item_type == 2 %}
+                <h3>{{ food.food_item_name }}</h3>
+                <p>{{ food.food_description }}<p>
+                <p>€{{ food.food_price }}</p>
+            {% endif %}
+            {% empty %}
+              <li>No desserts available.</li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
 </div>
 {% endblock %}
+
