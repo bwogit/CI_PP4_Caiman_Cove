@@ -3,11 +3,11 @@
 # 3rd party:
 from django.urls import path
 
-# Internal
+# Local
 from . import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 urlpatterns = [
-    path('', views.index, name="index"),
+    path('', views.home, name="home"),
 ]
