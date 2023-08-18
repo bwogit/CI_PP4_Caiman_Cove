@@ -1,16 +1,19 @@
 {% extends 'base.html' %}  
 
 {% block content %}
-<h2>This is the Drink section</h2>
-<ul>
-  {% for drink in drink_items %}
-  <li>
-     <h3>{{ drink.drink_item_name }}</h3>
-      <p>{{ drink.drink_description }}<p>
-      <p>€{{ drink.drink_price }}</p>
-    </li>
-  {% empty %}
-    <p>No drinks available at the moment.</p>
-  {% endfor %}
-</ul>
+<div class="container">
+  <h2>This is the Drink section</h2>
+    <ul>
+      {% for drink in drink_items %}
+      <li>
+        <h3>{{ drink.drink_item_name }}</h3>
+          <p>{{ drink.drink_description }}<p>
+          <p>€{{ drink.drink_price }}</p>
+        </li>
+      {% empty %}
+        <p>No drinks available at the moment.</p>
+      {% endfor %}
+    </ul>
+</div>
+
 {% endblock %}
