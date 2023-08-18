@@ -15,18 +15,54 @@
         <ul>
           {% for drink in drink_items %}
           {% if drink.drink_item_type == 0 %}
-            <!-- <li> -->
+            <li>
               <h3>{{ drink.drink_item_name }}</h3>
-                <p>{{ drink.drink_description }}<p>
-                <p>€{{ drink.drink_price }}</p>
-              <!-- </li> -->
+              <p>{{ drink.drink_description }}<p>
+              <p>€{{ drink.drink_price }}</p>
+            </li>
           {% endif %}
-             
+          {% empty %}
+            <li>No cocktails available.</li>
           {% endfor %}
         </ul>
     </div>
-  </div>
-    
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-8">
+          <h2 class="text-center">Wine</span></h2>
+          <hr>
+          <ul>
+            {% for drink in drink_items %}
+            {% if drink.drink_item_type == 1 %}
+              <li>
+                <h3>{{ drink.drink_item_name }}</h3>
+                <p>{{ drink.drink_description }}<p>
+                <p>€{{ drink.drink_price }}</p>
+              </li>
+            {% endif %}
+            {% empty %}
+              <li>No wines available.</li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-8">
+          <h2 class="text-center">Rhums</span></h2>
+          <hr>
+          <ul>
+            {% for drink in drink_items %}
+            {% if drink.drink_item_type == 2 %}
+              <li>
+                <h3>{{ drink.drink_item_name }}</h3>
+                <p>{{ drink.drink_description }}<p>
+                <p>€{{ drink.drink_price }}</p>
+              </li>
+            {% endif %}
+            {% empty %}
+              <li>No rhums available.</li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
 </div>
-
 {% endblock %}
