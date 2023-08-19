@@ -2,7 +2,8 @@ from django import forms
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 from datetime import datetime
-from .models import Reservation
+from phonenumber_field.formfields import PhoneNumberField
+from .models import Reservation, Customer
 
 class ReservationForm(forms.ModelForm):
     
@@ -18,3 +19,17 @@ class ReservationForm(forms.ModelForm):
     class Meta:
         model = Reservation
         fields = ('customer_capacity', 'reserved_date', 'reserved_time_slot')
+
+
+class CustomerForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.helper = FormHelper(self)
+        self.helper.add_input(Submit('submit', 'Submit'))
+
+    phone_number = PhoneNumberField(widget=forms.TextInput(
+        attrs={'placeholder': ('+353')}))
+
+    class Meta:
+        model = Guest
+        fields = ('customer_name', 'email', 'phone')
