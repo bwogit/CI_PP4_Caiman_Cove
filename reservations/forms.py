@@ -14,11 +14,12 @@ class ReservationForm(forms.ModelForm):
         
         requested_date = forms.DateField()
         widget=forms.DateInput(
-            attrs={'type': 'date', 'min': datetime.now().date()}))
+            attrs={'type': 'date', 'min': datetime.now().date()})
+
 
     class Meta:
         model = Reservation
-        fields = ('customer_capacity', 'reserved_date', 'reserved_time_slot')
+        fields = ('customer_count', 'reserved_date', 'reserved_time_slot')
 
 
 class CustomerForm(forms.ModelForm):
@@ -31,5 +32,10 @@ class CustomerForm(forms.ModelForm):
         attrs={'placeholder': ('+353')}))
 
     class Meta:
-        model = Guest
+        model = Customer
+        widgets = {
+            'name': forms.TextInput(attrs={'placeholder': 'Full name'}),
+            'email': forms.EmailInput(
+                attrs={'placeholder': 'Email address'}),
+        }
         fields = ('customer_name', 'email', 'phone')
