@@ -1,3 +1,10 @@
+#imports
+# -------------------------------------------------------------
+# 3rd party:
 from django.shortcuts import render
+from django.views import generic
 
-# Create your views here.
+# -------------------------------------------------------------
+# Internal:
+from .models import Table, Customer, Reservation
+# -------------------------------------------------------------
