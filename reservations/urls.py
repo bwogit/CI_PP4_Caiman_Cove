@@ -4,4 +4,8 @@
 from django.urls import path
 
 # Internal:
-from bookings import views
+from reservations import views
+
+urlpatterns = [
+    path('reservations/', views.Reservation, name='reservations'),
+]

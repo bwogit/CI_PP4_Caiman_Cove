@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     'cloudinary',
     'phonenumber_field',
     'django_summernote',
+    'crispy_forms',
+    "crispy_bootstrap5",
     'food_and_drinks',
     'reservations',
     'home',
@@ -65,6 +67,10 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 
 MIDDLEWARE = [
