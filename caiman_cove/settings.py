@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'django_summernote',
     'crispy_forms',
-    "crispy_bootstrap5",
     'food_and_drinks',
     'reservations',
     'home',
