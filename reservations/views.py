@@ -1,12 +1,16 @@
 #imports
 # -------------------------------------------------------------
 # 3rd party:
-from django.shortcuts import render
+from django.shortcuts import render, reverse, get_object_or_404
 from django.views import generic
+from django.views import View
+from django.http import HttpResponseRedirect
+from django.contrib.auth.models import User
 
 from .models import Table, Customer, Reservation
 from .forms import ReservationForm, CustomerForm
 # -------------------------------------------------------------
+
 def bookings(request):
     """
     A view to display the booking list

@@ -82,7 +82,7 @@ class Reservation(models.Model):
         (5, "5 Customers"),
         (6, "6 Customers"),
         )
-    customer_count = models.IntegerField(choices=customer_capacity, default=2) 
+    customer_count = models.PositiveIntegerField(choices=customer_capacity, default=2) 
 
     class Meta:
         ordering = ['-reserved_time_slot']
