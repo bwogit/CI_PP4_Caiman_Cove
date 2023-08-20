@@ -56,3 +56,12 @@ class Bookings(View):
             return render(request, "reservations/reservation.html", {'booking_form': booking_form})
 
 
+
+class Confirmed(generic.DetailView):
+    """
+    Renders the confirmation page
+    """
+    template_name = 'reservations/success.html'
+
+    def get(self, request):
+        return render(request, 'reservations/success.html')
