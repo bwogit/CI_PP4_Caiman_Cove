@@ -4,6 +4,14 @@ from django.views import generic
 from .forms import BookingForm
 from .models import Reservation, Table, Customer
 
+
+def get_user_instance(request):
+    """ retrieves user details if logged in """
+
+    user_email = request.user.email
+    user = Customer.objects.filter(email=email).first()
+    return user
+
 class Bookings(View):
     """ Reservation view for guests to make bookings """
 
