@@ -25,17 +25,17 @@ class BookingForm(forms.ModelForm):
         widget=forms.TextInput(attrs={'placeholder': ('+353')})
     )
 
-    reserved_table = forms.ModelChoiceField(
-        queryset=Table.objects.all(),
-        widget=forms.Select(attrs={'placeholder': 'Reserved Table'}),
-    )
+    # reserved_table = forms.ModelChoiceField(
+    #     queryset=Table.objects.all(),
+    #     widget=forms.Select(attrs={'placeholder': 'Reserved Table'}),
+    # )
     
-    reservation_status = forms.ChoiceField(
-        choices=status_options,
-        widget=forms.Select(attrs={'placeholder': 'Reservation Status'}),
-        initial='awaiting confirmation'
-    )    
+    # reservation_status = forms.ChoiceField(
+    #     choices=status_options,
+    #     widget=forms.Select(attrs={'placeholder': 'Reservation Status'}),
+    #     initial='awaiting confirmation'
+    # )    
 
     class Meta:
         model = Reservation
-        fields = ('customer_count', 'reserved_date', 'reserved_time_slot', 'reserved_table', 'reservation_status', 'customer_name', 'email', 'phone_number')
+        fields = ('customer_count', 'reserved_date', 'reserved_time_slot', 'customer_name', 'email', 'phone_number')

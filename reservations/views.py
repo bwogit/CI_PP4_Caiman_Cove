@@ -25,8 +25,8 @@ class Bookings(View):
             customer_name = cleaned_data['customer_name']
             email = cleaned_data['email']
             phone_number = cleaned_data['phone_number']
-            reserved_table = cleaned_data['reserved_table']  # Get the selected table
-            reservation_status = cleaned_data['reservation_status']  # Get the selected status
+            #reserved_table = cleaned_data['reserved_table']  # Get the selected table
+            #reservation_status = cleaned_data['reservation_status']  # Get the selected status
 
             # Check if the customer already exists
             customer, created = Customer.objects.get_or_create(
@@ -40,8 +40,8 @@ class Bookings(View):
                 customer_count=customer_count,
                 reserved_date=reserved_date,
                 reserved_time_slot=reserved_time_slot,
-                reserved_table=reserved_table,  # Assign the selected table
-                reservation_status=reservation_status,  # Assign the selected status
+                #reserved_table=reserved_table,  # Assign the selected table
+                #reservation_status=reservation_status,  # Assign the selected status
                 customer=customer
             )
 
