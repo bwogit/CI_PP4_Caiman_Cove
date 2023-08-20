@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 from .forms import BookingForm
-from .models import Reservation
+from .models import Reservation, Customer
 
 class Bookings(View):
     """ Reservation view for guests to make bookings """
@@ -22,12 +22,23 @@ class Bookings(View):
             customer_count = cleaned_data['customer_count']
             reserved_date = cleaned_data['reserved_date']
             reserved_time_slot = cleaned_data['reserved_time_slot']
+            customer_name = cleaned_data['customer_name']
+            email = cleaned_data['email']
+            phone_number = cleaned_data['phone_number']
 
-            # Create a new reservation instance with the extracted data
+            # Check if the customer already exists
+            customer, created = Customer.objects.get_or_create(
+                customer_name=customer_name,
+                email=email,
+                phone=phone_number
+            )
+
+            # Create a new reservation instance with the extracted data and customer
             reservation = Reservation(
                 customer_count=customer_count,
                 reserved_date=reserved_date,
-                reserved_time_slot=reserved_time_slot
+                reserved_time_slot=reserved_time_slot,
+                customer=customer
             )
 
             # Save the reservation to the database
@@ -39,5 +50,3 @@ class Bookings(View):
         else:
             # If the form is not valid, re-render the template with the form and errors
             return render(request, "reservations/reservation.html", {'booking_form': booking_form})
-
-
