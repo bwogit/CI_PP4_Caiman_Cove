@@ -73,7 +73,7 @@ class Reservation(models.Model):
         null=True)
     customer = models.ForeignKey(
         Customer, on_delete=models.CASCADE, related_name="customer", null=True)
-    reservation_status = models.CharField(max_length=25, choices=status_options, default='awaiting confirmation',  unique=True)
+    reservation_status = models.CharField(max_length=25, choices=status_options, default='awaiting confirmation')
     customer_capacity = (
         (1, "1 Customer"),
         (2, "2 Customers"),
