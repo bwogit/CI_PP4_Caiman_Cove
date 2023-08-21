@@ -15,6 +15,11 @@ class Bookings(LoginRequiredMixin, FormView):
     form_class = BookingForm
     success_url = 'confirmed'  # Update with your success URL
 
+    def get(self, request, *args, **kwargs):
+        template_name = "reservations/reservation.html"
+        booking_form = BookingForm()  # Create an instance of the form
+        return render(request, template_name, {'booking_form': booking_form})
+
     def form_valid(self, form):
         # Handle the form submission here
         cleaned_data = form.cleaned_data
