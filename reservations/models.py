@@ -30,7 +30,8 @@ class Table(models.Model):
     table_number = models.CharField(
         max_length=10, default='New Table', unique=True)
     capacity = models.PositiveIntegerField(validators=[MinValueValidator(1)])
-
+    reserved = models.BooleanField(default=False)
+    
     class Meta:
         ordering = ['-capacity']
 
