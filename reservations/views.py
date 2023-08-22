@@ -7,6 +7,7 @@ from django.views.generic import ListView
 from django.views.generic import TemplateView
 from .forms import BookingForm  # Import your BookingForm
 from .models import Reservation, Customer
+import datetime
 
 
 class Confirmed(TemplateView):
