@@ -7,7 +7,7 @@ from .models import Reservation, Customer
 
 
 class Confirmed(TemplateView):
-    template_name = 'reservations/success.html'
+    template_name = 'reservations/confirmed.html'
 
 
 class Bookings(LoginRequiredMixin, FormView):

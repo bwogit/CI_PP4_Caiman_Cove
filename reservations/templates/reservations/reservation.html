@@ -8,9 +8,7 @@
         <div class="col-md-4 mt-3 offset-md-2">
             <form method="post">
                 {% csrf_token %}
-                <!-- {{ booking_form }} -->
                 {% crispy booking_form %}
-                <button class="btn btn-signup right" type="submit">Submit</button>
             </form>
         </div>
     </div>
