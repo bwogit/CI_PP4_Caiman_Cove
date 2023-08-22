@@ -7,10 +7,15 @@ from django.utils import timezone
 
 # Create your models here.
 custom_time_slots = (
-    ('09:00', '09:00 AM'),
     ('12:00', '12:00 PM'),
-    ('18:00', '06:00 PM'),
-    # Add more time slots as needed
+    ('13:00', '13:00 PM'),
+    ('17:00', '08:00 PM'),
+    ('18:00', '22:00 PM'),
+    ('19:00', '20:00 PM'),
+    ('21:00', '21:00 PM'),
+    ('22:00', '22:00 PM'),
+    ('23:00', '23:00 PM'),
+   
 )
 
 status_options = (
@@ -19,7 +24,6 @@ status_options = (
     ('rejected', 'Rejected'),
     ('expired', 'Expired'),
 )
-
 
 
 class Table(models.Model):
@@ -31,7 +35,7 @@ class Table(models.Model):
         max_length=10, default='New Table', unique=True)
     capacity = models.PositiveIntegerField(validators=[MinValueValidator(1)])
     reserved = models.BooleanField(default=False)
-    
+
     class Meta:
         ordering = ['-capacity']
 
@@ -76,7 +80,6 @@ class Reservation(models.Model):
         Customer, on_delete=models.CASCADE, related_name="customer", null=True)
     reservation_status = models.CharField(max_length=25, choices=status_options, default='awaiting confirmation')
     customer_capacity = (
-        (1, "1 Customer"),
         (2, "2 Customers"),
         (3, "3 Customers"),
         (4, "4 Customers"),
