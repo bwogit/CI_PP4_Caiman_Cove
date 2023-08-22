@@ -24,9 +24,10 @@ class BookingForm(forms.ModelForm):
     phone_number = PhoneNumberField(
         widget=forms.TextInput(attrs={'placeholder': ('+353')})
     )
-    
+
     reserved_table = forms.ModelChoiceField(
-        queryset=Table.objects.filter(reserved=False),
+        # queryset=Table.objects.filter(reserved=False),
+        queryset=Table.objects.all(),
         widget=forms.Select(attrs={'placeholder': 'Reserved Table'}),
     )
     # reserved_table = forms.ModelChoiceField(
