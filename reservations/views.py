@@ -3,6 +3,7 @@ from django.views import generic
 from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
 from django.views.generic.edit import FormView
+from django.views.generic import ListView
 from django.views.generic import TemplateView
 from .forms import BookingForm  # Import your BookingForm
 from .models import Reservation, Customer
@@ -54,29 +55,12 @@ class Bookings(LoginRequiredMixin, FormView):
         return redirect('confirmed')
 
 
-class BookingList(generic.ListView):
+class BookingList(ListView):
     model = Reservation
     template_name = 'reservations/booking_list.html'
-    paginated_by = 4
+    context_object_name = 'bookings'
+    paginate_by = 4
 
-    def get(self, request, *args, **kwargs):
-        if request.user.is_authenticated:
-            reservations = Reservation.objects.filter(customer=request.user)
-            paginator = Paginator(reservations.order_by('-created_date'), self.paginated_by)
-            page = request.GET.get('page')
-            reservation_page = paginator.get_page(page)
-            today = datetime.datetime.now().date()
-
-            for reservation in reservations:
-                if reservation.reserved_date < today:
-                    reservation.status = 'Booking Expired'
-
-            return render(
-                request,
-                self.template_name,
-                {
-                    'reservations': reservations,
-                    'reservation_page': reservation_page
-                })
-        else:
-            return redirect('account_login')    
+    def get_queryset(self):
+        # Get all reservations for the current user's customer
+        return Reservation.objects.filter(customer__email=self.request.user.email).order_by('-reservation_time')
