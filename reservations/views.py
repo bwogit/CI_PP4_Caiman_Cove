@@ -1,5 +1,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views import generic
 from django.shortcuts import render, redirect
+from django.core.paginator import Paginator
 from django.views.generic.edit import FormView
 from django.views.generic import TemplateView
 from .forms import BookingForm  # Import your BookingForm
@@ -11,9 +13,9 @@ class Confirmed(TemplateView):
 
 
 class Bookings(LoginRequiredMixin, FormView):
-    template_name = 'reservations/reservation.html'  # Update with your template
+    template_name = 'reservations/reservation.html'  
     form_class = BookingForm
-    success_url = 'confirmed'  # Update with your success URL
+    success_url = 'confirmed'  
 
     def get(self, request, *args, **kwargs):
         template_name = "reservations/reservation.html"
@@ -49,5 +51,32 @@ class Bookings(LoginRequiredMixin, FormView):
         # Save the reservation to the database
         reservation.save()
 
-        #return render(self.request, self.template_name, {'booking_form': form})
         return redirect('confirmed')
+
+
+class BookingList(generic.ListView):
+    model = Reservation
+    template_name = 'reservations/booking_list.html'
+    paginated_by = 4
+
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            reservations = Reservation.objects.filter(customer=request.user)
+            paginator = Paginator(reservations.order_by('-created_date'), self.paginated_by)
+            page = request.GET.get('page')
+            reservation_page = paginator.get_page(page)
+            today = datetime.datetime.now().date()
+
+            for reservation in reservations:
+                if reservation.reserved_date < today:
+                    reservation.status = 'Booking Expired'
+
+            return render(
+                request,
+                self.template_name,
+                {
+                    'reservations': reservations,
+                    'reservation_page': reservation_page
+                })
+        else:
+            return redirect('account_login')    
