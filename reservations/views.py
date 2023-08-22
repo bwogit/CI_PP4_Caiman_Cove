@@ -1,5 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.edit import FormView
 from django.views.generic import TemplateView
 from .forms import BookingForm  # Import your BookingForm
@@ -49,4 +49,5 @@ class Bookings(LoginRequiredMixin, FormView):
         # Save the reservation to the database
         reservation.save()
 
-        return render(self.request, self.template_name, {'booking_form': form})
+        #return render(self.request, self.template_name, {'booking_form': form})
+        return redirect('confirmed')
