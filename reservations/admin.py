@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Table, Reservation, Customer
+from .models import Table, Reservation
 
 # Define the custom admin action function
 def approve_reservations(modeladmin, request, queryset):
@@ -21,8 +21,8 @@ class TableAdmin(admin.ModelAdmin):
 #     search_fields = ('reserved_table__table_number', 'customer__customer_name')
 # Registration of bookings to display in the admin panel
 
-@admin.register(Booking)
-class BookingAdmin(admin.ModelAdmin):
+@admin.register(Reservation)
+class ReservationAdmin(admin.ModelAdmin):
     list_filter = (
         'user',
         'name',
