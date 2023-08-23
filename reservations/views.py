@@ -70,6 +70,9 @@ class Bookings(View):
         return render(request, 'reservations/reservation.html',
                       {'booking_form': booking_form})
 
+        
+     
+
 class Confirmed(generic.DetailView):
     """
     This view will display confirmation on a successful booking
@@ -191,6 +194,9 @@ class EditBooking(UpdateView):
         # Make sure the user can only edit their own reservations
         return super().get_queryset().filter(user=self.request.user)
 
+    def form_valid(self, form):
+        messages.success(self.request, "Your reservation has been updated.")
+        return super().form_valid(form)
 
 class DeleteBooking(DeleteView):
     """
@@ -203,3 +209,7 @@ class DeleteBooking(DeleteView):
     def get_queryset(self):
         # Make sure the user can only delete their own reservations
         return super().get_queryset().filter(user=self.request.user)
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, "Reservation deleted successfully.")
+        return super().delete(request, *args, **kwargs)
