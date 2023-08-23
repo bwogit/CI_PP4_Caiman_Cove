@@ -12,6 +12,8 @@ from django.views.generic.edit import UpdateView
 from .forms import BookingForm  # Import your BookingForm
 from .models import Reservation, Table
 import datetime
+from django.views.generic.edit import UpdateView
+from django.urls import reverse_lazy
 
 def get_user_instance(request):
     """
