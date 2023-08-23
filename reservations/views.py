@@ -62,14 +62,14 @@ class Bookings(view):
         return render(request, 'reservations/reservation.html',
                       {'booking_form': booking_form})
 
-    class Confirmed(generic.DetailView):
+class Confirmed(generic.DetailView):
     """
     This view will display confirmation on a successful booking
     """
     template_name = 'reservations/confirmed.html'
 
     def get(self, request):
-        return render(request, 'reservations/confirmed.html')
+            return render(request, 'reservations/confirmed.html')
 
 
 # Dispays the confirmation page upon a succesful booking
