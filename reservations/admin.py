@@ -13,16 +13,46 @@ class TableAdmin(admin.ModelAdmin):
     list_filter = ('capacity',)
     search_fields = ('table_number',)
 
-@admin.register(Reservation)
-class ReservationAdmin(admin.ModelAdmin):
-    list_display = ('reservation_id','reservation_time', 'reserved_date', 'reserved_time_slot', 'customer', 'reservation_status','customer_count')
-    list_filter = ('reservation_status',)
-    actions = ['approve_reservations']
-    search_fields = ('reserved_table__table_number', 'customer__customer_name')
+# @admin.register(Reservation)
+# class ReservationAdmin(admin.ModelAdmin):
+#     list_display = ('reservation_id','reservation_time', 'reserved_date', 'reserved_time_slot', 'customer', 'reservation_status','customer_count')
+#     list_filter = ('reservation_status',)
+#     actions = ['approve_reservations']
+#     search_fields = ('reserved_table__table_number', 'customer__customer_name')
+# Registration of bookings to display in the admin panel
 
-@admin.register(Customer)
-class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('customer_id', 'customer_name', 'phone', 'email', 'created_date')
-    search_fields = ('customer_name', 'email')
+@admin.register(Booking)
+class BookingAdmin(admin.ModelAdmin):
+    list_filter = (
+        'user',
+        'name',
+        'email',
+        'phone',
+        'guest_count',
+        'status',
+        'table_id',
+        'reserved_date', 
+        'reserved_time_slot'
+        'reservation_time',
+        )
+    list_display = (
+        'booking_id',
+        'user',
+        'name',
+        'phone',
+        'guest_count',
+        'status',
+        'table',
+        'reserved_date', 
+        'reserved_time_slot'
+        'reservation_time',)
+    
+    actions = ['confirm_bookings']
+
+
+# @admin.register(Customer)
+# class CustomerAdmin(admin.ModelAdmin):
+#     list_display = ('customer_id', 'customer_name', 'phone', 'email', 'created_date')
+#     search_fields = ('customer_name', 'email')
 
 
