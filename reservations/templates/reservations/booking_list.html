@@ -33,6 +33,7 @@
           <td>
             {% if user.is_authenticated and user == booking.user %}
             <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-outline-primary btn-sm">Edit</a>
+            <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-outline-danger btn-sm">Delete</a>
             {% endif %}
           </td>
         </tr>
