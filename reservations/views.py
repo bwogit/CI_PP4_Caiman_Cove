@@ -12,6 +12,14 @@ from .forms import BookingForm  # Import your BookingForm
 from .models import Reservation
 import datetime
 
+def get_user_instance(request):
+    """
+    This function retrieves user details when the user is logged in
+    """
+
+    user_email = request.user.email
+    user = User.objects.filter(email=user_email).first()
+    return user
 
 # class Confirmed(TemplateView):
 #     template_name = 'reservations/confirmed.html'
