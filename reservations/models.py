@@ -136,8 +136,8 @@ class Reservation(models.Model):
     guest_count = models.IntegerField(choices=seats, default=2)
 
     class Meta:
-        ordering = ['-requested_time']
-        unique_together = ('requested_date', 'requested_time', 'table')
+        ordering = ['-reserved_time_slot']
+        unique_together = ('reserved_date', 'reserved_time_slot', 'table')
 
     def __str__(self):
         return self.status

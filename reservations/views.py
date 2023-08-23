@@ -9,7 +9,7 @@ from django.views.generic.edit import FormView
 from django.views.generic import ListView
 from django.views.generic import TemplateView
 from .forms import BookingForm  # Import your BookingForm
-from .models import Reservation, Customer
+from .models import Reservation
 import datetime
 
 
@@ -18,7 +18,7 @@ import datetime
 
 
 #class Bookings(LoginRequiredMixin, FormView):
-class Bookings(view):
+class Bookings(View):
     """
     This view renders the booking form when a registered user accesses it, 
     automatically populating the email field with the user's email address.
@@ -126,25 +126,25 @@ class BookingList(generic.ListView):
     This view will display all the bookings
     a particular user has made
     """
-    model = Booking
-    queryset = Booking.objects.filter().order_by('-created_date')
+    model = Reservation
+    queryset = Reservation.objects.filter().order_by('-reservation_time')
     template_name = 'booking_list.html'
     paginated_by = 4
 
     def get(self, request, *args, **kwargs):
 
-        booking = Booking.objects.all()
-        paginator = Paginator(Booking.objects.filter(user=request.user), 4)
+        booking = Reservation.objects.all()
+        paginator = Paginator(Reservation.objects.filter(user=request.user), 4)
         page = request.GET.get('page')
         booking_page = paginator.get_page(page)
         today = datetime.datetime.now().date()
 
         for date in booking:
-            if date.requested_date < today:
+            if date.reserved_date < today:
                 date.status = 'Booking Expired'
 
         if request.user.is_authenticated:
-            bookings = Booking.objects.filter(user=request.user)
+            bookings = Reservation.objects.filter(user=request.user)
             return render(
                 request,
                 'reservations/booking_list.html',

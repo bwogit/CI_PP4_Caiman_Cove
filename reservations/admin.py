@@ -32,11 +32,11 @@ class ReservationAdmin(admin.ModelAdmin):
         'status',
         'table_id',
         'reserved_date', 
-        'reserved_time_slot'
+        'reserved_time_slot',
         'reservation_time',
         )
     list_display = (
-        'booking_id',
+        'reservation_id',
         'user',
         'name',
         'phone',
@@ -44,7 +44,7 @@ class ReservationAdmin(admin.ModelAdmin):
         'status',
         'table',
         'reserved_date', 
-        'reserved_time_slot'
+        'reserved_time_slot',
         'reservation_time',)
     
     actions = ['confirm_bookings']
