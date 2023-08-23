@@ -27,6 +27,7 @@ class Bookings(LoginRequiredMixin, FormView):
     def form_valid(self, form):
         # Handle the form submission here
         cleaned_data = form.cleaned_data
+
         # Extract data from the cleaned_data dictionary
         customer_count = cleaned_data['customer_count']
         reserved_date = cleaned_data['reserved_date']
@@ -47,11 +48,13 @@ class Bookings(LoginRequiredMixin, FormView):
             customer_count=customer_count,
             reserved_date=reserved_date,
             reserved_time_slot=reserved_time_slot,
-            customer=customer
+            customer=customer,
         )
-
-        # Save the reservation to the database
-        reservation.save()
+        # Set reservation status to 'awaiting confirmation'
+        
+        print("Before setting status:", reservation.reservation_status)
+        reservation.reservation_status = 'awaiting confirmation'
+        print("After setting status:", reservation.reservation_status)
 
         return redirect('confirmed')
 

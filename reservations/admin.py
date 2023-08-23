@@ -1,6 +1,11 @@
 from django.contrib import admin
 from .models import Table, Reservation, Customer
 
+# Define the custom admin action function
+def approve_reservations(modeladmin, request, queryset):
+    queryset.update(reservation_status='confirmed')
+approve_reservations.short_description = "Approve selected reservations"
+
 # Register your models here.
 @admin.register(Table)
 class TableAdmin(admin.ModelAdmin):
@@ -10,8 +15,9 @@ class TableAdmin(admin.ModelAdmin):
 
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
-    list_display = ('reservation_id','reservation_time', 'reserved_date', 'reserved_time_slot', 'reserved_table', 'customer', 'reservation_status','customer_count')
-    list_filter = ('reservation_id','reservation_time', 'reserved_date', 'reserved_time_slot', 'reserved_table', 'customer', 'reservation_status','customer_count')
+    list_display = ('reservation_id','reservation_time', 'reserved_date', 'reserved_time_slot', 'customer', 'reservation_status','customer_count')
+    list_filter = ('reservation_status',)
+    actions = ['approve_reservations']
     search_fields = ('reserved_table__table_number', 'customer__customer_name')
 
 @admin.register(Customer)
