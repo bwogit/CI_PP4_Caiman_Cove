@@ -166,14 +166,28 @@ class BookingList(generic.ListView):
         else:
             return redirect('accounts/login.html')
 
-class EditBooking(SuccessMessageMixin, UpdateView):
-    """
+# class EditBooking(SuccessMessageMixin, UpdateView):
+#     """
     
-    """
+#     """
+#     model = Reservation
+#     form_class = BookingForm
+#     template_name = 'reservations/edit_booking.html'
+#     success_message = 'Your reservation has been updated.'
+
+#     def get_success_url(self, **kwargs):
+#         return reverse('reservation')            
+from django.views.generic.edit import UpdateView
+from django.urls import reverse_lazy
+from .models import Reservation
+from .forms import BookingForm
+
+class EditBooking(UpdateView):
     model = Reservation
     form_class = BookingForm
     template_name = 'reservations/edit_booking.html'
-    success_message = 'Your reservation has been updated.'
+    success_url = reverse_lazy('booking_list')  # Redirect after successful update
 
-    def get_success_url(self, **kwargs):
-        return reverse('booking_list')            
+    def get_queryset(self):
+        # Make sure the user can only edit their own reservations
+        return super().get_queryset().filter(user=self.request.user)
