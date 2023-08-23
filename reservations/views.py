@@ -9,7 +9,7 @@ from django.views.generic.edit import FormView
 from django.views.generic import ListView
 from django.views.generic import TemplateView
 from .forms import BookingForm  # Import your BookingForm
-from .models import Reservation
+from .models import Reservation, Table
 import datetime
 
 def get_user_instance(request):
@@ -136,12 +136,14 @@ class BookingList(generic.ListView):
     """
     model = Reservation
     queryset = Reservation.objects.filter().order_by('-reservation_time')
+    #queryset = Reservation.objects.select_related('table').filter(user=request.user).order_by('-reservation_time')
     template_name = 'booking_list.html'
     paginated_by = 4
 
     def get(self, request, *args, **kwargs):
 
-        booking = Reservation.objects.all()
+        #booking = Reservation.objects.all()
+        booking = self.queryset
         paginator = Paginator(Reservation.objects.filter(user=request.user), 4)
         page = request.GET.get('page')
         booking_page = paginator.get_page(page)
@@ -153,6 +155,7 @@ class BookingList(generic.ListView):
 
         if request.user.is_authenticated:
             bookings = Reservation.objects.filter(user=request.user)
+            #bookings = booking
             return render(
                 request,
                 'reservations/booking_list.html',
