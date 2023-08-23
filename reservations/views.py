@@ -192,7 +192,7 @@ class EditBooking(UpdateView):
         return super().get_queryset().filter(user=self.request.user)
 
 
-class DeleteBookingView(DeleteView):
+class DeleteBooking(DeleteView):
     """
     A class to handle deleteing reservations
     """
