@@ -5,14 +5,11 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import render, redirect, reverse
 from django.core.paginator import Paginator
-from django.views.generic.edit import FormView
-from django.views.generic import ListView
-from django.views.generic import TemplateView
-from django.views.generic.edit import UpdateView
+from django.views.generic.edit import FormView, UpdateView, DeleteView
+from django.views.generic import ListView, TemplateView
 from .forms import BookingForm  # Import your BookingForm
 from .models import Reservation, Table
 import datetime
-from django.views.generic.edit import UpdateView
 from django.urls import reverse_lazy
 
 def get_user_instance(request):
@@ -192,4 +189,17 @@ class EditBooking(UpdateView):
 
     def get_queryset(self):
         # Make sure the user can only edit their own reservations
+        return super().get_queryset().filter(user=self.request.user)
+
+
+class DeleteBookingView(DeleteView):
+    """
+    A class to handle deleteing reservations
+    """
+    model = Reservation
+    template_name = 'reservations/delete_booking.html'
+    success_url = reverse_lazy('booking_list')  # Redirect after successful deletion
+
+    def get_queryset(self):
+        # Make sure the user can only delete their own reservations
         return super().get_queryset().filter(user=self.request.user)
