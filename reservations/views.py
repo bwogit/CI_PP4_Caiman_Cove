@@ -3,7 +3,7 @@ from django.views import generic, View
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.core.paginator import Paginator
 from django.views.generic.edit import FormView
 from django.views.generic import ListView
