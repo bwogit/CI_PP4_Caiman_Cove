@@ -47,7 +47,10 @@ class ReservationAdmin(admin.ModelAdmin):
         'reserved_time_slot',
         'reservation_time',)
     
-    actions = ['confirm_bookings']
+    actions = ['confirm_reservation']
+
+    def confirm_reservations(self, request, queryset):
+        queryset.update(status='Reservation Confirmed')
 
 
 # @admin.register(Customer)
