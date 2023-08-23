@@ -50,7 +50,7 @@ class BookingForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
 
-    requested_date = forms.DateField(
+    reserved_date = forms.DateField(
         widget=forms.DateInput(
             attrs={'type': 'date', 'min': datetime.now().date()}))
 
@@ -65,4 +65,6 @@ class BookingForm(forms.ModelForm):
             'email',
             'guest_count',
             'table',
-            'reserved_time_slot')
+            'reserved_date',
+            'reserved_time_slot',
+            )
