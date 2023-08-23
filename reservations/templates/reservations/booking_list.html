@@ -1,67 +1,49 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
 {% block content %}
 <div class="container">
-  <h1>Your Bookings</h1>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Booking Date</th>
-        <th>Reserved Date</th>
-        <th>Reserved Time Slot</th>
-        <th>Guest Count</th>
-        <th>Table</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for booking in bookings %}
-      <tr>
-        <td>{{ booking.reservation_time }}</td>
-        <td>{{ booking.reserved_date }}</td>
-        <td>{{ booking.reserved_time_slot }}</td>
-        <td>{{ booking.guest_count }}</td>
-        <td>{{ booking.table }}</td>
-        <td>{{ booking.status }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+  <h1 class="my-5 text-center">Your Bookings</h1>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Booking Date</th>
+          <th>Reserved Date</th>
+          <th>Time Slot</th>
+          <th>Guest Count</th>
+          <th>Table</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for booking in bookings %}
+        <tr>
+          <td>{{ booking.reservation_time|date:"D, M d Y" }}</td>
+          <td>{{ booking.reserved_date|date:"D, M d Y" }}</td>
+          <td>{{ booking.get_reserved_time_slot_display }}</td>
+          <td>{{ booking.get_guest_count_display }}</td>
+          <td>{{ booking.table }}</td>
+          <td>
+            <span class="badge {% if booking.status == 'confirmed' %}badge-success{% elif booking.status == 'rejected' %}badge-danger{% else %}badge-info{% endif %}">
+              {{ booking.status }}
+            </span>
+          </td>
+          <td>
+            {% if user.is_authenticated and user == booking.user %}
+            <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-outline-primary btn-sm">Edit</a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
   {% if bookings.has_other_pages %}
   <nav aria-label="Bookings pagination">
     <ul class="pagination justify-content-center">
-      {% if bookings.has_previous %}
-      <li class="page-item">
-        <a class="page-link" href="?page=1" aria-label="First">
-          <span aria-hidden="true">&laquo;&laquo;</span>
-        </a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" href="?page={{ bookings.previous_page_number }}" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      {% endif %}
-      {% for i in bookings.paginator.page_range %}
-      {% if bookings.number == i %}
-      <li class="page-item active">
-        <a class="page-link" href="#">{{ i }} <span class="sr-only">(current)</span></a>
-      </li>
-      {% else %}
-      <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
-      {% endif %}
-      {% endfor %}
-      {% if bookings.has_next %}
-      <li class="page-item">
-        <a class="page-link" href="?page={{ bookings.next_page_number }}" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" href="?page={{ bookings.paginator.num_pages }}" aria-label="Last">
-          <span aria-hidden="true">&raquo;&raquo;</span>
-        </a>
-      </li>
-      {% endif %}
+      <!-- Pagination logic here -->
     </ul>
   </nav>
   {% endif %}

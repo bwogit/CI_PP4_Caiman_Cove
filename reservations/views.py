@@ -8,6 +8,7 @@ from django.core.paginator import Paginator
 from django.views.generic.edit import FormView
 from django.views.generic import ListView
 from django.views.generic import TemplateView
+from django.views.generic.edit import UpdateView
 from .forms import BookingForm  # Import your BookingForm
 from .models import Reservation, Table
 import datetime
@@ -131,8 +132,7 @@ class Confirmed(generic.DetailView):
 
 class BookingList(generic.ListView):
     """
-    This view will display all the bookings
-    a particular user has made
+    
     """
     model = Reservation
     queryset = Reservation.objects.filter().order_by('-reservation_time')
@@ -165,3 +165,15 @@ class BookingList(generic.ListView):
                     'booking_page': booking_page})
         else:
             return redirect('accounts/login.html')
+
+class EditBooking(SuccessMessageMixin, UpdateView):
+    """
+    
+    """
+    model = Reservation
+    form_class = BookingForm
+    template_name = 'reservations/edit_booking.html'
+    success_message = 'Your reservation has been updated.'
+
+    def get_success_url(self, **kwargs):
+        return reverse('booking_list')            
