@@ -195,8 +195,10 @@ class EditBooking(UpdateView):
         return super().get_queryset().filter(user=self.request.user)
 
     def form_valid(self, form):
+        response = super().form_valid(form)
         messages.success(self.request, "Your reservation has been updated.")
-        return super().form_valid(form)
+        #return super().form_valid(form)
+        return response
 
 class DeleteBooking(DeleteView):
     """
