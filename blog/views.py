@@ -44,6 +44,7 @@ class AddComment(LoginRequiredMixin, View):
             comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
             comment.post = post
+            comment.approved = False  # Set the approval status to False
             comment.save()
             messages.success(request, 'Comment pending approval')
         else:
