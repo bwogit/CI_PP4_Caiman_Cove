@@ -4,6 +4,7 @@
   <h2>Blog List</h2>
   <ul>
     {% for post in posts %}
+      
       <li><a href="{% url 'add_comment' post.pk %}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
