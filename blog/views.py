@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 class BlogList(View):
     def get(self, request):
         posts = Post.objects.all()
-        return render(request, 'blog/posts_list.html', {'posts': posts})
+        return render(request, 'blog/blog_list.html', {'posts': posts})
 
     # @login_required
     # def add_comment_to_post(request, pk):
@@ -30,8 +30,8 @@ class BlogList(View):
         body = request.POST.get('comment_body')
         comment = Comment(post=post, name=name, email=email, body=body)
         comment.save()
-        return redirect('posts_list', pk=post.pk)
+        return redirect('blog_list', pk=post.pk)
 
     def get(self, request, pk):
         post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/comments.html', {'post': post})
+        return render(request, 'blog/add_comment.html', {'post': post})
