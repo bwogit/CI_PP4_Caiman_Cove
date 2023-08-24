@@ -77,37 +77,66 @@ class Confirmed(generic.DetailView):
 
 
 
-class BookingList(generic.ListView):
-    """
+# class BookingList(generic.ListView):
+#     """
     
-    """
+#     """
+#     model = Reservation
+#     queryset = Reservation.objects.filter().order_by('-reservation_time')
+#     #queryset = Reservation.objects.select_related('table').filter(user=request.user).order_by('-reservation_time')
+#     template_name = 'booking_list.html'
+#     paginated_by = 4
+
+#     def get(self, request, *args, **kwargs):
+
+#         booking = self.queryset
+#         paginator = Paginator(Reservation.objects.filter(user=request.user), 4)
+#         page = request.GET.get('page')
+#         booking_page = paginator.get_page(page)
+#         today = datetime.datetime.now().date()
+
+#         for date in booking:
+#             if date.reserved_date < today:
+#                 date.status = 'Booking Expired'
+
+#         if request.user.is_authenticated:
+#             bookings = Reservation.objects.filter(user=request.user)
+#             return render(
+#                 request,
+#                 'reservations/booking_list.html',
+#                 {
+#                     'booking': booking,
+#                     'bookings': bookings,
+#                     'booking_page': booking_page})
+#         else:
+#             return redirect('accounts/login.html')
+class BookingList(generic.ListView):
     model = Reservation
     queryset = Reservation.objects.filter().order_by('-reservation_time')
-    #queryset = Reservation.objects.select_related('table').filter(user=request.user).order_by('-reservation_time')
     template_name = 'booking_list.html'
-    paginated_by = 4
+    paginate_by = 4
 
     def get(self, request, *args, **kwargs):
-
-        booking = self.queryset
-        paginator = Paginator(Reservation.objects.filter(user=request.user), 4)
-        page = request.GET.get('page')
-        booking_page = paginator.get_page(page)
         today = datetime.datetime.now().date()
 
-        for date in booking:
-            if date.reserved_date < today:
-                date.status = 'Booking Expired'
-
         if request.user.is_authenticated:
-            bookings = Reservation.objects.filter(user=request.user)
+            bookings = self.queryset.filter(user=request.user)
+            paginator = Paginator(bookings, self.paginate_by)
+            page = request.GET.get('page')
+            booking_page = paginator.get_page(page)
+
+            for date in bookings:
+                if date.reserved_date < today:
+                    date.status = 'Booking Expired'
+
             return render(
                 request,
                 'reservations/booking_list.html',
                 {
-                    'booking': booking,
-                    'bookings': bookings,
-                    'booking_page': booking_page})
+                    'booking': bookings,
+                    'booking_page': booking_page
+                }
+            )
         else:
             return redirect('accounts/login.html')
 
