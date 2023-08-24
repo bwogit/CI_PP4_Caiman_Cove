@@ -19,15 +19,25 @@ class BlogDetail(View):
 
 class AddComment(View):
     @login_required
+    # def post(self, request, pk):
+    #     post = get_object_or_404(Post, pk=pk, status=1)
+    #     name = request.user.username
+    #     email = request.user.email
+    #     body = request.POST.get('comment_body')
+    #     comment = Comment(post=post, name=name, email=email, body=body)
+    #     comment.save()
+    #     return redirect('blog_detail', pk=post.pk)
     def post(self, request, pk):
         post = get_object_or_404(Post, pk=pk, status=1)
-        name = request.user.username
-        email = request.user.email
-        body = request.POST.get('comment_body')
-        comment = Comment(post=post, name=name, email=email, body=body)
-        comment.save()
+        comment_form = CommentForm(request.POST)
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.post = post
+            comment.name = request.user.username
+            comment.email = request.user.email
+            comment.save()
         return redirect('blog_detail', pk=post.pk)
-
+        
     def get(self, request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/add_comment.html', {'post': post})
