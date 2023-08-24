@@ -4,7 +4,7 @@ from .forms import PostForm
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
-class BlogListView(View):
+class BlogList(View):
     def get(self, request):
         posts = Post.objects.all()
         return render(request, 'blog/posts_list.html', {'posts': posts})
@@ -21,7 +21,7 @@ class BlogListView(View):
     #     return redirect('blog_detail', pk=post.pk)
     # return render(request, 'blog/comments.html', {'post': post})
 
-    class AddCommentView(View):
+    class AddComment(View):
     @login_required
     def post(self, request, pk):
         post = get_object_or_404(Post, pk=pk)
