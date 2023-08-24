@@ -21,11 +21,7 @@ def get_user_instance(request):
     user = User.objects.filter(email=user_email).first()
     return user
 
-# class Confirmed(TemplateView):
-#     template_name = 'reservations/confirmed.html'
 
-
-#class Bookings(LoginRequiredMixin, FormView):
 class Bookings(View):
     """
     This view renders the booking form when a registered user accesses it, 
@@ -35,10 +31,7 @@ class Bookings(View):
     form_class = BookingForm
     success_url = 'confirmed'  
 
-    # def get(self, request, *args, **kwargs):
-    #     template_name = "reservations/reservation.html"
-    #     booking_form = BookingForm()  # Create an instance of the form
-    #     return render(request, template_name, {'booking_form': booking_form})
+    
     def get(self, request, *args, **kwargs):
         """
         Retrieves users email and inputs into email field
@@ -83,54 +76,6 @@ class Confirmed(generic.DetailView):
             return render(request, 'reservations/confirmed.html')
 
 
-# Dispays the confirmation page upon a succesful booking
-
-
-
-    # def form_valid(self, form):
-    #     # Handle the form submission here
-    #     cleaned_data = form.cleaned_data
-
-    #     # Extract data from the cleaned_data dictionary
-    #     customer_count = cleaned_data['customer_count']
-    #     reserved_date = cleaned_data['reserved_date']
-    #     reserved_time_slot = cleaned_data['reserved_time_slot']
-    #     customer_name = cleaned_data['customer_name']
-    #     email = cleaned_data['email']
-    #     phone_number = cleaned_data['phone_number']
-
-    #     # Check if the customer already exists
-    #     customer, created = Customer.objects.get_or_create(
-    #         customer_name=customer_name,
-    #         email=email,
-    #         phone=phone_number
-    #     )
-
-    #     # Create a new reservation instance with the extracted data and customer
-    #     reservation = Reservation(
-    #         customer_count=customer_count,
-    #         reserved_date=reserved_date,
-    #         reserved_time_slot=reserved_time_slot,
-    #         customer=customer,
-    #     )
-    #     # Set reservation status to 'awaiting confirmation'
-        
-    #     print("Before setting status:", reservation.reservation_status)
-    #     reservation.reservation_status = 'awaiting confirmation'
-    #     print("After setting status:", reservation.reservation_status)
-
-    #     return redirect('confirmed')
-
-
-# class BookingList(ListView):
-#     model = Reservation
-#     template_name = 'reservations/booking_list.html'
-#     context_object_name = 'bookings'
-#     paginate_by = 4
-
-#     def get_queryset(self):
-#         # Get all reservations for the current user's customer
-#         return Reservation.objects.filter(customer__email=self.request.user.email).order_by('-reservation_time')
 
 class BookingList(generic.ListView):
     """
@@ -144,7 +89,6 @@ class BookingList(generic.ListView):
 
     def get(self, request, *args, **kwargs):
 
-        #booking = Reservation.objects.all()
         booking = self.queryset
         paginator = Paginator(Reservation.objects.filter(user=request.user), 4)
         page = request.GET.get('page')
@@ -157,7 +101,6 @@ class BookingList(generic.ListView):
 
         if request.user.is_authenticated:
             bookings = Reservation.objects.filter(user=request.user)
-            #bookings = booking
             return render(
                 request,
                 'reservations/booking_list.html',
@@ -168,17 +111,7 @@ class BookingList(generic.ListView):
         else:
             return redirect('accounts/login.html')
 
-# class EditBooking(SuccessMessageMixin, UpdateView):
-#     """
-    
-#     """
-#     model = Reservation
-#     form_class = BookingForm
-#     template_name = 'reservations/edit_booking.html'
-#     success_message = 'Your reservation has been updated.'
-
-#     def get_success_url(self, **kwargs):
-#         return reverse('reservation')            
+      
 from django.views.generic.edit import UpdateView
 from django.urls import reverse_lazy
 from .models import Reservation
@@ -191,13 +124,11 @@ class EditBooking(UpdateView):
     success_url = reverse_lazy('booking_list')  # Redirect after successful update
 
     def get_queryset(self):
-        # Make sure the user can only edit their own reservations
         return super().get_queryset().filter(user=self.request.user)
 
     def form_valid(self, form):
         response = super().form_valid(form)
         messages.success(self.request, "Your reservation has been updated.")
-        #return super().form_valid(form)
         return response
 
 class DeleteBooking(DeleteView):
