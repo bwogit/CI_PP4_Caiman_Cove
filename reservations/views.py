@@ -2,6 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import generic, View
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import render, redirect, reverse
 from django.core.paginator import Paginator
@@ -12,6 +13,16 @@ from .models import Reservation, Table
 import datetime
 from django.urls import reverse_lazy
 
+from django.urls import reverse_lazy
+from django.views import generic, View
+from django.core.paginator import Paginator
+
+from django.views.generic.edit import FormView, UpdateView, DeleteView
+from django.contrib import messages
+from .models import Reservation
+from .forms import BookingForm
+import datetime
+
 def get_user_instance(request):
     """
     This function retrieves user details when the user is logged in
@@ -21,24 +32,17 @@ def get_user_instance(request):
     user = User.objects.filter(email=user_email).first()
     return user
 
-# class Confirmed(TemplateView):
-#     template_name = 'reservations/confirmed.html'
 
-
-#class Bookings(LoginRequiredMixin, FormView):
-class Bookings(View):
+class Bookings(SuccessMessageMixin, View):
     """
     This view renders the booking form when a registered user accesses it, 
     automatically populating the email field with the user's email address.
     """
     template_name = 'reservations/reservation.html'  
     form_class = BookingForm
-    success_url = 'confirmed'  
+    #sucess_message= 'Booking succesful, awaiting confirmation'   
 
-    # def get(self, request, *args, **kwargs):
-    #     template_name = "reservations/reservation.html"
-    #     booking_form = BookingForm()  # Create an instance of the form
-    #     return render(request, template_name, {'booking_form': booking_form})
+    
     def get(self, request, *args, **kwargs):
         """
         Retrieves users email and inputs into email field
@@ -54,8 +58,8 @@ class Bookings(View):
 
     def post(self, request):
         """
-        Checks that the provided info is valid format
-        and then posts to database
+        Validates the provided information 
+        format and then saves it to the database.
         """
         booking_form = BookingForm(data=request.POST)
 
@@ -70,9 +74,6 @@ class Bookings(View):
         return render(request, 'reservations/reservation.html',
                       {'booking_form': booking_form})
 
-        
-     
-
 class Confirmed(generic.DetailView):
     """
     This view will display confirmation on a successful booking
@@ -83,106 +84,36 @@ class Confirmed(generic.DetailView):
             return render(request, 'reservations/confirmed.html')
 
 
-# Dispays the confirmation page upon a succesful booking
-
-
-
-    # def form_valid(self, form):
-    #     # Handle the form submission here
-    #     cleaned_data = form.cleaned_data
-
-    #     # Extract data from the cleaned_data dictionary
-    #     customer_count = cleaned_data['customer_count']
-    #     reserved_date = cleaned_data['reserved_date']
-    #     reserved_time_slot = cleaned_data['reserved_time_slot']
-    #     customer_name = cleaned_data['customer_name']
-    #     email = cleaned_data['email']
-    #     phone_number = cleaned_data['phone_number']
-
-    #     # Check if the customer already exists
-    #     customer, created = Customer.objects.get_or_create(
-    #         customer_name=customer_name,
-    #         email=email,
-    #         phone=phone_number
-    #     )
-
-    #     # Create a new reservation instance with the extracted data and customer
-    #     reservation = Reservation(
-    #         customer_count=customer_count,
-    #         reserved_date=reserved_date,
-    #         reserved_time_slot=reserved_time_slot,
-    #         customer=customer,
-    #     )
-    #     # Set reservation status to 'awaiting confirmation'
-        
-    #     print("Before setting status:", reservation.reservation_status)
-    #     reservation.reservation_status = 'awaiting confirmation'
-    #     print("After setting status:", reservation.reservation_status)
-
-    #     return redirect('confirmed')
-
-
-# class BookingList(ListView):
-#     model = Reservation
-#     template_name = 'reservations/booking_list.html'
-#     context_object_name = 'bookings'
-#     paginate_by = 4
-
-#     def get_queryset(self):
-#         # Get all reservations for the current user's customer
-#         return Reservation.objects.filter(customer__email=self.request.user.email).order_by('-reservation_time')
-
 class BookingList(generic.ListView):
     """
-    
+    A custom implementation of BookingList view.
     """
     model = Reservation
-    queryset = Reservation.objects.filter().order_by('-reservation_time')
-    #queryset = Reservation.objects.select_related('table').filter(user=request.user).order_by('-reservation_time')
-    template_name = 'booking_list.html'
-    paginated_by = 4
+    template_name = 'reservations/booking_list.html'
+    paginate_by = 4
 
-    def get(self, request, *args, **kwargs):
+    def get_queryset(self):
+        """
+        Return a filtered queryset based on user authentication.
+        """
+        queryset = Reservation.objects.filter().order_by('-reservation_time')
+        user = self.request.user
+        if user.is_authenticated:
+            queryset = queryset.filter(user=user)
+            today = datetime.datetime.now().date()
+            for booking in queryset:
+                if booking.reserved_date < today:
+                    booking.status = 'Booking Expired'
+        return queryset
 
-        #booking = Reservation.objects.all()
-        booking = self.queryset
-        paginator = Paginator(Reservation.objects.filter(user=request.user), 4)
-        page = request.GET.get('page')
-        booking_page = paginator.get_page(page)
-        today = datetime.datetime.now().date()
+    def get_context_data(self, **kwargs):
+        """
+        Add additional context data to the template.
+        """
+        context = super().get_context_data(**kwargs)
+        context['bookings'] = self.get_queryset()
+        return context
 
-        for date in booking:
-            if date.reserved_date < today:
-                date.status = 'Booking Expired'
-
-        if request.user.is_authenticated:
-            bookings = Reservation.objects.filter(user=request.user)
-            #bookings = booking
-            return render(
-                request,
-                'reservations/booking_list.html',
-                {
-                    'booking': booking,
-                    'bookings': bookings,
-                    'booking_page': booking_page})
-        else:
-            return redirect('accounts/login.html')
-
-# class EditBooking(SuccessMessageMixin, UpdateView):
-#     """
-    
-#     """
-#     model = Reservation
-#     form_class = BookingForm
-#     template_name = 'reservations/edit_booking.html'
-#     success_message = 'Your reservation has been updated.'
-
-#     def get_success_url(self, **kwargs):
-#         return reverse('reservation')            
-from django.views.generic.edit import UpdateView
-from django.urls import reverse_lazy
-from .models import Reservation
-from .forms import BookingForm
 
 class EditBooking(UpdateView):
     model = Reservation
@@ -191,18 +122,20 @@ class EditBooking(UpdateView):
     success_url = reverse_lazy('booking_list')  # Redirect after successful update
 
     def get_queryset(self):
-        # Make sure the user can only edit their own reservations
         return super().get_queryset().filter(user=self.request.user)
-
+    
     def form_valid(self, form):
         response = super().form_valid(form)
         messages.success(self.request, "Your reservation has been updated.")
-        #return super().form_valid(form)
         return response
+
+    def get_success_url(self):
+        return self.success_url  # Return the URL for redirect
+
 
 class DeleteBooking(DeleteView):
     """
-    A class to handle deleteing reservations
+    A class to handle deleteting reservations
     """
     model = Reservation
     template_name = 'reservations/delete_booking.html'
