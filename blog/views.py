@@ -26,7 +26,7 @@ class AddComment(View):
         body = request.POST.get('comment_body')
         comment = Comment(post=post, name=name, email=email, body=body)
         comment.save()
-        return redirect('blog_list', pk=post.pk)
+        return redirect('blog_detail', pk=post.pk)
 
     def get(self, request, pk):
         post = get_object_or_404(Post, pk=pk)
