@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Comment
 from .forms import PostForm
+from django.views import View
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -21,7 +22,8 @@ class BlogList(View):
     #     return redirect('blog_detail', pk=post.pk)
     # return render(request, 'blog/comments.html', {'post': post})
 
-    class AddComment(View):
+
+class AddComment(View):
     @login_required
     def post(self, request, pk):
         post = get_object_or_404(Post, pk=pk)
