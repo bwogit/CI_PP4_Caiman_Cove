@@ -1,5 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views import generic, View
+from django.views.generic import View, ListView, TemplateView
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -7,21 +7,13 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import render, redirect, reverse
 from django.core.paginator import Paginator
 from django.views.generic.edit import FormView, UpdateView, DeleteView
-from django.views.generic import ListView, TemplateView
-from .forms import BookingForm  # Import your BookingForm
+from .forms import BookingForm
 from .models import Reservation, Table
 import datetime
 from django.urls import reverse_lazy
-
-from django.urls import reverse_lazy
 from django.views import generic, View
-from django.core.paginator import Paginator
 
-from django.views.generic.edit import FormView, UpdateView, DeleteView
-from django.contrib import messages
-from .models import Reservation
-from .forms import BookingForm
-import datetime
+
 
 def get_user_instance(request):
     """
