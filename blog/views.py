@@ -11,6 +11,8 @@ class BlogList(View):
         return render(request, 'blog/blog_list.html', {'posts': posts})
 
 class BlogDetail(View):
+    # A class to display the details of the blog #
+    
     def get(self, request, pk):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/blog_detail.html', {'post': post})    
