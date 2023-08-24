@@ -14,7 +14,6 @@ from django.urls import reverse_lazy
 from django.views import generic, View
 
 
-
 def get_user_instance(request):
     """
     This function retrieves user details when the user is logged in
