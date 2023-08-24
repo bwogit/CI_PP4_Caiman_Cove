@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="container mt-4">
-    <h2 class="mb-3">Add Comment to "{{ post.title }}"</h2>
-    <form method="post">
-      {% csrf_token %}
-      {{ comment_form.as_table }}
-      <button type="submit" class="btn btn-primary">Add Comment</button>
-    </form>
-  </div>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        {% for comment in comments %}
+            {% if comment.approved %}
+                <div class="col-md-8  col-lg-6 mx-auto bg-darker rounded p-3 mt-3 mb-3">
+                    <p><em>{{ comment.name }}:</em></p>
+                    {{ comment.body | linebreaks }}<hr>
+                    <em>{{ comment.created_date }}</em>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
