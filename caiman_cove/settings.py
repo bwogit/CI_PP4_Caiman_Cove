@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'food_and_drinks',
     'reservations',
     'home',
+    'blog',
 ]
 
 SITE_ID = 1
