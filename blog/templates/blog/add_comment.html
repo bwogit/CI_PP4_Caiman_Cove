@@ -5,10 +5,7 @@
     <h2 class="mb-3">Add Comment to "{{ post.title }}"</h2>
     <form method="post">
       {% csrf_token %}
-      <div class="mb-3">
-        <label for="comment_body" class="form-label">Your Comment:</label>
-        <textarea class="form-control" id="comment_body" name="comment_body" rows="4" required></textarea>
-      </div>
+      {{ comment_form.as_p }}
       <button type="submit" class="btn btn-primary">Add Comment</button>
     </form>
   </div>
