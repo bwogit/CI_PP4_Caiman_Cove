@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Comment
-from .forms import PostForm, CommentForm
+from .forms import CommentForm
 from django.views import View
 from django.contrib.auth.decorators import login_required
 
@@ -17,7 +17,7 @@ class BlogDetail(View):
     def get(self, request, pk):
         post = get_object_or_404(Post, pk=pk, status=1)
         comment_form = CommentForm()  # Create an instance of the form
-        comments = post.comments.filter(approved=True).order_by('-created_date')
+        comments = post.comments.filter(approved=True).order_by('-created_on')
         return render(request, 'blog/blog_detail.html', {'post': post, 'comment_form': comment_form})    
 
 class AddComment(View):
