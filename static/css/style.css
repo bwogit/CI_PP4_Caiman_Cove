@@ -9,6 +9,7 @@ body {
     max-width: 80%; /* Adjust the value as needed */
     max-height: 60%; /* Adjust the value as needed */
     margin: 0 auto; /* Center the carousel horizontally */
+    border: 10px solid goldenrod; /* Add a border with a gold color */
 }
 
 #carouselExample {
@@ -52,7 +53,7 @@ body {
 
 /* Navigation and Footer Styling */
 .bg-lighter {
-    background-color: rgb(105, 105, 131); /* Adjust the color as needed */
+    background-color: #070114b7; /* Adjust the color as needed */
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     color: #ffffff; /* White text color */
