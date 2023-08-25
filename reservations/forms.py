@@ -8,11 +8,15 @@ from .models import status_options
 
 
 class BookingForm(forms.ModelForm):
-
+    """
+    A form to gather booking information from users.
+    It is based on the Reservation model and provides validation.
+    """
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
-
+        # You can customize the form's appearance and behavior here
+        
     reserved_date = forms.DateField(
         widget=forms.DateInput(
             attrs={'type': 'date', 'min': datetime.now().date()}))

@@ -6,7 +6,6 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 from django.contrib.auth.models import User
 
-# Create your models here.
 custom_time_slots = (
     ('12:00', '12:00 PM'),
     ('13:00', '13:00 PM'),

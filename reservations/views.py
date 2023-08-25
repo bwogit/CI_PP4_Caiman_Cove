@@ -31,8 +31,6 @@ class Bookings(SuccessMessageMixin, View):
     """
     template_name = 'reservations/reservation.html'  
     form_class = BookingForm
-    #sucess_message= 'Booking succesful, awaiting confirmation'   
-
     
     def get(self, request, *args, **kwargs):
         """
