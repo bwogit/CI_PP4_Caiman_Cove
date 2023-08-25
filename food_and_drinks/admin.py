@@ -2,7 +2,6 @@ from django.contrib import admin
 from .models import FoodMenuItem, DrinkMenuItem
 from django_summernote.admin import SummernoteModelAdmin
 
-# Register your models here.
 
 @admin.register(FoodMenuItem)
 class FoodMenuAdmin(SummernoteModelAdmin):
