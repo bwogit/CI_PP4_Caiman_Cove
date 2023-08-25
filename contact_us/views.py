@@ -3,7 +3,7 @@ from django.views import View
 from .forms import ContactForm
 
 class ContactUser(View):
-    template_name = 'contact_user.html'
+    template_name = 'contact_us.html'
 
     def get(self, request, *args, **kwargs):
         # Check if the user is logged in
