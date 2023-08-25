@@ -1,31 +1,31 @@
+/* Index Page Styling */
 body {
     background-color: #212529;
     font-family: 'Montserrat', sans-serif;
-    color: #d41818;
+    color: white;
 }
-/*-----------------home page------------------------------------ */
-/* Reduce the size of the carousel */
+
 .carousel-inner {
     max-width: 80%; /* Adjust the value as needed */
     max-height: 60%; /* Adjust the value as needed */
     margin: 0 auto; /* Center the carousel horizontally */
 }
 
-/* Center the carousel vertically using flexbox */
 #carouselExample {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* Reduce the width and height of the card */
+
 .card {
     width: 30%; /* Adjust the value as needed */
     height: auto; /* Maintain aspect ratio */
     max-width: 300px; /* Set a maximum width */
     margin: 10px; /* Center the card horizontally */
+    border: none;
+    background-color: darkblue;
 }
 
-/* Center the card title */
 .card-title {
     text-align: center;
 }
@@ -36,157 +36,10 @@ body {
     margin-bottom: 20px;
 }
 
-
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+.grow {
+    transition: all .2s ease-in-out;
 }
 
-.red-o {
-    color: #E84610;
+.grow:hover {
+    transform: scale(1.1);
 }
-
-.thin {
-    font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #9b9d9f;
-}
-
-.main-bg {
-    background-color: #b5b5bb;
-}
-
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
-}
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 20%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
-
-.btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
-
-/* Style for success messages */
-.alert-success {
-    background-color: #d4edda; /* Green background color */
-    border-color: #c3e6cb; /* Lighter green border color */
-    color: #155724; /* Dark green text color */
-}
-
-/* Style for error messages */
-.alert-danger {
-    background-color: #f8d7da; /* Red background color */
-    border-color: #f5c6cb; /* Lighter red border color */
-    color: #721c24; /* Dark red text color */
-}
-
