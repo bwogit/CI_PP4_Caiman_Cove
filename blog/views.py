@@ -4,6 +4,7 @@ from .forms import CommentForm
 from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
+from django.core.paginator import Paginator
 
 
 
@@ -12,9 +13,15 @@ class BlogList(View):
     A class to display a list of blog posts.
     """
 
+    # def get(self, request):
+    #     posts = Post.objects.filter(status=1)
+    #     return render(request, 'blog/blog_list.html', {'posts': posts})
     def get(self, request):
         posts = Post.objects.filter(status=1)
-        return render(request, 'blog/blog_list.html', {'posts': posts})
+        paginator = Paginator(posts, 2)  # Display 2 posts per page
+        page_number = request.GET.get('page')
+        page_obj = paginator.get_page(page_number)
+        return render(request, 'blog/blog_list.html', {'page_obj': page_obj})
 
 class BlogDetail(View):
     """
