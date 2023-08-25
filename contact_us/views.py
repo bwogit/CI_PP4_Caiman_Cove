@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views import View
 from .forms import ContactForm
 
-class ContactUserView(View):
+class ContactUser(View):
     template_name = 'contact_user.html'
 
     def get(self, request, *args, **kwargs):
