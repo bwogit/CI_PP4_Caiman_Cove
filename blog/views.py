@@ -2,22 +2,25 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Comment
 from .forms import CommentForm
 from django.views import View
-from django.conf import settings
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 
 
 
-# Create your views here.
 class BlogList(View):
+    """
+    A class to display a list of blog posts.
+    """
+
     def get(self, request):
         posts = Post.objects.filter(status=1)
         return render(request, 'blog/blog_list.html', {'posts': posts})
 
 class BlogDetail(View):
-    # A class to display the details of the blog #
-    
+    """
+    A class to display the details of a blog post.
+    """
+
     def get(self, request, pk):
         post = get_object_or_404(Post, pk=pk, status=1)
         comment_form = CommentForm()  # Create an instance of the form
@@ -25,7 +28,11 @@ class BlogDetail(View):
         return render(request, 'blog/blog_detail.html', {'post': post, 'comment_form': comment_form})    
 
 class AddComment(LoginRequiredMixin, View):
-    #@login_required
+    """
+    A view to add comments to a blog post.
+    Requires login.
+    """
+
     login_url = 'login'  # Set the URL for the login page
     
     def post(self, request, pk, *args, **kwargs):
@@ -48,5 +55,3 @@ class AddComment(LoginRequiredMixin, View):
     def get(self, request, pk, *args, **kwargs):
         post = get_object_or_404(Post, pk=pk)
         return render(request, 'blog/add_comment.html', {'post': post})
-
-    
