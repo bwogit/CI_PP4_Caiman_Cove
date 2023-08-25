@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 from phonenumber_field.modelfields import PhoneNumberField
 
 class Contact(models.Model):
+    """
+    A model to store contact messages from users.
+    Each message contains user details, message content, and a timestamp.
+    """
     message_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(

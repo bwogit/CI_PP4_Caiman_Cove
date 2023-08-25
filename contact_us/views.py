@@ -2,30 +2,38 @@ from django.shortcuts import render
 from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import ContactForm
+from django.urls import reverse
+from django.contrib import messages
+from django.http import HttpResponseRedirect
 
 class ContactUser(LoginRequiredMixin, View):
+    """
+    A view that allows authenticated users to access the contact form.
+    When accessed, the form is pre-filled with the user's email and name.
+    When the form is submitted, the message is saved and a success message is displayed.
+    """
     template_name = 'contact_us.html'
 
     def get(self, request, *args, **kwargs):
-        # Check if the user is logged in
-        # if request.user.is_authenticated:
-        #     initial_data = {'email': request.user.email}
-        # else:
-        #     initial_data = {}
         user = request.user
-        contact_form = ContactForm(initial={'email': user.email, 'name': user.username} if user.is_authenticated else {})
-        return render(request, self.template_name, {'contact_form': contact_form})
-
+        initial_data = {'email': user.email, 'name': user.username} if user.is_authenticated else {}
         contact_form = ContactForm(initial=initial_data)
         return render(request, self.template_name, {'contact_form': contact_form})
 
-    class ContactGreeting(View):
-    template_name = 'contact_greeting.html'
+    def post(self, request, *args, **kwargs):
+        contact_form = ContactForm(data=request.POST)
+        if contact_form.is_valid():
+            contact_form.save()
+            messages.success(request, "Message submitted. Thank you!")
+            return HttpResponseRedirect(reverse('home'))
+        return render(request, self.template_name, {'contact_form': contact_form})    
 
+class ContactGreeting(View):
+    """
+    A simple greeting view that welcomes users to the contact page.
+    If the user is not authenticated, no special message is displayed.
+    """
+    template_name = 'contact_greeting.html'
+    
     def get(self, request, *args, **kwargs):
-        if not request.user.is_authenticated:
-            # If the user is not authenticated, display a message
-            messages.info(request, 'Before you can leave a message, please log in.')
-            # Redirect the user to the contact form page
-            return HttpResponseRedirect(reverse('contact_us'))
-        return render(request, self.template_name)
+        return render(request, self.template_name, {'user': request.user})
