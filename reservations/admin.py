@@ -18,7 +18,7 @@ def approve_reservation(modeladmin, request, queryset):
     Custom admin action to approve reservations in bulk.
     Changes the status of selected reservations to 'confirmed'.
     """
-        queryset.update(status='confirmed')
+    queryset.update(status='confirmed')
 
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
