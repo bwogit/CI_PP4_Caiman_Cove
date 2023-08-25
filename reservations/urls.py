@@ -1,9 +1,4 @@
-# Imports
-
-# 3rd party:
 from django.urls import path
-
-# Internal:
 from reservations import views
 from .views import BookingList
 

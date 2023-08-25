@@ -140,3 +140,17 @@ body {
     background: transparent;
     border: none;
 }
+
+/* Style for success messages */
+.alert-success {
+    background-color: #d4edda; /* Green background color */
+    border-color: #c3e6cb; /* Lighter green border color */
+    color: #155724; /* Dark green text color */
+}
+
+/* Style for error messages */
+.alert-danger {
+    background-color: #f8d7da; /* Red background color */
+    border-color: #f5c6cb; /* Lighter red border color */
+    color: #721c24; /* Dark red text color */
+}
