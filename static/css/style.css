@@ -101,4 +101,33 @@ footer a:hover {
     color: #ced4da; /* Lighter color on hover */
 }
 
-
+/*---------------------------------Menu---------------------------------------*/
+/* style.css or a new CSS file */
+.menu-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .menu-item {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .menu-description {
+    font-size: 16px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+  }
+  
+  .menu-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  

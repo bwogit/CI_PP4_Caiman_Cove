@@ -4,61 +4,86 @@
 <div class="container">
   <div class="row d-flex justify-content-center">
     <div class="col-sm-8">
-        <h2 class="text-center">Drinks</span></h2>
-        <hr>
+        <h1 class="text-center mb-4">Beverages</h1>
+        <hr class="mb-5">
     </div>
   </div>
   <div class="row d-flex justify-content-center">
     <div class="col-sm-8">
-        <h2 class="text-center">Cocktails</span></h2>
-        <hr>
-        <ul>
+        <h2 class="text-center">Zero Alcohol</h2>
+        <hr class="mb-3">
+        <ul class="menu-list">
           {% for drink in drink_items %}
-          {% if drink.drink_item_type == 0 %}
-              <h3>{{ drink.drink_item_name }}</h3>
-              <p>{{ drink.drink_description }}<p>
-              <p>€{{ drink.drink_price }}</p>
+          {% if drink.drink_item_type == 3 %}
+              <li class="menu-item">
+                <h3>{{ drink.drink_item_name }}</h3>
+                <p class="menu-description">{{ drink.drink_description }}</p>
+                <p class="menu-price">€{{ drink.drink_price }}</p>
+              </li>
           {% endif %}
           {% empty %}
-            <li>No cocktails available.</li>
+            <li>No zero-alcohol options available.</li>
           {% endfor %}
         </ul>
     </div>
-    <div class="row d-flex justify-content-center">
-      <div class="col-sm-8">
-          <h2 class="text-center">Beers</span></h2>
-          <hr>
-          <ul>
-            {% for drink in drink_items %}
-            {% if drink.drink_item_type == 1 %}
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-8">
+        <h2 class="text-center">Cocktails</h2>
+        <hr class="mb-3">
+        <ul class="menu-list">
+          {% for drink in drink_items %}
+          {% if drink.drink_item_type == 0 %}
+              <li class="menu-item">
                 <h3>{{ drink.drink_item_name }}</h3>
-                <p>{{ drink.drink_description }}<p>
-                <p>€{{ drink.drink_price }}</p>
-            {% endif %}
-            {% empty %}
-            {% if forloop.last %}
-              <li>No beers available.</li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-      </div>
+                <p class="menu-description">{{ drink.drink_description }}</p>
+                <p class="menu-price">€{{ drink.drink_price }}</p>
+              </li>
+          {% endif %}
+          {% empty %}
+            <li>No Cocktails available.</li>
+          {% endfor %}
+        </ul>
     </div>
-    <div class="row d-flex justify-content-center">
-      <div class="col-sm-8">
-          <h2 class="text-center">Rhums</span></h2>
-          <hr>
-          <ul>
-            {% for drink in drink_items %}
-            {% if drink.drink_item_type == 2 %}
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-8">
+        <h2 class="text-center">Beers</h2>
+        <hr class="mb-3">
+        <ul class="menu-list">
+          {% for drink in drink_items %}
+          {% if drink.drink_item_type == 1 %}
+              <li class="menu-item">
                 <h3>{{ drink.drink_item_name }}</h3>
-                <p>{{ drink.drink_description }}<p>
-                <p>€{{ drink.drink_price }}</p>
-            {% endif %}
-            {% empty %}
-              <li>No beers available.</li>
-            {% endfor %}
-          </ul>
-      </div>
+                <p class="menu-description">{{ drink.drink_description }}</p>
+                <p class="menu-price">€{{ drink.drink_price }}</p>
+              </li>
+          {% endif %}
+          {% empty %}
+            <li>No Beers available.</li>
+          {% endfor %}
+        </ul>
     </div>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-8">
+        <h2 class="text-center">Rhums</h2>
+        <hr class="mb-3">
+        <ul class="menu-list">
+          {% for drink in drink_items %}
+          {% if drink.drink_item_type == 2 %}
+              <li class="menu-item">
+                <h3>{{ drink.drink_item_name }}</h3>
+                <p class="menu-description">{{ drink.drink_description }}</p>
+                <p class="menu-price">€{{ drink.drink_price }}</p>
+              </li>
+          {% endif %}
+          {% empty %}
+            <li>No Rhums available.</li>
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+  <!-- Repeat similar styling for other sections -->
 </div>
 {% endblock %}
