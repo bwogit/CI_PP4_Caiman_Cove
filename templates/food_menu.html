@@ -4,62 +4,67 @@
 <div class="container">
   <div class="row d-flex justify-content-center">
     <div class="col-sm-8">
-        <h1 class="text-center">Meals</h1>
-        <hr>
+        <h1 class="text-center mb-4">Meals</h1>
+        <hr class="mb-5">
     </div>
   </div>
   <div class="row d-flex justify-content-center">
     <div class="col-sm-8">
         <h2 class="text-center">Starters</h2>
-        <hr>
-        <ul>
+        <hr class="mb-3">
+        <ul class="menu-list">
           {% for food in food_items %}
           {% if food.food_item_type == 0 %}
-              <h3>{{ food.food_item_name }}</h3>
-              <p>{{ food.food_description }}<p>
-              <p>€{{ food.food_price }}</p>
+              <li class="menu-item">
+                <h3>{{ food.food_item_name }}</h3>
+                <p class="menu-description">{{ food.food_description }}</p>
+                <p class="menu-price">€{{ food.food_price }}</p>
+              </li>
           {% endif %}
           {% empty %}
             <li>No starters available.</li>
           {% endfor %}
         </ul>
     </div>
-    <div class="row d-flex justify-content-center">
-      <div class="col-sm-8">
-          <h2 class="text-center">Mains</h2>
-          <hr>
-          <ul>
-            {% for food in food_items %}
-            {% if food.food_item_type == 1 %}
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-8">
+        <h2 class="text-center">Mains</h2>
+        <hr class="mb-3">
+        <ul class="menu-list">
+          {% for food in food_items %}
+          {% if food.food_item_type == 1 %}
+              <li class="menu-item">
                 <h3>{{ food.food_item_name }}</h3>
-                <p>{{ food.food_description }}<p>
-                <p>€{{ food.food_price }}</p>
-            {% endif %}
-            {% empty %}
-            {% if forloop.last %}
-              <li>No mains available.</li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-      </div>
+                <p class="menu-description">{{ food.food_description }}</p>
+                <p class="menu-price">€{{ food.food_price }}</p>
+              </li>
+          {% endif %}
+          {% empty %}
+            <li>No Mains available.</li>
+          {% endfor %}
+        </ul>
     </div>
-    <div class="row d-flex justify-content-center">
-      <div class="col-sm-8">
-          <h2 class="text-center">Desserts</h2>
-          <hr>
-          <ul>
-            {% for food in food_items %}
-            {% if food.food_item_type == 2 %}
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-8">
+        <h2 class="text-center">Desserts</h2>
+        <hr class="mb-3">
+        <ul class="menu-list">
+          {% for food in food_items %}
+          {% if food.food_item_type == 2 %}
+              <li class="menu-item">
                 <h3>{{ food.food_item_name }}</h3>
-                <p>{{ food.food_description }}<p>
-                <p>€{{ food.food_price }}</p>
-            {% endif %}
-            {% empty %}
-              <li>No desserts available.</li>
-            {% endfor %}
-          </ul>
-      </div>
+                <p class="menu-description">{{ food.food_description }}</p>
+                <p class="menu-price">€{{ food.food_price }}</p>
+              </li>
+          {% endif %}
+          {% empty %}
+            <li>No Desserts available.</li>
+          {% endfor %}
+        </ul>
     </div>
+  </div>
 </div>
 {% endblock %}
 
