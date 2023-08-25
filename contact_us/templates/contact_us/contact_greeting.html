@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <p>{% if user.is_authenticated %}Before you can leave a message, please log in.{% endif %}</p>
+{% endblock %}
