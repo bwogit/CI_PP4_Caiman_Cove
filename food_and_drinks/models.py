@@ -2,7 +2,7 @@ from django.db import models
 from django.core.exceptions import ValidationError
 
 FOOD_ITEM_TYPE = ((0, 'Starters'), (1, 'Mains'), (2, 'Desserts'), (3, 'AddItem'))
-DRINK_ITEM_TYPE = ((0, 'Cocktails'), (1, 'Beers'), (2, 'Rhums'), (3, 'AddItem'))
+DRINK_ITEM_TYPE = ((0, 'Cocktails'), (1, 'Beers'), (2, 'Rhums'), (3, 'Zero'), (4, 'AddItem'))
 
 class FoodMenuItem(models.Model):
     """
