@@ -18,8 +18,7 @@ class BookingForm(forms.ModelForm):
         # You can customize the form's appearance and behavior here
         
         reserved_date = forms.DateField(
-        widget=forms.DateInput(
-            attrs={'type': 'date', 'min': datetime.now().date()}))
+            widget=forms.DateInput(attrs={'type': 'date', 'min': datetime.now().date()}))
 
         phone = PhoneNumberField(widget=forms.TextInput(
         attrs={'placeholder': ('+353123456789')}))
