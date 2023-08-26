@@ -2,7 +2,7 @@
 body {
     background-color: #212529;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color:white;
 }
 
 .carousel-inner {
@@ -29,8 +29,8 @@ body {
     max-width: 300px; /* Set a maximum width */
     margin: 10px; /* Center the card horizontally */
     border: none;
-    /* background-color:rgb(105, 105, 131); */
     background-color:goldenrod;
+    color:black;
 }
 
 .card img {
@@ -145,3 +145,20 @@ footer a:hover {
     margin: 0 auto;
     padding: 20px;
 }  
+/* Customize the font and line spacing */
+.card-body {
+    font-family: 'Helvetica', Arial, sans-serif; 
+    line-height: 1.6; /* Adjust line spacing */
+}
+
+.card-body h3 {
+    font-size: 24px; /* Increase heading font size for readability */
+}
+
+.list-unstyled li {
+    margin-bottom: 20px; /* Add spacing between comments */
+}
+
+.small.text-muted {
+    font-size: 12px; /* Reduce date font size for subtlety */
+}
