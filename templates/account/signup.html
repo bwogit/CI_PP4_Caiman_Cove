@@ -16,8 +16,8 @@
 
         <form class="signup-form mt-4" id="signup_form" method="post" action="{% url 'account_signup' %}">
           {% csrf_token %}
-          {{ form.as_p }}
-          <!-- {% crispy form %} -->
+          
+          {% crispy form %}
           {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
           {% endif %}
