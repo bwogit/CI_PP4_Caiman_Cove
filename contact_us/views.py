@@ -6,7 +6,7 @@ from django.urls import reverse
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 
-class ContactUser(LoginRequiredMixin, View):
+class ContactUser(View):
     """
     A view that allows authenticated users to access the contact form.
     When accessed, the form is pre-filled with the user's email and name.
