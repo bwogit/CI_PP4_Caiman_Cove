@@ -17,11 +17,11 @@ class BookingForm(forms.ModelForm):
         self.helper = FormHelper(self)
         # You can customize the form's appearance and behavior here
         
-    reserved_date = forms.DateField(
+        reserved_date = forms.DateField(
         widget=forms.DateInput(
             attrs={'type': 'date', 'min': datetime.now().date()}))
 
-    phone = PhoneNumberField(widget=forms.TextInput(
+        phone = PhoneNumberField(widget=forms.TextInput(
         attrs={'placeholder': ('+353123456789')}))
 
     class Meta:
