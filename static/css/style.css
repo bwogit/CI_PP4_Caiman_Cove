@@ -32,7 +32,9 @@ body {
     background-color:goldenrod;
     color:black;
 }
-
+.card .card-text {
+    font-size: 18px; /* Adjust the font size for the text content */
+}
 .card img {
     max-height: 350px; /* Adjust the value as needed */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
