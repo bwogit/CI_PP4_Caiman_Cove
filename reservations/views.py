@@ -58,7 +58,7 @@ class Bookings(SuccessMessageMixin, View):
             booking.save()
             messages.success(
                 request, "Booking succesful, awaiting confirmation")
-            return render(request, 'reservations/confirmed.html')
+            # return render(request, 'reservations/confirmed.html')
 
         return render(request, 'reservations/reservation.html',
                       {'booking_form': booking_form})
