@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load crispy_forms_tags %}
 {% block content %}
     <div class="container">
         <div class="row justify-content-center">
@@ -17,24 +17,24 @@
             </div>
         </div>
     </div>
-    <section id="comments">
-      <h3>Comments</h3>
-      <ul>
+    <div class="comments-container">
+      <h3 class="comments-title">Comments</h3>
+      <ul class="comment-list">
         {% for comment in post.comments.all %}
           {% if comment.approved %}
-            <li>{{ comment.body }} - {{ comment.name }}</li>
-            {% endif %}
-          {% endfor %}
+            <li class="comment-item">{{ comment.body }} - <span class="comment-author">{{ comment.name }}</span></li>
+          {% endif %}
+        {% endfor %}
       </ul>
       {% if user.is_authenticated %}
-        <form method="post" action="{% url 'add_comment' post.pk %}">
+        <form method="post" action="{% url 'add_comment' post.pk %}" class="comment-form">
           {% csrf_token %}
-          {{ comment_form.as_p }}
-          <button type="submit">Submit Comment</button>
+          {{ comment_form|crispy }}
+          <button type="submit" class="btn btn-primary">Submit Comment</button>
         </form>
       {% else %}
-        <p><a href="{% url 'login' %}">Login</a> to add comments.</p>
+        <p><a href="{% url 'login' %}" class="btn btn-secondary">Login</a> to add comments.</p>
       {% endif %}
-    </section>
+    </div>
     
 {% endblock %}
