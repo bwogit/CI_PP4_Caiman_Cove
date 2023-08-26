@@ -26,7 +26,11 @@
                   <ul class="list-unstyled">
                       {% for comment in post.comments.all %}
                           {% if comment.approved %}
-                              <li>{{ comment.body }} - {{ comment.name }}</li>
+                              <li>
+                                <div>Published by {{ comment.name }}, {{ comment.created_on|date:"F d, Y" }}</div>
+                                <div>{{ comment.body }}</div>
+                                <div></div>
+                              </li>  
                           {% endif %}
                       {% endfor %}
                   </ul>
