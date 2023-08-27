@@ -14,7 +14,7 @@ class FoodMenuItem(models.Model):
     food_price = models.FloatField()
     food_item_type = models.IntegerField(choices=FOOD_ITEM_TYPE)
     food_available = models.BooleanField(default=False)
-    food_picture = models.ImageField(upload_to='food_pics/', blank=True, null=True)
+    # food_picture = models.ImageField(upload_to='food_pics/', blank=True, null=True)
 
     class Meta:
         ordering = ['-food_available']
@@ -38,7 +38,7 @@ class DrinkMenuItem(models.Model):
     drink_price = models.FloatField()
     drink_item_type = models.IntegerField(choices=DRINK_ITEM_TYPE)
     drink_available = models.BooleanField(default=False)
-    drink_picture = models.ImageField(upload_to='drink_pics/', blank=True, null=True)
+    # drink_picture = models.ImageField(upload_to='drink_pics/', blank=True, null=True)
 
     class Meta:
         ordering = ['-drink_available']
