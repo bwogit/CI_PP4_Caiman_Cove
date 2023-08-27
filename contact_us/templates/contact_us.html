@@ -16,6 +16,7 @@
             </div>
         </div>
     </div>
+    {% if user.is_authenticated %}
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="contact-form-card p-4">
@@ -26,11 +27,21 @@
                     <!-- contact form -->
                     {{ contact_form|crispy }}
                     <div class="text-center mt-4">
-                        <button class="btn btn-success" type="submit">Submit</button>
+                        <button class="btn btn-primary btn-block" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    {% else %}
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="contact-form-card p-4">
+                <h4 class="contact-title text-center mb-4">Login to Leave a Message</h4>
+                <p class="contact-text text-center mb-4">Please <a href="{% url 'account_login' %}">log in</a> to leave a message.</p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}
