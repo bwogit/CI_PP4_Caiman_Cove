@@ -17,6 +17,7 @@
           or like a post, please log in. If you have not created an account yet, then <a class="link"
             href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 
+        {% with form=form_class %}
         <form class="login-form mt-4" method="POST" action="{% url 'account_login' %}">
           {% csrf_token %}
           {{form| crispy}}
@@ -25,6 +26,7 @@
           {% endif %}
           <button class="btn btn-primary btn-block" type="submit">{% trans "Sign In" %}</button>
         </form>
+        {% endwith %}
       </div>
     </div>
   </div>
