@@ -5,7 +5,7 @@
 <div class="container text-white">
   <h1 class="my-5 text-center">Your Bookings</h1>
   <div class="table-responsive">
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover" style="background-color: white;">
       <thead class="thead-dark">
         <tr>
           <th>Booking Date</th>
@@ -26,7 +26,7 @@
           <td>{{ booking.get_guest_count_display }}</td>
           <td>{{ booking.table }}</td>
           <td>
-            <span class="badge {% if booking.status == 'confirmed' %}badge-success{% elif booking.status == 'rejected' %}badge-danger{% else %}badge-info{% endif %}">
+            <span class="badge {% if booking.status == 'confirmed' %}badge-success{% elif booking.status == 'rejected' %}badge-danger{% else %}badge-info{% endif %} text-dark">
               {{ booking.status }}
             </span>
           </td>
