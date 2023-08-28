@@ -10,12 +10,12 @@ import datetime
 
 class Bookings(View):
     """
-    This view renders the booking form when a registered user accesses it, 
+    This view renders the booking form when a registered user accesses it,
     automatically populating the email field with the user's email address.
     """
     template_name = 'reservations/reservation.html'
     form_class = BookingForm
-    
+
     def get(self, request, *args, **kwargs):
         """
         Retrieves users email and inputs into email field
@@ -25,11 +25,12 @@ class Bookings(View):
             booking_form = BookingForm(initial={'email': email})
         else:
             booking_form = BookingForm()
-        return render(request, 'reservations/reservation.html', {'booking_form': booking_form})
+        return render(request, 'reservations/reservation.html',
+                      {'booking_form': booking_form})
 
     def post(self, request):
         """
-        Validates the provided information 
+        Validates the provided information
         format and then saves it to the database.
         """
         booking_form = BookingForm(data=request.POST)
@@ -38,10 +39,12 @@ class Bookings(View):
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
-            messages.success(request, "Booking successful, awaiting confirmation")
+            messages.success(request, "Booking successful,
+                             awaiting confirmation")
             return render(request, 'reservations/confirmed.html')
 
-        return render(request, 'reservations/reservation.html', {'booking_form': booking_form})
+        return render(request, 'reservations/reservation.html',
+                      {'booking_form': booking_form})
 
 
 class Confirmed(generic.DetailView):
@@ -89,7 +92,7 @@ class EditBooking(generic.UpdateView):
     model = Reservation
     form_class = BookingForm
     template_name = 'reservations/edit_booking.html'
-    success_url = reverse_lazy('booking_list')  # Redirect after successful update
+    success_url = reverse_lazy('booking_list')
 
     def get_queryset(self):
         return super().get_queryset().filter(user=self.request.user)
@@ -100,7 +103,7 @@ class EditBooking(generic.UpdateView):
         return response
 
     def get_success_url(self):
-        return self.success_url  # Return the URL for redirect
+        return self.success_url
 
 
 class DeleteBooking(generic.DeleteView):
@@ -109,10 +112,9 @@ class DeleteBooking(generic.DeleteView):
     """
     model = Reservation
     template_name = 'reservations/delete_booking.html'
-    success_url = reverse_lazy('booking_list')  # Redirect after successful deletion
+    success_url = reverse_lazy('booking_list')
 
     def get_queryset(self):
-        # Make sure the user can only delete their own reservations
         return super().get_queryset().filter(user=self.request.user)
 
     def delete(self, request, *args, **kwargs):
