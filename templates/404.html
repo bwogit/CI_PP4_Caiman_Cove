@@ -1,15 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+<div class="container d-flex flex-column justify-content-center align-items-center mt-5">
     <div class="text-center">
-        <h1 class="mb-3">404 - Page Not Found</h1>
+        <h1 class="mb-3">404</h1>
+        <h2 class="mb-3">PAGE NOT FOUND</h2>
         <p>Oops! It seems like you've wandered off the culinary path.</p>
         <p>Indulge in our exquisite Caribbean cuisine while we search for the missing flavor.</p>
         <a href="{% url 'home' %}" class="btn btn-primary mt-3">Back to Home</a>
     </div>
     <footer class="mt-auto py-3 text-center">
-        &copy; 2023 Caribbean Cove. All rights reserved.
-    </footer>
 </div>
 {% endblock %}
