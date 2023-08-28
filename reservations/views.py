@@ -1,35 +1,19 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import View, ListView, TemplateView
-from django.contrib.auth.models import User
 from django.contrib import messages
-from django.http import HttpResponseRedirect
-from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render
 from django.core.paginator import Paginator
-from django.views.generic.edit import FormView, UpdateView, DeleteView
 from .forms import BookingForm
-from .models import Reservation, Table
-import datetime
+from .models import Reservation
 from django.urls import reverse_lazy
 from django.views import generic, View
+import datetime
 
 
-def get_user_instance(request):
-    """
-    This function retrieves user details when the user is logged in
-    """
-
-    user_email = request.user.email
-    user = User.objects.filter(email=user_email).first()
-    return user
-
-
-class Bookings(SuccessMessageMixin, View):
+class Bookings(View):
     """
     This view renders the booking form when a registered user accesses it, 
     automatically populating the email field with the user's email address.
     """
-    template_name = 'reservations/reservation.html'  
+    template_name = 'reservations/reservation.html'
     form_class = BookingForm
     
     def get(self, request, *args, **kwargs):
@@ -41,9 +25,7 @@ class Bookings(SuccessMessageMixin, View):
             booking_form = BookingForm(initial={'email': email})
         else:
             booking_form = BookingForm()
-        return render(request, 'reservations/reservation.html',
-                      {'booking_form': booking_form})
-
+        return render(request, 'reservations/reservation.html', {'booking_form': booking_form})
 
     def post(self, request):
         """
@@ -56,12 +38,11 @@ class Bookings(SuccessMessageMixin, View):
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
-            messages.success(
-                request, "Booking succesful, awaiting confirmation")
+            messages.success(request, "Booking successful, awaiting confirmation")
             return render(request, 'reservations/confirmed.html')
 
-        return render(request, 'reservations/reservation.html',
-                      {'booking_form': booking_form})
+        return render(request, 'reservations/reservation.html', {'booking_form': booking_form})
+
 
 class Confirmed(generic.DetailView):
     """
@@ -70,7 +51,7 @@ class Confirmed(generic.DetailView):
     template_name = 'reservations/confirmed.html'
 
     def get(self, request):
-            return render(request, 'reservations/confirmed.html')
+        return render(request, 'reservations/confirmed.html')
 
 
 class BookingList(generic.ListView):
@@ -104,7 +85,7 @@ class BookingList(generic.ListView):
         return context
 
 
-class EditBooking(UpdateView):
+class EditBooking(generic.UpdateView):
     model = Reservation
     form_class = BookingForm
     template_name = 'reservations/edit_booking.html'
@@ -112,7 +93,7 @@ class EditBooking(UpdateView):
 
     def get_queryset(self):
         return super().get_queryset().filter(user=self.request.user)
-    
+
     def form_valid(self, form):
         response = super().form_valid(form)
         messages.success(self.request, "Your reservation has been updated.")
@@ -122,9 +103,9 @@ class EditBooking(UpdateView):
         return self.success_url  # Return the URL for redirect
 
 
-class DeleteBooking(DeleteView):
+class DeleteBooking(generic.DeleteView):
     """
-    A class to handle deleteting reservations
+    A class to handle deleting reservations
     """
     model = Reservation
     template_name = 'reservations/delete_booking.html'
