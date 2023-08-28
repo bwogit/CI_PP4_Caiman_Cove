@@ -7,7 +7,6 @@ from django.contrib import messages
 from django.core.paginator import Paginator
 
 
-
 class BlogList(View):
     """
     A class to display a list of blog posts.
@@ -23,6 +22,7 @@ class BlogList(View):
         page_obj = paginator.get_page(page_number)
         return render(request, 'blog/blog_list.html', {'page_obj': page_obj})
 
+
 class BlogDetail(View):
     """
     A class to display the details of a blog post.
@@ -32,7 +32,9 @@ class BlogDetail(View):
         post = get_object_or_404(Post, pk=pk, status=1)
         comment_form = CommentForm()  # Create an instance of the form
         comments = post.comments.filter(approved=True).order_by('-created_on')
-        return render(request, 'blog/blog_detail.html', {'post': post, 'comment_form': comment_form})    
+        return render(request, 'blog/blog_detail.html',
+                      {'post': post, 'comment_form': comment_form})
+
 
 class AddComment(LoginRequiredMixin, View):
     """
@@ -41,7 +43,7 @@ class AddComment(LoginRequiredMixin, View):
     """
 
     login_url = 'login'  # Set the URL for the login page
-    
+
     def post(self, request, pk, *args, **kwargs):
         post = get_object_or_404(Post, pk=pk, status=1)
         comment_form = CommentForm(data=request.POST)
