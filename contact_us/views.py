@@ -6,19 +6,22 @@ from django.urls import reverse
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 
+
 class ContactUser(View):
     """
     A view that allows authenticated users to access the contact form.
     When accessed, the form is pre-filled with the user's email and name.
-    When the form is submitted, the message is saved and a success message is displayed.
+    When the form is submitted, the message is saved and message is displayed.
     """
     template_name = 'contact_us.html'
 
     def get(self, request, *args, **kwargs):
         user = request.user
-        initial_data = {'email': user.email, 'name': user.username} if user.is_authenticated else {}
+        initial_data = {'email': user.email,
+                        'name': user.username} if user.is_authenticated else {}
         contact_form = ContactForm(initial=initial_data)
-        return render(request, self.template_name, {'contact_form': contact_form})
+        return render(request, self.template_name,
+                      {'contact_form': contact_form})
 
     def post(self, request, *args, **kwargs):
         contact_form = ContactForm(data=request.POST)
@@ -26,7 +29,9 @@ class ContactUser(View):
             contact_form.save()
             messages.success(request, "Message submitted. Thank you!")
             return HttpResponseRedirect(reverse('home'))
-        return render(request, self.template_name, {'contact_form': contact_form})    
+        return render(request, self.template_name,
+                      {'contact_form': contact_form})
+
 
 class ContactGreeting(View):
     """
@@ -34,6 +39,6 @@ class ContactGreeting(View):
     If the user is not authenticated, no special message is displayed.
     """
     template_name = 'contact_greeting.html'
-    
+
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name, {'user': request.user})

@@ -4,6 +4,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Post(models.Model):
     """
     A model to represent blog posts.
@@ -23,21 +24,17 @@ class Post(models.Model):
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
 
-
     class Meta:
         ordering = ["-created_on"]
 
     def __str__(self):
         return self.title
 
-    # def number_of_likes(self):
-    #     return self.likes.count()
-
 
 class Comment(models.Model):
     """
     A model to represent comments on blog posts.
-    Each comment contains the post it belongs to, name, email, body, and other details.
+    Each comment contains the post it belongs to, name, date, body
     """
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name="comments")

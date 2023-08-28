@@ -1,6 +1,7 @@
 from django import forms
 from .models import Contact
 
+
 class ContactForm(forms.ModelForm):
     """
     A form to gather user contact information and message.

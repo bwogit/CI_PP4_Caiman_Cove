@@ -1,7 +1,6 @@
 from django.shortcuts import render
 
 
-
 def home(request):
     """
     a view to display the homepage

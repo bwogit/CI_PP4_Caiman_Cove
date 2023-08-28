@@ -11,10 +11,6 @@ class BlogList(View):
     """
     A class to display a list of blog posts.
     """
-
-    # def get(self, request):
-    #     posts = Post.objects.filter(status=1)
-    #     return render(request, 'blog/blog_list.html', {'posts': posts})
     def get(self, request):
         posts = Post.objects.filter(status=1)
         paginator = Paginator(posts, 2)  # Display 2 posts per page
@@ -42,7 +38,7 @@ class AddComment(LoginRequiredMixin, View):
     Requires login.
     """
 
-    login_url = 'login'  # Set the URL for the login page
+    login_url = 'login'
 
     def post(self, request, pk, *args, **kwargs):
         post = get_object_or_404(Post, pk=pk, status=1)
@@ -53,7 +49,7 @@ class AddComment(LoginRequiredMixin, View):
             comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
             comment.post = post
-            comment.approved = False  # Set the approval status to False
+            comment.approved = False
             comment.save()
             messages.success(request, 'Comment pending approval')
         else:
