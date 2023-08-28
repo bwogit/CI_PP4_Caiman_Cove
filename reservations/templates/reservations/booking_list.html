@@ -14,7 +14,7 @@
           <th>Guest Count</th>
           <th>Table</th>
           <th>Status</th>
-          <th></th>
+          <th class="sr-only">Actions</th> <!-- Visually hidden header cell -->
         </tr>
       </thead>
       <tbody>
@@ -32,8 +32,14 @@
           </td>
           <td>
             {% if user.is_authenticated and user == booking.user %}
-            <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-outline-primary btn-sm">Edit</a>
-            <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-outline-danger btn-sm">Delete</a>
+            <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-outline-primary btn-sm">
+              <span class="sr-only">Edit Booking</span>
+              Edit
+            </a>
+            <a href="{% url 'delete_booking' booking.pk %}" class="btn btn-outline-danger btn-sm">
+              <span class="sr-only">Delete Booking</span>
+              Delete
+            </a>
             {% endif %}
           </td>
         </tr>
@@ -42,4 +48,5 @@
     </table>
   </div>
 </div>
+
 {% endblock %}
