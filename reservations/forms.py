@@ -1,11 +1,8 @@
 from django import forms
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit
 from datetime import datetime
 from phonenumber_field.formfields import PhoneNumberField
-from .models import Reservation, Table
-from .models import status_options
-
+from .models import Reservation
 
 class BookingForm(forms.ModelForm):
     """
@@ -15,7 +12,6 @@ class BookingForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
-        # You can customize the form's appearance and behavior here
         
     reserved_date = forms.DateField(
         widget=forms.DateInput(attrs={'type': 'date', 'min': datetime.now().date()}))
@@ -33,4 +29,4 @@ class BookingForm(forms.ModelForm):
             'table',
             'reserved_date',
             'reserved_time_slot',
-            )
+        )

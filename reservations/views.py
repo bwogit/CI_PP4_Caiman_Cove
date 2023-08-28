@@ -39,8 +39,8 @@ class Bookings(View):
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
-            messages.success(request, "Booking successful,
-                             awaiting confirmation")
+            messages.success(request, "Booking successful, "
+                             "awaiting confirmation")
             return render(request, 'reservations/confirmed.html')
 
         return render(request, 'reservations/reservation.html',

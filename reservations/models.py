@@ -15,7 +15,7 @@ custom_time_slots = (
     ('20:00', '21:00 PM'),
     ('22:00', '22:00 PM'),
     ('23:00', '23:00 PM'),
-   
+
 )
 
 status_options = (
@@ -41,6 +41,7 @@ class Table(models.Model):
 
     def __str__(self):
         return self.table_number
+
 
 class Reservation(models.Model):
     """
@@ -89,4 +90,3 @@ class Reservation(models.Model):
 
     def __str__(self):
         return self.status
-        
