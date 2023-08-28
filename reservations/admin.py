@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Table, Reservation
 
-# Register your models here.
+
 @admin.register(Table)
 class TableAdmin(admin.ModelAdmin):
     """
@@ -12,13 +12,14 @@ class TableAdmin(admin.ModelAdmin):
     list_filter = ('capacity',)
     search_fields = ('table_number',)
 
-# Define the custom admin action function
+
 def approve_reservation(modeladmin, request, queryset):
     """
     Custom admin action to approve reservations in bulk.
     Changes the status of selected reservations to 'confirmed'.
     """
     queryset.update(status='confirmed')
+
 
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
@@ -35,7 +36,7 @@ class ReservationAdmin(admin.ModelAdmin):
         'guest_count',
         'status',
         'table_id',
-        'reserved_date', 
+        'reserved_date',
         'reserved_time_slot',
         'reservation_time',
         )
@@ -47,15 +48,9 @@ class ReservationAdmin(admin.ModelAdmin):
         'guest_count',
         'status',
         'table',
-        'reserved_date', 
+        'reserved_date',
         'reserved_time_slot',
         'reservation_time',)
-    
+
     search_fields = ['name']
     actions = ['approve_reservation']
-
-    
-
-
-
-

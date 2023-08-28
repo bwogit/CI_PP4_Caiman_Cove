@@ -4,25 +4,10 @@
     {% load crispy_forms_tags %}
     <div class="container">
         <h1 class="text-center mb-5">Enquiries</h1>
-        <!-- <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="restaurant-card p-4 mb-5"> -->
-                    <!-- Restaurant Information Section -->
-                    <!-- <h4 class="restaurant-title text-center mb-4">Caiman Cove</h4>
-                    <p class="restaurant-text text-center">Fine Dining in Jamaica</p>
-                    <p class="restaurant-text text-center">123 Elegant Avenue, Kingston</p>
-                    <p class="restaurant-text text-center">Phone: +1 (876) 123-4567</p>
-                    <p class="restaurant-text text-center">Email: info@caimancove.com</p>
-                    <p class="restaurant-text text-center">Opening Hours: 6:00 PM - 12:00 AM</p>
-                </div>
-            </div>
-        </div> -->
         {% if user.is_authenticated %}
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="contact-form-card p-4">
-                        <!-- <h4 class="contact-title text-center mb-4">Leave us a Message</h4> -->
-                        <!-- <p class="contact-text text-center mb-4">We will get back to you shortly</p> -->
                         <form method="post">
                             {% csrf_token %}
                             <!-- contact form -->

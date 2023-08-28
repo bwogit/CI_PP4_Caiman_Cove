@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-{%endblock%}
+<div class="container">
+    <h1 class="text-center">404 - Page Not Found</h1>
+    <p class="text-center">Oops! It seems like you've wandered off the culinary path.</p>
+    <p class="text-center">Indulge in our exquisite Caribbean cuisine while we search for the missing flavor.</p>
+    <div class="d-flex justify-content-center mt-3">
+        <a href="{% url 'home' %}" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
