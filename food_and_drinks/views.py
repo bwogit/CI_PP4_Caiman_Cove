@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from .models import FoodMenuItem, DrinkMenuItem
 
+
 def food_menu(request):
     food_list = FoodMenuItem.objects.all()
     return render(request, 'food_menu.html', {'food_list': food_list})
@@ -19,8 +20,9 @@ class FoodMenuListView(ListView):
     model = FoodMenuItem
     template_name = 'food_menu.html'
     context_object_name = 'food_items'
-    queryset = FoodMenuItem.objects.filter(food_available=True).order_by('food_item_type')
-       
+    queryset = FoodMenuItem.objects.filter(
+        food_available=True).order_by('food_item_type')
+
 
 class DrinkMenuListView(ListView):
     """
@@ -29,4 +31,5 @@ class DrinkMenuListView(ListView):
     model = DrinkMenuItem
     template_name = 'drink_menu.html'
     context_object_name = 'drink_items'
-    queryset = DrinkMenuItem.objects.filter(drink_available=True).order_by('drink_item_type')
+    queryset = DrinkMenuItem.objects.filter(
+        drink_available=True).order_by('drink_item_type')

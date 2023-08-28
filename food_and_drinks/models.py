@@ -1,8 +1,11 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 
-FOOD_ITEM_TYPE = ((0, 'Starters'), (1, 'Mains'), (2, 'Desserts'), (3, 'AddItem'))
-DRINK_ITEM_TYPE = ((0, 'Cocktails'), (1, 'Beers'), (2, 'Rhums'), (3, 'Zero'), (4, 'AddItem'))
+FOOD_ITEM_TYPE = ((0, 'Starters'), (1, 'Mains'),
+                  (2, 'Desserts'), (3, 'AddItem'))
+DRINK_ITEM_TYPE = ((0, 'Cocktails'), (1, 'Beers'),
+                   (2, 'Rhums'), (3, 'Zero'), (4, 'AddItem'))
+
 
 class FoodMenuItem(models.Model):
     """
@@ -14,14 +17,12 @@ class FoodMenuItem(models.Model):
     food_price = models.FloatField()
     food_item_type = models.IntegerField(choices=FOOD_ITEM_TYPE)
     food_available = models.BooleanField(default=False)
-    # food_picture = models.ImageField(upload_to='food_pics/', blank=True, null=True)
 
     class Meta:
         ordering = ['-food_available']
 
     def __str__(self):
         return self.food_item_name
-
 
     def clean(self):
         if self.food_price is not None and self.food_price <= 0:
@@ -38,7 +39,6 @@ class DrinkMenuItem(models.Model):
     drink_price = models.FloatField()
     drink_item_type = models.IntegerField(choices=DRINK_ITEM_TYPE)
     drink_available = models.BooleanField(default=False)
-    # drink_picture = models.ImageField(upload_to='drink_pics/', blank=True, null=True)
 
     class Meta:
         ordering = ['-drink_available']
@@ -46,7 +46,6 @@ class DrinkMenuItem(models.Model):
     def __str__(self):
         return self.drink_item_name
 
-    
     def clean(self):
         if self.drink_price is not None and self.drink_price <= 0:
             raise ValidationError("Price cannot be negative or zero")
