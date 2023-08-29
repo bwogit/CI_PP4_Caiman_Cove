@@ -13,7 +13,7 @@
       <div class="login-card">
         <h1 class="text-center mb-4">{% trans "Login" %}</h1>
         <h2 class="text-center">{% blocktrans %}Welcome to the Caiman Cove login page. Please log in. If you have not created an account yet, then <a class="link"
-            href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</h2>
+            href="{{ signup_url }}">Sign Up</a> first.{% endblocktrans %}</h2>
           
           <form class="login-form mt-4" method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
