@@ -69,3 +69,27 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 - Integration of social media functionalities for enhanced engagement
 - Clear presentation of relevant contact information
 - Prioritization of accessibility features to ensure inclusiveness
+
+##### Back to [top](#table-of-contents)<hr>
+
+
+## User Stories
+
+### Users
+1.	As a User, I can Navigate the Site Easily and Intuitively:
+2.	As a User, I can Efficiently Use the Navbar, Footer, and Social Media Icons
+3.	As a User, I can qccess a dedicated "Contact Us" Page for Effective Communication  (Must have)
+4.	As a User, I can quickly Access Opening Hours and Essential Contact Information iemail, phone, and social media.
+5.	As a User, I can Seamlessly Choose Preferred Dates and Times for Reservation
+6.	As a User, I can asily modify my booking by selecting an alternative
+7.  As a User, I can Conveniently Delete My Reservation
+8.  As a User, I can Easily View My Booked Reservations
+9.  As a User, I can Receive Timely Alerts for Booking Actions 
+10. As a User, I can Register to Enable Reservation Creation
+11. As a User, I can Authenticate Myself to Access Reservation Functionality
+12. As a User, I can Clearly Observe My Current Login Status
+13. As a User, I can Experience Admin-controlled Booking Confirmation Modes
+14. As a User, I can Engage with Informative Blog Content
+15. As a User, I can Explore the Comprehensive Food and Drink Menu
+16. As a User, I can Ensure Future-Date Bookings
+17. As a User, I can Prevent Duplicate Bookings
