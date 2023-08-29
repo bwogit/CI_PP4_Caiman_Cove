@@ -104,3 +104,7 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 24. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
 21. As an Admin, I can Log In to Manage Food and Cocktail Menu Items
 22.	As an Admin, I can CRUD Food and Drink Items in the Database
+
+### Site Owner  
+23. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
+24. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission.
