@@ -421,3 +421,12 @@ Responsive sign up page
 
 ![Footer](docs/feature/feature_navbar.jpg)
 </details>
+
+### Footer
+- Includes social media links the address and detaisl of a modern business
+- consistently visible on every page
+
+<details><summary>See feature images</summary>
+
+![Footer](docs/feature/feature_footer.jpg)
+</details>
