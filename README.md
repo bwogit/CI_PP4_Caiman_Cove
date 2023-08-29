@@ -155,3 +155,41 @@ Prominently featured in the footer are essential social media links, enabling us
  - The seamless "Login" and "Logout" functionality enables users to access booking features and reservation management.
  - The registration process empowers users to create accounts, facilitating access to the booking system.
  - A polished "404 Error" page elegantly addresses any encountered errors.
+
+ #### Database
+
+- Built with Python Django framework and Postgres for deployement to heroku
+
+<details><summary>Show diagram</summary>
+<img src="docs/erd_output.png">
+</details>
+
+##### User Model
+The User is a built-in Django feature and is used for authentication and has the following fields:
+- user_id
+- password
+- last_login
+- is_superuser
+- username
+- first_name
+- last_name
+- email
+- is_staff
+- is_active
+- date_joined
+
+##### FoodMenuItem Model
+The FoodMenuItem Model contains the following:
+- food_item_id
+- food_item_name
+- food_description
+- food_price
+- food_available
+
+##### DrinkManuItem Model
+The DrinkIMenutem Model contains the following:
+- drink_item_id
+- drink_item_name
+- drink_description
+- drink_price
+- drink_available
