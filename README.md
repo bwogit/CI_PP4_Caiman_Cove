@@ -423,10 +423,38 @@ Responsive sign up page
 </details>
 
 ### Footer
-- Includes social media links the address and detaisl of a modern business
+- Includes social media links and all details of a modern business (email, telephone address, and opening hours)
 - consistently visible on every page
 
 <details><summary>See feature images</summary>
 
 ![Footer](docs/feature/feature_footer.jpg)
+</details>
+
+### Login
+- User is required to login to reserve a table, view bookings, 
+edit and delete bookings and comment a blog.
+
+<details><summary>See feature images</summary>
+
+![Login](docs/feature/feature_login.jpg)
+</details>
+
+
+### Logout
+- Allows the user to securely log out
+
+<details><summary>See feature images</summary>
+
+![Logout](docs/feature/feature_logout.jpg)
+</details>
+
+### Sign up / Register
+- Allow users to create an acoount
+- Use Django built in authentication. Seameless.
+
+
+<details><summary>See feature images</summary>
+
+![Register](docs/feature/feature_signup.jpg)
 </details>
