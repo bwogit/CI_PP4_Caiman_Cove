@@ -178,18 +178,62 @@ The User is a built-in Django feature and is used for authentication and has the
 - is_active
 - date_joined
 
+<details><summary>Show model</summary>
+<img src="docs/model_User.jpg">
+</details>
+
 ##### FoodMenuItem Model
-The FoodMenuItem Model contains the following:
+The FoodMenuItem Model contains the following fields:
 - food_item_id
 - food_item_name
 - food_description
 - food_price
 - food_available
 
-##### DrinkManuItem Model
-The DrinkIMenutem Model contains the following:
+<details><summary>Show model</summary>
+<img src="docs/model_FoodMenuItem.jpg">
+</details>
+
+##### DrinkMenuItem Model
+The DrinkIMenutem Model contains the following fields:
 - drink_item_id
 - drink_item_name
 - drink_description
 - drink_price
 - drink_available
+
+<details><summary>Show model</summary>
+<img src="docs/model_DrinkMenuItem.jpg">
+</details>
+
+
+##### Table Model
+The Table Model contains the following fields:
+- table_id (PrimaryKey)
+- capacity
+- reserved
+- table_number
+
+<details><summary>Show model</summary>
+<img src="docs/model_Table.jpg">
+</details>
+
+##### Reservation Model
+The Reservation Model contains the following fields:
+- reservation_id (PrimaryKey)
+- reserved_date
+- requested_date
+- reserved_time_slot
+- table (ForeignKey)
+- user (ForeignKey)
+- guest_count
+- name
+- email
+- phone
+- status
+- seats
+
+<details><summary>Show model</summary>
+<img src="docs/model_reservation.jpg.jpg">
+</details>
+
