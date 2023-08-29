@@ -237,3 +237,47 @@ The Reservation Model contains the following fields:
 <img src="docs/model_reservation.jpg.jpg">
 </details>
 
+##### Post Model
+The Post Model contains the following:
+- post_id (PrimaryKey)
+- author (ForeignKey)
+- content
+- created_on
+- excerpt
+- featured_image
+- slug
+- status
+- title
+- updated_on
+
+<details><summary>Show model</summary>
+<img src="docs/model_post.jpg">
+</details>
+
+##### Comment Model
+The Comment Model contains the following:
+- id (primary Key)
+- post (ForeignKey)
+- approved
+- body
+- created_on
+- email
+- name
+
+<details><summary>Show model</summary>
+<img src="docs/model_Comment.jpg">
+</details>
+
+##### Contact Model
+The Contact Model contains the following fields:
+- message_id (PrimaryKey)
+- user (ForeignKey)
+- email 
+- message
+- name
+- phone
+
+<details><summary>Show model</summary>
+<img src="docs/model_Contact.jpg">
+</details>
+
