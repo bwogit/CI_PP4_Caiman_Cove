@@ -3,7 +3,7 @@
 {% block content %}
     {% load crispy_forms_tags %}
     <div class="container">
-        <h1 class="text-center mb-5">Enquiries</h1>
+        <h1 class="text-center mb-5">Enquire</h1>
         {% if user.is_authenticated %}
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -20,6 +20,8 @@
                 </div>
             </div>
         {% else %}
+        <div class="booking-card p-4">
+            <h2 class="text-center">Login Required</h2>
             <p class="text-center">Please login to leave a message</p>
             <div class="text-center mt-4">
                 <a href="{% url 'account_login' %}" class="btn btn-primary">Go to Login Page</a>
