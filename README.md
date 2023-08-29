@@ -78,7 +78,7 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 ### Users
 1.	As a User, I can Navigate the Site Easily and Intuitively:
 2.	As a User, I can Efficiently Use the Navbar, Footer, and Social Media Icons
-3.	As a User, I can qccess a dedicated "Contact Us" Page for Effective Communication  (Must have)
+3.	As a User, I can access a dedicated "Contact Us" Page for Effective Communication
 4.	As a User, I can quickly Access Opening Hours and Essential Contact Information iemail, phone, and social media.
 5.	As a User, I can Seamlessly Choose Preferred Dates and Times for Reservation
 6.	As a User, I can asily modify my booking by selecting an alternative
@@ -108,3 +108,26 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 ### Site Owner  
 23. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
 24. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission.
+
+### Kanban
+- GitHub Kanban was used to track all open user stories
+- Epics were created using the milestones feature
+- Backlog, In Progress, Done headings were used in the kanban
+
+<details><summary>Epics</summary>
+</details>
+
+<details><summary>User Stories</summary>
+</details>
+
+<details><summary>kanban</summary>
+</details>
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Design
+
+### Colours
+
+The choice of a dark background for the website draws inspiration from the allure of a luxurious jewelry box's dark material. This carefully selected color scheme serves to elevate the visual presentation of the website's content, especially the high-quality images of exquisite dishes and captivating ambiances. By embracing the dark backdrop, the website aims to create a sense of opulence and sophistication, mirroring the lavishness associated with the Caribbean Cove's culinary offerings
+
