@@ -53,3 +53,19 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 - Deliver a User-Friendly Modern experience
 - Ensure Full Responsiveness and Accessibility
 <hr>
+
+## User Experience
+
+### Target Audience
+- Users that wish to book a table to experience culinary prestige and Glamour
+- Tourists for memorable dining experience
+- Attract local and visiting guests
+
+### User Requirements and Expectations
+
+- Seamless responsiveness across diverse devices and screen sizes
+- Compliance with accessibility standards to ensure inclusivity
+- Implementation of an inviting and user-centric design
+- Integration of social media functionalities for enhanced engagement
+- Clear presentation of relevant contact information
+- Prioritization of accessibility features to ensure inclusiveness
