@@ -399,3 +399,25 @@ Responsive sign up page
   - [Wave Validator](https://wave.webaim.org/)
 
   ##### Back to [top](#table-of-contents)
+
+  ## Features
+
+### Home page
+- Home page includes nav bar, main body and a footer
+
+
+<details><summary>See feature images</summary>
+
+![Home page](docs/feature/features_home.jpg)
+</details>
+
+### Logo & Navigation
+- Logo
+- Responsive down to hamburger menu
+- Indicates login/logout in status
+- displayed on all pages (inc. 404)
+
+<details><summary>See feature images</summary>
+
+![Footer](docs/feature/feature_navbar.jpg)
+</details>
