@@ -549,43 +549,43 @@ The W3C Markup Validation Service
 </details>
 
 <details><summary>Login</summary>
-<img src="">
+<img src="docs/validation/validation_html_login.jpg">
 </details>
 
 <details><summary>Logout</summary>
-<img src="">
+<img src="docs/validation/validation_html_logout.jpg">
 </details>
 
 <details><summary>Bookings</summary>
-<img src="">
+<img src="docs/validation/validation_html_logout.jpg">
 </details>
 
 <details><summary>Edit Booking</summary>
-<img src="">
+<img src="docs/validation/validation_html_edit_booking.jpg">
 </details>
 
 <details><summary>delete Booking</summary>
-<img src="">
+<img src="docs/validation/validation_html_delete_booking.jpg">
 </details>
 
 <details><summary>Meal Menu</summary>
-<img src="">
+<img src="docs/validation/validation_html_food_menu.jpg">
 </details>
 
 <details><summary>Beverage Menu</summary>
-<img src="">
+<img src="docs/validation/validation_html_drink_menu.jpg">
 </details>
 
 <details><summary>Blog</summary>
-<img src="">
+<img src="docs/validation/validation_html_blog_list.jpg">
 </details>
 
 <details><summary>Blog Read more</summary>
-<img src="">
+<img src="docs/validation/validation_html_read_more.jpg">
 </details>
 
 <details><summary>Enquire</summary>
-<img src="">
+<img src="docs/validation/validation_html_contact_us.jpg">
 </details>
 
 <details><summary>Confirmed</summary>
