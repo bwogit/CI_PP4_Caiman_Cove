@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'cloudinary_storage',
+    'django_extensions',
     'django.contrib.staticfiles',
     'cloudinary',
     'phonenumber_field',
@@ -75,6 +76,10 @@ LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+GRAPH_MODELS = {
+    'all_applications' : True,
+    'group_model' : True ,
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
