@@ -111,7 +111,6 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 
 ### Kanban
 - GitHub Kanban was used to track all open user stories
-- Epics were created using the milestones feature
 - Backlog, In Progress, Done headings were used in the kanban
 
 <details><summary>Epics</summary>
@@ -131,3 +130,28 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 
 The choice of a dark background for the website draws inspiration from the allure of a luxurious jewelry box's dark material. This carefully selected color scheme serves to elevate the visual presentation of the website's content, especially the high-quality images of exquisite dishes and captivating ambiances. By embracing the dark backdrop, the website aims to create a sense of opulence and sophistication, mirroring the lavishness associated with the Caribbean Cove's culinary offerings
 
+### Fonts
+
+ The fonts selected were from Google Fonts, Montserrat wits sans-serif as a backup font.
+
+### Structure
+
+#### Website pages
+The website design prioritizes user freindliness, featuring a top navigation bar for seamless navigation and a hamburger menu button for smaller screens. This ensures an intuitive user experience across devices.
+
+Prominently featured in the footer are essential social media links, enabling users to engage with the business across various platforms. This strategic inclusion enhances the business's online presence, garnering followers, likes, and shares.
+
+- Are featured the following pages:
+ - A dynamic homepage with intuitive cards for table booking and menu exploration.
+ - A comprehensive food menu, thoughtfully sorted into starters, mains, and desserts, showcasing the rich array of culinary offerings.
+ - An expansive drinks menu categorized by type, presenting a diverse selection of available beverages.
+ - An engaging blog section, thoughtfully paginated, where authorized users share insights and experiences.
+ - Detailed blog expansion offers users an opportunity to delve into selected content, with logged-in users contributing moderated comments.
+ - The user-friendly booking page empowers registered users to effortlessly secure a table by specifying guest count, date, time, and desired table location.
+ - The "My Bookings" section conveniently displays users' active reservations, automatically expiring past bookings.
+ - The edit booking feature allows users to adapt reservation details, including date, time, table, and guest count.
+ - The cancel booking option permits hassle-free reservation cancellation, removing bookings from the database.
+ - The "Contact Us" page facilitates user communication via DM for registered users, or via the provided email, phone number, or physical  address.
+ - The seamless "Login" and "Logout" functionality enables users to access booking features and reservation management.
+ - The registration process empowers users to create accounts, facilitating access to the booking system.
+ - A polished "404 Error" page elegantly addresses any encountered errors.
