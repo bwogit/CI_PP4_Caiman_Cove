@@ -9,7 +9,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-6 mx-auto mt-5">
+    <div class="col-md-6 mx-auto">
       <div class="login-card">
         <h1 class="text-center mb-4">{% trans "Login" %}</h1>
         <h2 class="text-center">{% blocktrans %}Welcome to the Caiman Cove login page. Please log in. If you have not created an account yet, then <a class="link"
@@ -21,7 +21,9 @@
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
-            <button class="btn btn-primary btn-block" type="submit">{% trans "Sign In" %}</button>
+            <div class="d-flex justify-content-center mt-4"> 
+              <button class="btn btn-primary" type="submit">{% trans "Log In" %}</button>
+            </div>
           </form>
       </div>
     </div>
