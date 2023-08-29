@@ -402,15 +402,6 @@ Responsive sign up page
 
   ## Features
 
-### Home page
-- Home page includes nav bar, main body and a footer
-
-
-<details><summary>See feature images</summary>
-
-![Home page](docs/feature/features_home.jpg)
-</details>
-
 ### Logo & Navigation
 - Logo
 - Responsive down to hamburger menu
@@ -429,6 +420,37 @@ Responsive sign up page
 <details><summary>See feature images</summary>
 
 ![Footer](docs/feature/feature_footer.jpg)
+</details>
+
+### Home page
+- Home page includes nav bar, main body and a footer
+
+<details><summary>See feature images</summary>
+
+![Home page](docs/feature/features_home.jpg)
+</details>
+
+
+### Food Menu
+- The food menu showcases a comprehensive selection of available dishes.
+- The menu is categorized into starters, main courses, and desserts.
+- Authorized staff members can edit the menu via the backend admin panel.
+- uthorized staff members can perform actions such as creating, updating, and removing food items using the admin panel.
+  
+<details><summary>See feature images</summary>
+
+![Food Menu](docs/feature/feature_meals_menu.jpg)
+</details>
+
+
+### Drinks Menu
+- The drink menu showcases a comprehensive selection of available drinks.
+- The menu is categorized into non alcoholic, cocktails, beers and ruhums
+- Authorized staff members can edit the menu via the backend admin panel.
+- uthorized staff members can perform actions such as creating, updating, and removing drink items using the admin panel.
+<details><summary>See feature images</summary>
+
+![Drinks Menu](docs/feature/feature_drinks_menu.jpg)
 </details>
 
 ### Login
@@ -451,10 +473,54 @@ edit and delete bookings and comment a blog.
 
 ### Sign up / Register
 - Allow users to create an acoount
-- Use Django built in authentication. Seameless.
+- Use Django built-in authentication. Seameless.
 
 
 <details><summary>See feature images</summary>
 
 ![Register](docs/feature/feature_signup.jpg)
+</details>
+
+
+### Blog
+- The blog displays each post made by authorised user
+- The main blog list features exerpts and Pictures
+- Paginations is used to display 2 posts per page
+  
+<details><summary>See feature images</summary>
+
+![Blog](docs/feature/feature_blog.jpg)
+</details>
+
+
+### Blog Read More
+- Click on read more to expand the selection you have chosen
+- Registerd user can comment on the blog
+- Staff can approve comments via the admin panel on the backend
+  
+  
+<details><summary>See feature images</summary>
+
+![Blog Expanded](docs/feature/feature_blog_read_more.jpg)
+</details>
+
+
+### Comments
+- Comments made are set to pending approval status
+- Only registered users can comment on a blog post
+- Staff are the moderators
+  
+<details><summary>See feature images</summary>
+
+![Comments](docs/feature/feature_blog_comments.jpg)
+</details>
+
+
+### Contact Us
+- Registered users can DM staff via the message box
+- Contact info such as,name, email, and address is displayed
+  
+<details><summary>See feature images</summary>
+
+![Contact Us](docs/feature/feature_enquire.jpg)
 </details>
