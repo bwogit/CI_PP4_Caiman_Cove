@@ -46,3 +46,10 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 - Manage Bookings
 - Explore menus, a blog and contact info
 
+### Site Owner Goals
+
+- Enable online Table reservations
+- Enhance business appeal with a polished website
+- Deliver a User-Friendly Modern experience
+- Ensure Full Responsiveness and Accessibility
+<hr>
