@@ -139,9 +139,8 @@ The choice of a dark background for the website draws inspiration from the allur
 #### Website pages
 The website design prioritizes user freindliness, featuring a top navigation bar for seamless navigation and a hamburger menu button for smaller screens. This ensures an intuitive user experience across devices.
 
-Prominently featured in the footer are essential social media links, enabling users to engage with the business across various platforms. This strategic inclusion enhances the business's online presence, garnering followers, likes, and shares.
+Prominently featured in the footer are essential social media links, enabling users to engage with the business across various platforms. This strategic inclusion enhances the business's online presence, garnering followers, likes, and shares. The site features the following pages:
 
-- Are featured the following pages:
  - A dynamic homepage with intuitive cards for table booking and menu exploration.
  - A comprehensive food menu, thoughtfully sorted into starters, mains, and desserts, showcasing the rich array of culinary offerings.
  - An expansive drinks menu categorized by type, presenting a diverse selection of available beverages.
@@ -280,4 +279,82 @@ The Contact Model contains the following fields:
 <details><summary>Show model</summary>
 <img src="docs/model_Contact.jpg">
 </details>
+
+### Wireframes
+The wireframes were created using Balsamiq
+
+#### home page
+Home page responsive wireframes
+
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_home.jpg">
+</details>
+
+#### meal/drink menu
+Menus responsive wireframes
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_menu.jpg">
+</details>
+
+#### book
+Book a table 
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_book.jpg">
+</details>
+
+#### book
+View bookings
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_bookings.jpg">
+</details>
+
+#### book
+View the Blog list 
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_blog.jpg">
+</details>
+
+#### book
+Enquire / Contact us
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_contact_us.jpg">
+</details>
+
+#### book
+Log out
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_logout.jpg">
+</details>
+
+#### book
+Book Log in required
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_book_login_required.jpg">
+</details>
+
+#### Blog (login required)
+Blog log in required
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_Blog_loggedIn.jpg">
+</details>
+
+#### book
+Blog read more
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_Blog_read_more.jpg">
+</details>
+
+#### book
+Enquire (loging Required)
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_Enquire_login_required.jpg">
+</details>
+
+#### book
+Responsive LogIn
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_login.jpg">
+</details>
+
+
 
