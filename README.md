@@ -515,6 +515,15 @@ edit and delete bookings and comment a blog.
 ![Comments](docs/feature/feature_blog_comments.jpg)
 </details>
 
+### Pagination
+- used on the blog page
+- Ensures the page is kept tidy as only 2 items are displayed per page
+  
+<details><summary>See feature images</summary>
+
+![Pagination](docs/feature/feature_pagination.jpg)
+</details>
+
 
 ### Contact Us
 - Registered users can DM staff via the message box
