@@ -93,3 +93,14 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 15. As a User, I can Explore the Comprehensive Food and Drink Menu
 16. As a User, I can Ensure Future-Date Bookings
 17. As a User, I can Prevent Duplicate Bookings
+
+
+
+### Admin / Privileged User
+18.	As an Admin or Privileged User, I can Log In to Access the Site's Backend
+19.	As an Admin or Privileged User, I can Manually Add Bookings for Phone or Email Reservations 
+20. As an Admin or Privileged User, I can Accept or Reject Bookings to Prevent Double Bookings
+23. As an Admin or Privileged User, I can Search Through Bookings and Menus
+24. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
+21. As an Admin, I can Log In to Manage Food and Cocktail Menu Items
+22.	As an Admin, I can CRUD Food and Drink Items in the Database
