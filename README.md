@@ -290,44 +290,44 @@ Home page responsive wireframes
 <img src="docs/wireframes/wireframes_home.jpg">
 </details>
 
-#### meal/drink menu
+#### meal/drink menu page
 Menus responsive wireframes
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_menu.jpg">
 </details>
 
-#### book
-Book a table 
+#### book a table page
+Book a table through this responsive and high quality app
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_book.jpg">
 </details>
 
-#### book
+#### View past and future bookings page (data gathering)
 View bookings
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_bookings.jpg">
 </details>
 
-#### book
-View the Blog list 
+#### Read the blogs page
+Read the blogs from a variaty of interesting topics page
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_blog.jpg">
 </details>
 
-#### book
-Enquire / Contact us
+#### Enquire page
+Enquire / Contact us and we will get backt to you
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_contact_us.jpg">
 </details>
 
-#### book
-Log out
+#### Logout page
+You can now log ou in a safe manner. 
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_logout.jpg">
 </details>
 
-#### book
-Book Log in required
+#### Login required (booking)
+You have to log in before you book a table
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_book_login_required.jpg">
 </details>
@@ -338,22 +338,28 @@ Blog log in required
 <img src="docs/wireframes/wireframes_Blog_loggedIn.jpg">
 </details>
 
-#### book
-Blog read more
+#### Blog Read more 
+You have found the topic that you want to delve into.
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_Blog_read_more.jpg">
 </details>
 
-#### book
+#### Enquire 
 Enquire (loging Required)
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_Enquire_login_required.jpg">
 </details>
 
-#### book
+#### Log IN
 Responsive LogIn
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_login.jpg">
+</details>
+
+#### Sign up
+Responsive sign up page
+<details><summary></summary>
+<img src="docs/wireframes/wireframes_SignUp.jpg">
 </details>
 
 
