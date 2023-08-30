@@ -840,3 +840,520 @@ Performance, best practices and SEO was tested using Lighthouse.
 <details><summary>home</summary>
 <img src="docs/validation/performance-home.jpg">
 </details>
+
+
+##### Back to [top](#table-of-contents)<hr>
+
+
+## Testing
+
+
+### Manual testing
+
+1. As a User, I can Navigate the Site Easily and Intuitively
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the links in the navigation bar or log | all pages will load| Works as expected |
+
+
+<details><summary></summary>
+<img src="">
+</details>
+
+2. As a User, I can Efficiently Use the Navbar, Footer, and Social Media Icons
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ | See test 1 | See test 1 | Works as expected |
+ | Scroll to footer at bottom of page | Read information | Works as expected |
+ | Scroll to footer at bottom of page | Use social media links | Works as expected |
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+3. As a User, I can access a dedicated "Enquire" Page for Effective Communication
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ | Click on Enquire link in the navbar | Fill out form | Works as expected |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+5. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+6. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+7. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+8. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+9. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+10. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+11. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+12. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+13. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+14. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+15. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+16. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+17. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+18. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+19. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+20. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+21. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+22. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+23. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+24. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  |  |  |
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
