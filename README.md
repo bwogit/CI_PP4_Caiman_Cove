@@ -636,3 +636,25 @@ PEP8 Validation Service from CodeInstitute was used.
 <details><summary>admin.py</summary>
 <img src="docs/validation/pep8_food_and_drinks_admin.jpg">
 </details>
+
+<hr><summary>blog</summary><hr>
+
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8_blog_views.jpg">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="docs/validation/blog_urls.jpg">
+</details>
+
+<details><summary>forms.py</summary>
+<img src="docs/validation/pep8_blog_forms.jpg">
+</details>
+
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8_blog_models.jpg">
+</details>
+
+<details><summary>admin.py</summary>
+<img src="docs/validation/pep8_blog_admin.jpg">
+</details>
