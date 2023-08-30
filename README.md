@@ -854,9 +854,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
 | Click on the links in the navigation bar or log | all pages will load| Works as expected |
 
-
 <details><summary></summary>
-<img src="">
+<img src="docs/testing/user_story_1.jpg">
 </details>
 
 2. As a User, I can intuitively Use the Navbar, Footer, and Social Media Icons
@@ -868,8 +867,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  | Scroll to footer at bottom of page | Use social media links | Works as expected |
 
 <details><summary></summary>
-<img src="">
-
+<img src="docs/testing/user_story_2.jpg">
 </details>
 
 3. As a User, I can access a Page for enquiries or leave suggestions or coments
