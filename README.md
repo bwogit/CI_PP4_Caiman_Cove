@@ -709,6 +709,7 @@ PEP8 Validation Service from CodeInstitute was used.
 <img src="docs/validation/pep8_reservations_admin.jpg">
 </details>
 
+
 ### Wave
 WAVE was used to test the websites accessibility.
 
@@ -752,25 +753,28 @@ WAVE was used to test the websites accessibility.
 <img src="docs/validation/wave-blog_details_4.jpg">
 </details>
 
-
-<details><summary>Reservation</summary>
-<img src="docs/validation/wave-blog_">
+<details><summary>Reservation Login</summary>
+<img src="docs/validation/wave-reservations.jpg">
 </details>
 
-<details><summary>Reservation confirmation</summary>
-<img src="">
+<details><summary>Reservation book</summary>
+<img src="docs/validation/wave-reservations_book.jpg">
+</details>
+
+<details><summary>Reservation Confirmation</summary>
+<img src="docs/validation/wave-reservations_confirmation.jpg">
 </details>
 
 <details><summary>bookings list</summary>
-<img src="">
+<img src="docs/validation/wave-reservations_bookings.jpg">
 </details>
 
 <details><summary>enquire</summary>
-<img src="">
+<img src="docs/validation/wave-reservations_contact_us.jpg">
 </details>
 
 <details><summary>Signup</summary>
-<img src="">
+<img src="docs/validation/wave-reservations_signup.jpg">
 </details>
 
 ### Lighthouse
@@ -786,7 +790,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>blog1</summary>
-<img src="docs/validation/performance-blog_list.jpg">
+<img src="docs/validation/performance-blog_list_1.jpg">
 </details>
 
 <details><summary>blog2</summary>
@@ -796,15 +800,15 @@ Performance, best practices and SEO was tested using Lighthouse.
 <details><summary>Blog_detail1</summary>
 <img src="docs/validation/performance-blog_detail_1.jpg">
 </details>
-<details><summary>Blog_detail1</summary>
+<details><summary>Blog_detail2</summary>
 <img src="docs/validation/performance-blog_detail_2.jpg">
 </details>
 
-<details><summary>Blog_details</summary>
+<details><summary>Blog_detail3</summary>
 <img src="docs/validation/performance-blog_detail_3.jpg">
 </details>
 
-<details><summary>Blog_details</summary>
+<details><summary>Blog_detail4</summary>
 <img src="docs/validation/performance-blog_detail_4.jpg">
 </details>
 
@@ -834,5 +838,5 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>home</summary>
-<img src="docs/validation/performance-index.jpg">
+<img src="docs/validation/performance-home.jpg">
 </details>
