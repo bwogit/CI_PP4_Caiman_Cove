@@ -1,8 +1,12 @@
-// Close messages after 3 seconds
-$(document).ready(function () {
-    setTimeout(function () {
-        let messages = document.getElementById("msg");
-        let alert = new bootstrap.Alert(messages);
-        alert.close();
-    }, 3000);
+// Get the current URL path
+const currentPath = window.location.pathname;
+
+// Get all navigation links
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+// Loop through each navigation link and add the active-link class if the href matches the current path
+navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+        link.classList.add('active-link');
+    }
 });
