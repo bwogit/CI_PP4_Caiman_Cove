@@ -878,7 +878,6 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 <details><summary></summary>
 <img src="docs/testing/user_story_3.jpg">
-<img src="">
 </details>
 
 4. As a User, I can quickly Access Opening Hours and Essential Information email, phone, and social media.
@@ -889,40 +888,39 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 <details><summary></summary>
 <img src="docs/testing/user_story_4.jpg">
-<img src="">
 </details>
 
 5. As a User, I can Choose date/times to make reservations
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ | Click 'Book' link in the navbar | Form is available | Works as expected |
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_5.jpg">
 </details>
 
 6. As a User, I can modify booking and select another date/time
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ | user must be logged in  | login | works as expected |
+ | select a booking Bookings then click on edit | edit previously saved booking  | Works as expected |
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_6.jpg">
 </details>
 
 7. As a User, I can Delete My Reservation
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+| this suggest a logged in user | login | works as expected |
+| Click on 'Bookings' then identify the event yuo want to cancel and click 'delete' | confirm or cancel  | Works as expected |
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_7a.jpg">
+<img src="docs/testing/user_story_7b.jpg">
 </details>
 
 8. As a User, I can view past and current reservations
