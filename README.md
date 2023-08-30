@@ -691,3 +691,24 @@ PEP8 Validation Service from CodeInstitute was used.
 <img src="docs/validation/pep8_home_urls.py.jpg">
 </details>
 
+<hr><summary>reservations</summary><hr>
+
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8_reservations_views.jpg">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8_reservations_urls.jpg">
+</details>
+
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8_reservations_models.jpg">
+</details>
+
+<details><summary>forms.py</summary>
+<img src="docs/validation/pep8_reservations_forms.jpg">
+</details>
+
+<details><summary>admin.py</summary>
+<img src="docs/validation/pep8_reservations_admin.jpg">
+</details>
