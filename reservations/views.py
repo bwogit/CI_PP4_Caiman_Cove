@@ -22,7 +22,8 @@ class Bookings(View):
         """
         if request.user.is_authenticated:
             email = request.user.email
-            booking_form = BookingForm(initial={'email': email})
+            name = request.user.username
+            booking_form = BookingForm(initial={'email': email, 'name': name})
         else:
             booking_form = BookingForm()
         return render(request, 'reservations/reservation.html',
