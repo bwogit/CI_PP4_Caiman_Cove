@@ -658,3 +658,25 @@ PEP8 Validation Service from CodeInstitute was used.
 <details><summary>admin.py</summary>
 <img src="docs/validation/pep8_blog_admin.jpg">
 </details>
+
+hr><summary>contact_us</summary><hr>
+
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8_contact_us_views.jpg">
+</details>
+
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8_contact_us_models.jpg">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8_contact_us_urls.jpg">
+</details>
+
+<details><summary>forms.py</summary>
+<img src="docs/validation/pep8_contact_us_forms.jpg">
+</details>
+
+<details><summary>admin.py</summary>
+<img src="docs/validation/pep8_contact_us_admin.jpg">
+</details>
