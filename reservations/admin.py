@@ -21,6 +21,9 @@ def approve_reservation(modeladmin, request, queryset):
     queryset.update(status='confirmed')
 
 
+actions = [approve_reservation]
+
+
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
     """
@@ -63,5 +66,3 @@ class ReservationAdmin(admin.ModelAdmin):
         queryset.update(status='confirmed')
         self.message_user(request,
                           f'{queryset.count()} reservations were approved.')
-
-    actions = [approve_reservation]
