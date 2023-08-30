@@ -585,7 +585,7 @@ The W3C Markup Validation Service
 </details>
 
 <details><summary>Blog Read more</summary>
-<img src="docs/validation/validation_html_read_more.jpg">
+<img src="docs/validation/validation_html_blog_details_1.jpg">
 </details>
 
 <details><summary>Enquire</summary>
@@ -597,5 +597,5 @@ The W3C Markup Validation Service
 </details>
 
 <details><summary>404</summary>
-<img src="">
+<img src="docs/validation/validation_html_404.jpg">
 </details><hr>
