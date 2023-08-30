@@ -13,18 +13,6 @@ class TableAdmin(admin.ModelAdmin):
     search_fields = ('table_number',)
 
 
-@admin.action(description='Approve selected reservations')
-def approve_reservation(modeladmin, request, queryset):
-    """
-    Custom admin action to approve reservations in bulk.
-    Changes the status of selected reservations to 'confirmed'.
-    """
-    queryset.update(status='confirmed')
-
-
-actions = [approve_reservation]
-
-
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
     """
@@ -43,7 +31,7 @@ class ReservationAdmin(admin.ModelAdmin):
         'reserved_date',
         'reserved_time_slot',
         'reservation_time',
-        )
+    )
     list_display = (
         'reservation_id',
         'user',
@@ -54,16 +42,15 @@ class ReservationAdmin(admin.ModelAdmin):
         'table',
         'reserved_date',
         'reserved_time_slot',
-        'reservation_time',)
+        'reservation_time',
+    )
 
     search_fields = ['name']
+    actions = ['approve_reservation']
 
-    # @admin.action(description='Approve selected reservations')
-    # def approve_reservation(self, request, queryset):
-    #     """
-    #     Custom admin action to approve reservations in bulk.
-    #     Changes the status of selected reservations to 'confirmed'.
-    #     """
-    #     queryset.update(status='confirmed')
-    #     self.message_user(request,
-    #                       f'{queryset.count()} reservations were approved.')
+    def approve_reservation(self, request, queryset):
+        """
+        Custom admin action to approve reservations in bulk.
+        Changes the status of selected reservations to 'confirmed'.
+        """
+        queryset.update(status='confirmed')
