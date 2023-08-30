@@ -709,6 +709,70 @@ PEP8 Validation Service from CodeInstitute was used.
 <img src="docs/validation/pep8_reservations_admin.jpg">
 </details>
 
+### Wave
+WAVE was used to test the websites accessibility.
+
+<details><summary>Login</summary>
+<img src="docs/validation/wave-login.jpg">
+</details>
+
+<details><summary>Logout</summary>
+<img src="docs/validation/wave-logout.jpg">
+</details>
+
+<details><summary>Home</summary>
+<img src="docs/validation/wave-home.jpg">
+</details>
+
+<details><summary>Meals</summary>
+<img src="docs/validation/wave-food_menu.jpg">
+</details>
+
+<details><summary>Beverages</summary>
+<img src="docs/validation/wave-drink_menu.jpg">
+</details>
+
+<details><summary>Blog</summary>
+<img src="docs/validation/wave-blog.jpg">
+</details>
+
+<details><summary>Blog Detail1</summary>
+<img src="docs/validation/wave-blog_details_1.jpg">
+</details>
+
+<details><summary>Blog Detail2</summary>
+<img src="docs/validation/wave-blog_details_2.jpg">
+</details>
+
+<details><summary>Blog Detail3</summary>
+<img src="docs/validation/wave-blog_details_3.jpg">
+</details>
+
+<details><summary>Blog Detail4</summary>
+<img src="docs/validation/wave-blog_details_4.jpg">
+</details>
+
+
+<details><summary>Reservation</summary>
+<img src="docs/validation/wave-blog_">
+</details>
+
+<details><summary>Reservation confirmation</summary>
+<img src="">
+</details>
+
+<details><summary>bookings list</summary>
+<img src="">
+</details>
+
+<details><summary>enquire</summary>
+<img src="">
+</details>
+
+<details><summary>Signup</summary>
+<img src="">
+</details>
+
 ### Lighthouse
 
 Performance, best practices and SEO was tested using Lighthouse.
