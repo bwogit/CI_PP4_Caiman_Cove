@@ -310,8 +310,8 @@ Read the blogs from a variaty of interesting topics page
 <img src="docs/wireframes/wireframes_blog.jpg">
 </details>
 
-#### Enquire page
-Enquire / Contact us and we will get backt to you
+#### Contact Us page
+Contact us and we will get backt to you
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_contact_us.jpg">
 </details>
@@ -340,8 +340,8 @@ You have found the topic that you want to delve into.
 <img src="docs/wireframes/wireframes_Blog_read_more.jpg">
 </details>
 
-#### Enquire 
-Enquire (loging Required)
+#### Contact Us
+Contact Us (loging Required)
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_Enquire_login_required.jpg">
 </details>
@@ -584,7 +584,7 @@ The W3C Markup Validation Service
 <img src="docs/validation/validation_html_blog_details_1.jpg">
 </details>
 
-<details><summary>Enquire</summary>
+<details><summary>Contact Us</summary>
 <img src="docs/validation/validation_html_contact_us.jpg">
 </details>
 
@@ -765,7 +765,7 @@ WAVE was used to test the websites accessibility.
 <img src="docs/validation/wave-reservations_bookings.jpg">
 </details>
 
-<details><summary>enquire</summary>
+<details><summary>Contact Us</summary>
 <img src="docs/validation/wave-reservations_contact_us.jpg">
 </details>
 
@@ -812,7 +812,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/validation/performance-bookings.jpg">
 </details>
 
-<details><summary>Enquire</summary>
+<details><summary>Contact Us</summary>
 <img src="docs/validation/performance-contact_us.jpg.jpg">
 
 </details>
@@ -876,7 +876,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- | Click on Enquire link in the navbar | Fill out form | Works as expected |
+ | Click on Contact Us link in the navbar | Fill out form | Works as expected |
 
 <details><summary></summary>
 <img src="">
