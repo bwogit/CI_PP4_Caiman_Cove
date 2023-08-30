@@ -96,14 +96,14 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 ### Admin / Privileged User
 15.	As an Admin or Privileged User, I can Log In to Access the Site's Backend
 16.	As an Admin or Privileged User, I can CRUD bookings for Phone or Email Reservations 
-18. As an Admin or Privileged User, I can filter Bookings and Menus
-19. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
-20. As an Admin, I can Log In to Manage Food and Cocktail Menu Items
-21.	As an Admin, I can CRUD Food and Drink Items in the Database
+17. As an Admin or Privileged User, I can filter Bookings and Menus
+18. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
+19. As an Admin, I can Log In to Manage Food and Cocktail Menu Items
+20.	As an Admin, I can CRUD Food and Drink Items in the Database
 
 ### Site Owner  
-22. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
-23. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission.
+21. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
+22. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission.
 
 ### Kanban
 - GitHub Kanban was used to track all open user stories
