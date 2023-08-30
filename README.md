@@ -949,7 +949,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-10. As a User, I can SignUp to be able to login and therefore book
+10. As a User, I can SignUp to login
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1004,6 +1004,9 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
+
+### Admin
+
 15. As an Admin or Privileged User, I can Log In to Access the Site's Backend
 
 **Step** | **Expected Result** | **Actual Result**
@@ -1015,7 +1018,6 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-### Admin
 
 16. As an Admin or Privileged User, I can CRUD bookings for Phone or Email Reservations
 

@@ -33,12 +33,12 @@ class ContactUser(View):
                       {'contact_form': contact_form})
 
 
-class ContactGreeting(View):
-    """
-    A simple greeting view that welcomes users to the contact page.
-    If the user is not authenticated, no special message is displayed.
-    """
-    template_name = 'contact_greeting.html'
+# class ContactGreeting(View):
+#     """
+#     A simple greeting view that welcomes users to the contact page.
+#     If the user is not authenticated, no special message is displayed.
+#     """
+#     template_name = 'contact_greeting.html'
 
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {'user': request.user})
+#     def get(self, request, *args, **kwargs):
+#         return render(request, self.template_name, {'user': request.user})
