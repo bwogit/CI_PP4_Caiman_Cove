@@ -877,7 +877,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  | Click on Contact Us link in the navbar | Fill out form | Works as expected |
 
 <details><summary></summary>
-<img src="">
+<img src="docs/testing/user_story_3.jpg">
 <img src="">
 </details>
 
@@ -885,10 +885,10 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ Scroll to footer at bottom of page | Read information | Works as expected 
 
 <details><summary></summary>
-<img src="">
+<img src="docs/testing/user_story_4.jpg">
 <img src="">
 </details>
 
