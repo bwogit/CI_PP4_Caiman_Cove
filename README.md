@@ -77,8 +77,8 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 
 ### Users
 1.	As a User, I can Navigate the Site Easily and Intuitively:
-2.	As a User, I can Efficiently Use the Navbar, Footer, and Social Media Icons
-3.	As a User, I can access "Contact Us" type Page for enquiries or leave suggestions or coments
+2.	As a User, I can intuitively Use the Navbar, Footer, and Social Media Icons
+3.	As a User, I can access a Page for enquiries or leave suggestions or coments
 4.	As a User, I can quickly Access Opening Hours and Essential Information email, phone, and social media.
 5.	As a User, I can Choose date/times to make reservations
 6.	As a User, I can mofify booking and select another date/time
@@ -96,7 +96,7 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 ### Admin / Privileged User
 15.	As an Admin or Privileged User, I can Log In to Access the Site's Backend
 16.	As an Admin or Privileged User, I can CRUD bookings for Phone or Email Reservations 
-18. As an Admin or Privileged User, I can Search Through Bookings and Menus
+18. As an Admin or Privileged User, I can filter Bookings and Menus
 19. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
 20. As an Admin, I can Log In to Manage Food and Cocktail Menu Items
 21.	As an Admin, I can CRUD Food and Drink Items in the Database
@@ -846,6 +846,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 ### Manual testing
 
+### User
+
 1. As a User, I can Navigate the Site Easily and Intuitively
 
 **Step** | **Expected Result** | **Actual Result**
@@ -857,7 +859,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-2. As a User, I can Efficiently Use the Navbar, Footer, and Social Media Icons
+2. As a User, I can intuitively Use the Navbar, Footer, and Social Media Icons
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -870,7 +872,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 </details>
 
-3. As a User, I can access a dedicated "Enquire" Page for Effective Communication
+3. As a User, I can access a Page for enquiries or leave suggestions or coments
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -881,7 +883,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-4. As a User, I can quickly Access Opening Hours and Essential Contact Information iemail, phone, and social media.
+4. As a User, I can quickly Access Opening Hours and Essential Information email, phone, and social media.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -892,7 +894,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-5. As a User, I can Seamlessly Choose Preferred Dates and Times for Reservation
+5. As a User, I can Choose date/times to make reservations
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -903,7 +905,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-6. As a User, I can easily modify my booking by selecting an alternative
+6. As a User, I can modify booking and select another date/time
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -914,7 +916,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-7. As a User, I can Conveniently Delete My Reservation
+7. As a User, I can Delete My Reservation
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -925,7 +927,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-8. As a User, I can Easily View My Booked Reservations
+8. As a User, I can view past and current reservations
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -936,7 +938,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-9. As a User, I can Receive Timely Alerts for Booking Actions 
+9. As a User, I can receive nototications for each event in the bookig process 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -947,7 +949,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-10. As a User, I can Register to Enable Reservation Creation
+10. As a User, I can SignUp to be able to login and therefore book
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -958,7 +960,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-11. As a User, I can Authenticate Myself to Access Reservation Functionality 
+11. As a User, I can Authenticate to be granted access to the app features
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -980,7 +982,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-13. As a (Admin User), I can Experience Admin-controlled Booking Confirmation Modes
+13. As a User, I can read blogs
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -991,7 +993,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-14. As a (Admin User), I can Engage with Informative Blog Content 
+14. As a User, I can Explore the Comprehensive Food and Drink offering
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1002,7 +1004,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-15. As a User, I can Explore the Comprehensive Food and Drink Menu 
+15. As an Admin or Privileged User, I can Log In to Access the Site's Backend
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1013,7 +1015,9 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-16. As a (site owner), I can Ensure Future-Date Bookings
+### Admin
+
+16. As an Admin or Privileged User, I can CRUD bookings for Phone or Email Reservations
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1024,7 +1028,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-17. As a (site owner), I can Prevent Duplicate Bookings
+
+17.  As an Admin or Privileged User, I can CRUD menus
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1035,7 +1040,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-18. 
+
+18. As a (Admin User), I can read customers opinions/reclamation/suggestions 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1046,7 +1052,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-19. 
+19. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1057,7 +1063,10 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-20. 
+
+#### Site Owner
+
+20. As a (site owner), I can ensure reservations are never for a time  prior to the bookign creation time
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1068,7 +1077,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-21. 
+21. As a (site owner), I can prevent 2 or more bookings for the same date/time
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1079,7 +1088,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-22. 
+22. As a Site Owner, I Can provide a Fully Responsive Site for Optimum User Experience
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1090,260 +1099,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-23. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-24. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-4. 
+23. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
