@@ -557,7 +557,11 @@ The W3C Markup Validation Service
 </details>
 
 <details><summary>Bookings</summary>
-<img src="docs/validation/validation_html_logout.jpg">
+<img src="docs/validation/validation_html_booking_list.jpg">
+</details>
+
+<details><summary>Booking confirmation</summary>
+<img src="docs/validation/validation_html_booking_confirmation.jpg">
 </details>
 
 <details><summary>Edit Booking</summary>
@@ -589,7 +593,7 @@ The W3C Markup Validation Service
 </details>
 
 <details><summary>Confirmed</summary>
-<img src="">
+<img src="docs/validation/validation_html_booking_confirmation.jpg">
 </details>
 
 <details><summary>404</summary>
