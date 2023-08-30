@@ -712,3 +712,67 @@ PEP8 Validation Service from CodeInstitute was used.
 <details><summary>admin.py</summary>
 <img src="docs/validation/pep8_reservations_admin.jpg">
 </details>
+
+### Lighthouse
+
+Performance, best practices and SEO was tested using Lighthouse.
+
+<details><summary>Meals</summary>
+<img src="docs/validation/performance-food_menu.jpg">
+</details>
+
+<details><summary>Drinks</summary>
+<img src="docs/validation/performance-drink_menu.jpg">
+</details>
+
+<details><summary>blog1</summary>
+<img src="docs/validation/performance-blog_list.jpg">
+</details>
+
+<details><summary>blog2</summary>
+<img src="docs/validation/performance-blog_list_2.jpg">
+</details>
+
+<details><summary>Blog_detail1</summary>
+<img src="docs/validation/performance-blog_detail_1.jpg">
+</details>
+<details><summary>Blog_detail1</summary>
+<img src="docs/validation/performance-blog_detail_2.jpg">
+</details>
+
+<details><summary>Blog_details</summary>
+<img src="docs/validation/performance-blog_detail_3.jpg">
+</details>
+
+<details><summary>Blog_details</summary>
+<img src="docs/validation/performance-blog_detail_4.jpg">
+</details>
+
+<details><summary>bookings</summary>
+<img src="docs/validation/performance-bookings.jpg">
+</details>
+
+<details><summary>Enquire</summary>
+<img src="docs/validation/performance-contact_us.jpg.jpg">
+
+</details>
+
+<details><summary>login</summary>
+<img src="docs/validation/performance-login.jpg">
+</details>
+
+<details><summary>logout</summary>
+<img src="docs/validation/performance-logout.jpg">
+</details>
+
+<details><summary>book</summary>
+<img src="docs/validation/performance-reservations.jpg">
+</details>
+
+<details><summary>signup</summary>
+<img src="docs/validation/performance-signup.jpg">
+</details>
+
+<details><summary>home</summary>
+<img src="docs/validation/performance-index.jpg">
+</details>
