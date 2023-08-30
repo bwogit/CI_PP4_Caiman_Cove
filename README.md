@@ -599,3 +599,40 @@ The W3C Markup Validation Service
 <details><summary>404</summary>
 <img src="docs/validation/validation_html_404.jpg">
 </details><hr>
+
+
+### CSS Validation
+The W3C Jigsaw CSS Validation Service
+
+<details><summary>Style.css</summary>
+<img src="docs/validation/validation-css.jpg">
+</details><hr>
+
+
+
+### PEP8 Validation
+PEP8 Validation Service from CodeInstitute was used.
+- [pep8ci](https://pep8ci.herokuapp.com/)
+
+<hr><summary>food_and_drinks</summary><hr>
+
+<details><summary>admin.py</summary>
+<img src="">
+</details>
+
+
+<details><summary>views.py</summary>
+<img src="docs/validation/pep8-food_and_drinks_views.jpg">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="docs/validation/pep8-food_and_drinks_urls.jpg">
+</details>
+
+<details><summary>models.py</summary>
+<img src="docs/validation/pep8-food_and_drinks_models.jpg">
+</details>
+
+<details><summary>admin.py</summary>
+<img src="docs/validation/pep8_food_and_drinks_admin.jpg">
+</details>
