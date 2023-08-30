@@ -18,7 +18,7 @@ class Bookings(View):
 
     def get(self, request, *args, **kwargs):
         """
-        Retrieves users email and inputs into email field
+        Retrieves users email and name and inputs into email field
         """
         if request.user.is_authenticated:
             email = request.user.email
