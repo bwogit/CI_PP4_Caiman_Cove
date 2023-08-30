@@ -1,10 +1,10 @@
-# caribbeann Cove
+# Caribbeann Cove
 
 ![Am I Responsive](docs/)
 
 **Developer: BWOGIT**
 
-💻 [Visit live website](https://herokuapp.com/)  
+💻 [Visit live website](https://caiman-cove-3c81faa4aa99.herokuapp.com/)  
 (Ctrl + click to open in new tab)
 
 
@@ -78,36 +78,32 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 ### Users
 1.	As a User, I can Navigate the Site Easily and Intuitively:
 2.	As a User, I can Efficiently Use the Navbar, Footer, and Social Media Icons
-3.	As a User, I can access a dedicated "Contact Us" Page for Effective Communication
-4.	As a User, I can quickly Access Opening Hours and Essential Contact Information iemail, phone, and social media.
-5.	As a User, I can Seamlessly Choose Preferred Dates and Times for Reservation
-6.	As a User, I can asily modify my booking by selecting an alternative
-7.  As a User, I can Conveniently Delete My Reservation
-8.  As a User, I can Easily View My Booked Reservations
-9.  As a User, I can Receive Timely Alerts for Booking Actions 
-10. As a User, I can Register to Enable Reservation Creation
-11. As a User, I can Authenticate Myself to Access Reservation Functionality
-12. As a User, I can Clearly Observe My Current Login Status
-13. As a User, I can Experience Admin-controlled Booking Confirmation Modes
-14. As a User, I can Engage with Informative Blog Content
-15. As a User, I can Explore the Comprehensive Food and Drink Menu
-16. As a User, I can Ensure Future-Date Bookings
-17. As a User, I can Prevent Duplicate Bookings
+3.	As a User, I can access "Contact Us" type Page for enquiries or leave suggestions or coments
+4.	As a User, I can quickly Access Opening Hours and Essential Information email, phone, and social media.
+5.	As a User, I can Choose date/times to make reservations
+6.	As a User, I can mofify booking and select another date/time
+7.  As a User, I can Delete My Reservation
+8.  As a User, I can view past and current reservations
+9.  As a User, I can receive notofications for each event in the bookig process 
+10. As a User, I can SignUp to be able to login and therefore book
+11. As a User, I can Authenticate Myself tobe granted access to the app features
+12. As a User, I can know my loggin status
+13. As a User, I can read blogs
+14. As a User, I can discover the restaurants food offering
 
 
 
 ### Admin / Privileged User
-18.	As an Admin or Privileged User, I can Log In to Access the Site's Backend
-19.	As an Admin or Privileged User, I can Manually Add Bookings for Phone or Email Reservations 
-20. As an Admin or Privileged User, I can Accept or Reject Bookings to Prevent Double Bookings
-23. As an Admin or Privileged User, I can Search Through Bookings and Menus
-24. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
-21. As an Admin, I can Log In to Manage Food and Cocktail Menu Items
-22.	As an Admin, I can CRUD Food and Drink Items in the Database
+15.	As an Admin or Privileged User, I can Log In to Access the Site's Backend
+16.	As an Admin or Privileged User, I can CRUD bookings for Phone or Email Reservations 
+18. As an Admin or Privileged User, I can Search Through Bookings and Menus
+19. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
+20. As an Admin, I can Log In to Manage Food and Cocktail Menu Items
+21.	As an Admin, I can CRUD Food and Drink Items in the Database
 
 ### Site Owner  
-23. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
-24. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission.
+22. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
+23. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission.
 
 ### Kanban
 - GitHub Kanban was used to track all open user stories
@@ -885,7 +881,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-4. 
+4. As a User, I can quickly Access Opening Hours and Essential Contact Information iemail, phone, and social media.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -896,7 +892,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-5. 
+5. As a User, I can Seamlessly Choose Preferred Dates and Times for Reservation
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -907,7 +903,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-6. 
+6. As a User, I can easily modify my booking by selecting an alternative
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -918,7 +914,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-7. 
+7. As a User, I can Conveniently Delete My Reservation
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -929,7 +925,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-8. 
+8. As a User, I can Easily View My Booked Reservations
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -940,7 +936,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-9. 
+9. As a User, I can Receive Timely Alerts for Booking Actions 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -951,7 +947,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-10. 
+10. As a User, I can Register to Enable Reservation Creation
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -962,7 +958,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-11. 
+11. As a User, I can Authenticate Myself to Access Reservation Functionality 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -973,7 +969,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-12. 
+12. As a User, I can Clearly Observe My Current Login Status
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -984,7 +980,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-13. 
+13. As a (Admin User), I can Experience Admin-controlled Booking Confirmation Modes
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -995,7 +991,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-14. 
+14. As a (Admin User), I can Engage with Informative Blog Content 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1006,7 +1002,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-15. 
+15. As a User, I can Explore the Comprehensive Food and Drink Menu 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1017,7 +1013,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-16. 
+16. As a (site owner), I can Ensure Future-Date Bookings
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1028,7 +1024,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 </details>
 
-17. 
+17. As a (site owner), I can Prevent Duplicate Bookings
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
