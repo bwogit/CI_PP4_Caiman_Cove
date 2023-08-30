@@ -616,10 +616,6 @@ PEP8 Validation Service from CodeInstitute was used.
 
 <hr><summary>food_and_drinks</summary><hr>
 
-<details><summary>admin.py</summary>
-<img src="">
-</details>
-
 
 <details><summary>views.py</summary>
 <img src="docs/validation/pep8-food_and_drinks_views.jpg">
