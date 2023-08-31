@@ -1073,15 +1073,15 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_18c.jpg">
 </details>
 
-19. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
+19. As an Admin or Privileged User, I can Filter Bookings by Date to have al bookings of the day
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ |in Django admin select Reservations|Bring the section of all bookings|Works as expected|
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_19a.jpg">
+<img src="docs/testing/user_story_19a.jpg">
 </details>
 
 
@@ -1102,12 +1102,16 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ |as user cipp4_tst click on book|brings the booking form  |Works as expected|
+ |Create booking date, table, time slot|ssubmit|Works as expected|
+ |as user jeremie-new click on book|brings the booking form  |Works as expected|
+ |Create booking date, table, time slot|Error mesage|Works as expected|
 
 <details><summary></summary>
-<img src="">
-<img src="">
-</details>
+<img src="docs/testing/user_story_21a.jpg">
+<img src="docs/testing/user_story_21b.jpg">
+<img src="docs/testing/user_story_21c.jpg">
+<img src="docs/testing/user_story_21d.jpg">
 
 22. As a Site Owner, I Can provide a Fully Responsive Site for Optimum User Experience
 
