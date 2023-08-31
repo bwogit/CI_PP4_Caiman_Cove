@@ -1091,14 +1091,13 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |In navbar select book and select a date for yesterday |Doesn't allow you to select|Works as expected  |
+ |In navbar select book and select a date for yesterday |Doesn't allow you to select|Works as expected|
 
 <details><summary></summary>
 <img src="docs/testing/user_story_20.jpg">
-<img src="">
 </details>
 
-21. As a (site owner), I can prevent 2 or more bookings for the same date/time
+21. As a (site owner), I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time) ever
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1134,3 +1133,6 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="">
 <img src="">
 </details>
+
+
+
