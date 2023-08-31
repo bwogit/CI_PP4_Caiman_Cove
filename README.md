@@ -1109,7 +1109,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_21b.jpg">
 <img src="docs/testing/user_story_21c.jpg">
 <img src="docs/testing/user_story_21d.jpg">
-
+</details>
 
 ## Bugs
 
