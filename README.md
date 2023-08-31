@@ -1118,16 +1118,19 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Features| Test | Expected Results |
 | ---------- | --------- | ---------- |
 |Logo & Navigation| Verify that the custom logo is displayed and navigation bar functions properly|The logo is visible, and navigation accurately leads to corresponding pages|
-|Footer|Validate that the footer contains social media links, contact details, and opening hours|The footer displays social media icons, business details, and consistent information across pages|
+|Footer|Validate that the footer contains social media links, contact details, and opening hours|The footer displays social media icons, business details, and consistent information across all pages|
 |Home Page|Confirm that the home page includes a navigation bar, main body, and footer| The layout of the home page comprises these components as intended|
 |Meals Menu|Check if the food menu displays categories including starters, main courses, and desserts|The menu should categorize dishes as per the specified divisions
 |       |Verify that authorized staff members can edit the menu using the backend admin panel|Staff members should be able to manage food items as expected|
 |Beverages Menu|Check if the drink menu displays categories including non-alcoholic, cocktails, beers, and rhums||The menu should categorize drinks accurately according to their types|
 |       |Verify that authorized staff members can edit the drink menu using the backend admin panel| Staff members should be able to manage drink items as expected|
-|       |           |           |
-|       |           |           |
-|       |           |           |
-|       |           |           |
+|Login|Attempt user login using valid credentials|Successful login grants access to reservation, booking viewing, editing, and deleting functionalities|
+|Logout|Validate that users can log out securely|Users should be logged out, and a confirmation prompt should appear|
+|Sign up|Test user registration functionality|Users should be able to create accounts seamlessly|
+|Blog|Check if the blog displays posts made by authorized users|Blog posts should be visible|
+||Verify that pagination is applied to the blog page|Pagination should display 2 posts per page, keeping the layout neat|
+|blog/readmore|Click on "Read More" to expand a selected blog post|The selected blog should expand, showing the full content and images|
+| |Attempt to comment on a blog post as a registered user|Registered users should be able to post comments on the blog pending approval by administrator|
 
 ## Bugs
 
