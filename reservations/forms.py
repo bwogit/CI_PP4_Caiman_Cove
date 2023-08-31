@@ -5,6 +5,13 @@ from phonenumber_field.formfields import PhoneNumberField
 from .models import Reservation
 
 
+
+def validate_phone_number(value):
+    phone_number = to_python(value)
+    if phone_number and not phone_number.is_valid():
+        raise ValidationError('Invalid phone number.')
+
+
 class BookingForm(forms.ModelForm):
     """
     A form to gather booking information from users.
@@ -19,7 +26,7 @@ class BookingForm(forms.ModelForm):
                                datetime.now().date()}))
 
     phone = PhoneNumberField(widget=forms.TextInput(
-        attrs={'placeholder': ('+353123456789')}))
+        attrs={'placeholder': ('+569123456789')}))
 
     class Meta:
         model = Reservation

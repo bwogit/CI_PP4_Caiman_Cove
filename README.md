@@ -101,8 +101,8 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 19. As an Admin or Privileged User, I can Filter Bookings by Date to have al bookings of the day
 
 ### Site Owner  
-21. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
-22. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission.
+21. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission
+22. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
 
 ### Kanban
 - GitHub Kanban was used to track all open user stories
@@ -364,7 +364,6 @@ Responsive sign up page
 
 - HTML
 - CSS
-- Javascript
 - Python
 - Django
 
@@ -1096,7 +1095,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_20.jpg">
 </details>
 
-21. As a (site owner), I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time) ever
+21. As a (site owner), I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time combination) ever
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1111,7 +1110,42 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_21c.jpg">
 <img src="docs/testing/user_story_21d.jpg">
 
+##### Back to [top](#table-of-contents)<hr>
 
 
+## Bugs
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| css not loading| ensure DEBUG is set to False before exporting to heroku and turn it back on for testing |
+| Dropdown menu not working| wrong version of the bootstrap CDN. Once changed it worked|
+
+
+
+##### Back to [top](#table-of-contents)<hr>
+
+##### Back to [top](#table-of-contents)<hr>
+
+
+## Credits
+
+### Images
+
+Images used were sourced from Pexels.com 
+
+### Code
+
+-[Django tutorials] (https://www.geeksforgeeks.org/django-tutorial/)
+-[Github] (https://github.com/topics/booking-system/)
+
+
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Acknowledgements
+
+### Special thanks to the following:
+- Code Institute
+- Mo Shami my mentor
 
 
