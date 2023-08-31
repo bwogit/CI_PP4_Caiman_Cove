@@ -1007,11 +1007,11 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ |in the navbar click on menu|Brigs sub menu meal, beverages  | Works as expected |
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_14a.jpg">
+<img src="docs/testing/user_story_14b.jpg">
 </details>
 
 
@@ -1021,11 +1021,12 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ |Add "/admin" to home URL|Bring the Django admin loging page|Works as expected|
+ |Enter credentials specified during setup|Authetication|Works as expected|
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_15a.jpg">
+<img src="docs/testing/user_story_15b.jpg">
 </details>
 
 
