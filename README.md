@@ -842,9 +842,10 @@ Performance, best practices and SEO was tested using Lighthouse.
 ## Testing
 
 
-### Manual testing
 
-### User
+### User story Manual testing
+
+#### User
 
 1. As a User, I can Navigate the Site Easily and Intuitively
 
@@ -1013,7 +1014,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 
-### Admin
+#### Admin
 
 15. As an Admin or Privileged User, I can Log In to Access the Site's Backend
 
@@ -1110,6 +1111,23 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_21c.jpg">
 <img src="docs/testing/user_story_21d.jpg">
 </details>
+
+
+### Features Manual testing
+
+| Features| Test | Expected Results |
+| ---------- | --------- | ---------- |
+|Logo & Navigation| Verify that the custom logo is displayed and navigation bar functions properly|The logo is visible, and navigation accurately leads to corresponding pages|
+|Footer|Validate that the footer contains social media links, contact details, and opening hours|The footer displays social media icons, business details, and consistent information across pages|
+|Home Page|Confirm that the home page includes a navigation bar, main body, and footer| The layout of the home page comprises these components as intended|
+|Meals Menu|Check if the food menu displays categories including starters, main courses, and desserts|The menu should categorize dishes as per the specified divisions
+|       |Verify that authorized staff members can edit the menu using the backend admin panel|Staff members should be able to manage food items as expected|
+|Beverages Menu|Check if the drink menu displays categories including non-alcoholic, cocktails, beers, and rhums||The menu should categorize drinks accurately according to their types|
+|       |Verify that authorized staff members can edit the drink menu using the backend admin panel| Staff members should be able to manage drink items as expected|
+|       |           |           |
+|       |           |           |
+|       |           |           |
+|       |           |           |
 
 ## Bugs
 
