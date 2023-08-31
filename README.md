@@ -1143,6 +1143,6 @@ Images used were sourced from Pexels.com
 ### Special thanks to the following:
 - Code Institute
 - Mo Shami my mentor
-- myself for the perseverance
+- Myself for the perseverance
 
 
