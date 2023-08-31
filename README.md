@@ -929,7 +929,6 @@ Performance, best practices and SEO was tested using Lighthouse.
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
  | click on Login in the navbar |the navbar switches to logged in mode | Works as expected |
- | click on Login in the navbar click on sign in if not account | confirmation message | Works as expected  |
  | Click Bookings in the navbar | Booking list will display all bookings made| Works as expected |
 
 <details><summary></summary>
@@ -952,7 +951,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ | click on Login in the navbar click on sign Un  | Bring the sign Up form | Works as expected  |
 
 <details><summary></summary>
 <img src="">
