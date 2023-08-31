@@ -853,9 +853,16 @@ Performance, best practices and SEO was tested using Lighthouse.
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | Click on the links in the navigation bar or log | all pages will load| Works as expected |
+|Site is design to be self explanatory|all links explain what to do|work as expected|
+
 
 <details><summary></summary>
-<img src="docs/testing/user_story_1.jpg">
+<img src="docs/testing/user_story_1a.jpg">
+<img src="docs/testing/user_story_1b.jpg">
+<img src="docs/testing/user_story_1c.jpg">
+<img src="docs/testing/user_story_1d.jpg">
+<img src="docs/testing/user_story_1e.jpg">
+<img src="docs/testing/user_story_1f.jpg">
 </details>
 
 2. As a User, I can intuitively Use the Navbar, Footer, and Social Media Icons
@@ -965,7 +972,9 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ | Click on book |bring the Login required warning  | works as expected |
+ | click on login |brings the login form  | Works as expected |
+ |fill and submit| comfrimation message|works as expected|
 
 <details><summary></summary>
 <img src="">
