@@ -76,30 +76,29 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 ## User Stories
 
 ### Users
-1.	As a User, I can Navigate the Site Easily and Intuitively:
-2.	As a User, I can intuitively Use the Navbar, Footer, and Social Media Icons
-3.	As a User, I can access a Page for enquiries or leave suggestions or coments
-4.	As a User, I can quickly Access Opening Hours and Essential Information email, phone, and social media.
-5.	As a User, I can Choose date/times to make reservations
-6.	As a User, I can mofify booking and select another date/time
-7.  As a User, I can Delete My Reservation
-8.  As a User, I can view past and current reservations
-9.  As a User, I can receive notofications for each event in the bookig process 
-10. As a User, I can SignUp to be able to login and therefore book
-11. As a User, I can Authenticate Myself tobe granted access to the app features
-12. As a User, I can know my loggin status
+1.	1. As a User, I can Navigate the Site Easily and Intuitively
+2. As a User, I can intuitively Use the Navbar, Footer, and Social Media Icons
+3. As a User, I can access a Page for enquiries or leave suggestions or comments
+4. As a User, I can quickly Access Opening Hours and Essential Information email, phone, and social media.
+5. As a User, I can Choose date/times to make reservations
+6. As a User, I can modify booking and select another date/time
+7. As a User, I can Delete My Reservation
+8. As a User, I can view past and current valid reservations
+9. As a User, I can receive notifications for each event in the booking process
+10. As a User, I can SignUp to login
+11. As a User, I can Authenticate to be granted access to the app features
+12. As a User, I can Clearly Observe My Current Login Status
 13. As a User, I can read blogs
-14. As a User, I can discover the restaurants food offering
+14. As a User, I can Explore the Comprehensive Food and Drink offering
 
 
 
 ### Admin / Privileged User
-15.	As an Admin or Privileged User, I can Log In to Access the Site's Backend
-16.	As an Admin or Privileged User, I can CRUD bookings for Phone or Email Reservations 
-17. As an Admin or Privileged User, I can filter Bookings and Menus
-18. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
-19. As an Admin, I can Log In to Manage Food and Cocktail Menu Items
-20.	As an Admin, I can CRUD Food and Drink Items in the Database
+15. As an Admin or Privileged User, I can Log In to Access the Site's Backend
+16. As an Admin or Privileged User, I can CRUD bookings for Phone or Email Reservations
+17.  As an Admin or Privileged User, I can CRUD menus items
+18. As a (Admin User), I can read customers opinions/reclamation/suggestions
+19. As an Admin or Privileged User, I can Filter Bookings by Date to have al bookings of the day
 
 ### Site Owner  
 21. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
@@ -1112,27 +1111,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_21c.jpg">
 <img src="docs/testing/user_story_21d.jpg">
 
-22. As a Site Owner, I Can provide a Fully Responsive Site for Optimum User Experience
 
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
-
-23. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
- |  |  |  |
-
-<details><summary></summary>
-<img src="">
-<img src="">
-</details>
 
 
 
