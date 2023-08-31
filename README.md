@@ -1027,6 +1027,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <details><summary></summary>
 <img src="docs/testing/user_story_15a.jpg">
 <img src="docs/testing/user_story_15b.jpg">
+<img src="docs/testing/user_story_15c.jpg">
 </details>
 
 
@@ -1034,23 +1035,28 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ |In Django admin page select Reservations  |Brings list of reservations  |works as expected|
+ |Select one resernation |brings the reservation details |works as expected |
+ |Change reservation | VAlues of field can be changed| Works as expected|
+  
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_16a.jpg">
+<img src="docs/testing/user_story_16b.jpg">
 </details>
 
 
-17.  As an Admin or Privileged User, I can CRUD menus
+17.  As an Admin or Privileged User, I can CRUD menus items
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ |In Django admin page select the meny of choice|Brings list of reservations  |works as expected|
+ |Select one resernation |brings the reservation details |works as expected |
+ |Change reservation | VAlues of field can be changed| Works as expected|
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_17a.jpg">
+<img src="docs/testing/user_story_17b.jpg">
 </details>
 
 
@@ -1058,11 +1064,13 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ |in Django Admin click on Comments  |brings teh list of comments| Works as expected  |
+ |select the one comment to change|brings the details of the comment|works as expected"
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_18a.jpg">
+<img src="docs/testing/user_story_18b.jpg">
+<img src="docs/testing/user_story_18c.jpg">
 </details>
 
 19. As an Admin or Privileged User, I can Filter Bookings by Date for Specific Day Insight
