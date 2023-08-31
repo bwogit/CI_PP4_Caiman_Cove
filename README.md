@@ -972,35 +972,35 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- | Click on book |bring the Login required warning  | works as expected |
- | click on login |brings the login form  | Works as expected |
- |fill and submit| comfrimation message|works as expected|
+ |Click on book |bring the Login required warning  | works as expected |
+ |click on login |brings the login form  | Works as expected |
+ |Fill and submit| comfrimation message|works as expected|
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_11a.jpg">
+<img src="docs/testing/user_story_11b.jpg">
+<img src="docs/testing/user_story_11c.jpg">
 </details>
 
 12. As a User, I can Clearly Observe My Current Login Status
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
-
+|Scroll up to the navbar bookibng link missing  |default mode lot logged in| Works as expected  |
+|bookings option is available  |Logged in mode activated  |works as expected  |
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_12.jpg">
 </details>
 
 13. As a User, I can read blogs
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ | in the nav bar click on blogs| Available blogs are displayed  |Works as expected  |
+ |click on Read More |Expends the blog | Works as expected |
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_13.jpg">
 </details>
 
 14. As a User, I can Explore the Comprehensive Food and Drink offering
