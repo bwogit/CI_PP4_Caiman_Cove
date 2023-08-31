@@ -1091,10 +1091,10 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ |In navbar select book and select a date for yesterday |Doesn't allow you to select|Works as expected  |
 
 <details><summary></summary>
-<img src="">
+<img src="docs/testing/user_story_20.jpg">
 <img src="">
 </details>
 
