@@ -1124,8 +1124,6 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 ##### Back to [top](#table-of-contents)<hr>
 
-##### Back to [top](#table-of-contents)<hr>
-
 
 ## Credits
 
@@ -1137,6 +1135,9 @@ Images used were sourced from Pexels.com
 
 -[Django tutorials] (https://www.geeksforgeeks.org/django-tutorial/)
 -[Github] (https://github.com/topics/booking-system/)
+-[Hotel Booking] (https://github.com/topics/hotel-booking?l=python)
+-[Code Institute Walkthrough] (https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/dc049b343a9b474f8d75822c5fda1582/121ef050096f4546a1c74327a9113ea6/?child=first)
+
 
 
 
