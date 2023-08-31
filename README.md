@@ -908,7 +908,8 @@ Performance, best practices and SEO was tested using Lighthouse.
  | select a booking Bookings then click on edit | edit previously saved booking  | Works as expected |
 
 <details><summary></summary>
-<img src="docs/testing/user_story_6.jpg">
+<img src="docs/testing/user_story_6a.jpg">
+<img src="docs/testing/user_story_6b.jpg">
 </details>
 
 7. As a User, I can Delete My Reservation
@@ -923,26 +924,28 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_7b.jpg">
 </details>
 
-8. As a User, I can view past and current reservations
+8. As a User, I can view past and current valid reservations
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ | click on Login in the navbar |the navbar switches to logged in mode | Works as expected |
+ | click on Login in the navbar click on sign in if not account | confirmation message | Works as expected  |
+ | Click Bookings in the navbar | Booking list will display all bookings made| Works as expected |
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_8.jpg">
 </details>
 
 9. As a User, I can receive nototications for each event in the bookig process 
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  |  |  |
+ | From booking list delete a booking | a notification message is displayed  |works as expected|
+ | Click on logout in the navbar  |a notification message is displayed |works as expected|
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_9a.jpg">
+<img src="docs/testing/user_story_9b.jpg">
 </details>
 
 10. As a User, I can SignUp to login
