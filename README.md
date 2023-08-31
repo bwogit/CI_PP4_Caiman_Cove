@@ -292,13 +292,13 @@ Home page responsive wireframes
 <img src="docs/wireframes/wireframes_home.jpg">
 </details>
 
-#### meal/drink menu page
+#### Meal/Beverages menu page
 Menus responsive wireframes
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_menu.jpg">
 </details>
 
-#### book a table page
+#### Book a table page
 Book a table through this responsive and high quality app
 <details><summary></summary>
 <img src="docs/wireframes/wireframes_book.jpg">
@@ -313,7 +313,7 @@ View bookings
 #### Read the blogs page
 Read the blogs from a variaty of interesting topics page
 <details><summary></summary>
-<img src="docs/wireframes/wireframes_blog.jpg">
+<img src="docs/wireframes/wireframes_Blog.jpg">
 </details>
 
 #### Contact Us page
@@ -382,6 +382,7 @@ Responsive sign up page
 - [Bootstrap v5.2](https://getbootstrap.com/)
 - [Cloudinary](https://cloudinary.com/)
 - [Favicon.io](https://favicon.io)
+- [Dbdiagram.io](https://dbdiagram.io/)
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
 - [Font Awesome](https://fontawesome.com/)
 - [Git](https://git-scm.com/)
@@ -394,7 +395,6 @@ Responsive sign up page
 - Validation:
   - [WC3 Validator](https://validator.w3.org/)
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
-  - [JShint](https://jshint.com/)
   - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
   - [Wave Validator](https://wave.webaim.org/)
@@ -409,6 +409,8 @@ Responsive sign up page
 - Indicates login/logout in status
 - displayed on all pages (inc. 404)
 
+- User stories covered: 2, 12, 15
+
 <details><summary>See feature images</summary>
 
 ![Footer](docs/feature/feature_navbar.jpg)
@@ -418,6 +420,8 @@ Responsive sign up page
 - Includes social media links and all details of a modern business (email, telephone address, and opening hours)
 - consistently visible on every page
 
+User stories covered: 4, 12, 15
+
 <details><summary>See feature images</summary>
 
 ![Footer](docs/feature/feature_footer.jpg)
@@ -425,6 +429,8 @@ Responsive sign up page
 
 ### Home page
 - Home page includes nav bar, main body and a footer
+
+User stories covered: 1, 4, 12, 15
 
 <details><summary>See feature images</summary>
 
@@ -438,8 +444,8 @@ Responsive sign up page
 - Authorized staff members can edit the menu via the backend admin panel.
 - uthorized staff members can perform actions such as creating, updating, and removing food items using the admin panel.
   
+ - User stories covered: 14, 15  
 <details><summary>See feature images</summary>
-
 ![Food Menu](docs/feature/feature_meals_menu.jpg)
 </details>
 
@@ -449,6 +455,8 @@ Responsive sign up page
 - The menu is categorized into non alcoholic, cocktails, beers and ruhums
 - Authorized staff members can edit the menu via the backend admin panel.
 - uthorized staff members can perform actions such as creating, updating, and removing drink items using the admin panel.
+
+ - User stories covered: 14, 15
 <details><summary>See feature images</summary>
 
 ![Drinks Menu](docs/feature/feature_drinks_menu.jpg)
@@ -457,6 +465,8 @@ Responsive sign up page
 ### Login
 - User is required to login to reserve a table, view bookings, 
 edit and delete bookings and comment a blog.
+
+- User Stories Associated: 11, 12, 15, 18
 
 <details><summary>See feature images</summary>
 
@@ -487,6 +497,8 @@ edit and delete bookings and comment a blog.
 - The blog displays each post made by authorised user
 - The main blog list features exerpts and Pictures
 - Paginations is used to display 2 posts per page
+
+- User stories covered: 13,15
   
 <details><summary>See feature images</summary>
 
@@ -498,7 +510,8 @@ edit and delete bookings and comment a blog.
 - Click on read more to expand the selection you have chosen
 - Registerd user can comment on the blog
 - Staff can approve comments via the admin panel on the backend
-  
+
+- User stories covered: 13,15 
   
 <details><summary>See feature images</summary>
 
@@ -510,6 +523,8 @@ edit and delete bookings and comment a blog.
 - Comments made are set to pending approval status
 - Only registered users can comment on a blog post
 - Staff are the moderators
+
+- User stories covered: 13,15 
   
 <details><summary>See feature images</summary>
 
@@ -529,6 +544,8 @@ edit and delete bookings and comment a blog.
 ### Contact Us
 - Registered users can DM staff via the message box
 - Contact info such as,name, email, and address is displayed
+
+- User Stories Covered: 3, 18
   
 <details><summary>See feature images</summary>
 
