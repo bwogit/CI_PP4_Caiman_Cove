@@ -1131,6 +1131,10 @@ Performance, best practices and SEO was tested using Lighthouse.
 ||Verify that pagination is applied to the blog page|Pagination should display 2 posts per page, keeping the layout neat|
 |blog/readmore|Click on "Read More" to expand a selected blog post|The selected blog should expand, showing the full content and images|
 | |Attempt to comment on a blog post as a registered user|Registered users should be able to post comments on the blog pending approval by administrator|
+|Comments|Test the comment functionality|Comments should be set to pending approval status, awaiting admin confirmation|
+|Pagination| Verify that pagination is properly implemented on the blog page|Pagination should divide blog posts into manageable segments for display|
+|Contact Us|Check if registered users can use the message box to contact staff|Registered users should be able to send messages via the contact form|
+
 
 ## Bugs
 
