@@ -1120,8 +1120,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 
 
-##### Back to [top](#table-of-contents)<hr>
-
+### test
 
 ## Credits
 
