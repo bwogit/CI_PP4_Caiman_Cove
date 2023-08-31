@@ -110,18 +110,18 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 
 <details><summary>Epics</summary>
 <img src="docs/user story/epic.jpg">
-<img src="docs/user story/epi1.jpg">
-<img src="docs/user story/epi2.jpg">
-<img src="docs/user story/epi3.jpg">
+<img src="docs/user story/epic1.jpg">
+<img src="docs/user story/epic2.jpg">
+<img src="docs/user story/epic3.jpg">
 <img src="docs/user story/epic4.jpg">
 </details>
 
 <details><summary>User Stories</summary>
-<img src="docs/user story/user_stories.jpg.jpg">
+<img src="docs/user story/user_stories.jpg">
 </details>
 
 <details><summary>kanban</summary>
-<img src="docs/user story/Kanban.jpg.jpg">
+<img src="docs/user story/Kanban.jpg">
 </details>
 
 ##### Back to [top](#table-of-contents)<hr>
