@@ -1,6 +1,6 @@
 # Caiman Cove
 
-![Am I Responsive](docs/)
+![Am I Responsive](docs/amiresponsive.jpg)
 
 **Developer: BWOGIT**
 
@@ -76,7 +76,7 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 ## User Stories
 
 ### Users
-1.	1. As a User, I can Navigate the Site Easily and Intuitively
+1. As a User, I can Navigate the Site Easily and Intuitively
 2. As a User, I can intuitively Use the Navbar, Footer, and Social Media Icons
 3. As a User, I can access a Page for enquiries or leave suggestions or comments
 4. As a User, I can quickly Access Opening Hours and Essential Information email, phone, and social media.
@@ -109,12 +109,19 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 - Backlog, In Progress, Done headings were used in the kanban
 
 <details><summary>Epics</summary>
+<img src="docs/user story/epic.jpg">
+<img src="docs/user story/epi1.jpg">
+<img src="docs/user story/epi2.jpg">
+<img src="docs/user story/epi3.jpg">
+<img src="docs/user story/epic4.jpg">
 </details>
 
 <details><summary>User Stories</summary>
+<img src="docs/user story/user_stories.jpg.jpg">
 </details>
 
 <details><summary>kanban</summary>
+<img src="docs/user story/Kanban.jpg.jpg">
 </details>
 
 ##### Back to [top](#table-of-contents)<hr>
@@ -1142,6 +1149,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | ------- | ------- |
 | css not loading| ensure DEBUG is set to False before exporting to heroku and turn it back on for testing |
 | Dropdown menu not working| wrong version of the bootstrap CDN. Once changed it worked|
+
 
 
 
