@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = False 
 
 ALLOWED_HOSTS = ['8000-bwogit-cipp4caimancove-sq9vicfqokt.ws-eu102.gitpod.io', 'caiman_cove.herokuapp.com', 'localhost', 
                 'caiman-cove-3c81faa4aa99.herokuapp.com',
