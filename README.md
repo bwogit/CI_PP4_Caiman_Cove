@@ -951,11 +951,14 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- | click on Login in the navbar click on sign Un  | Bring the sign Up form | Works as expected  |
+ | click on Login in the navbar  | Bring the sign Up option | Works as expected  |
+ | click on sign up  | Bring the sign Up form | Works as expected  |
+ | Fill out the form and submit  | Confirmation message | Works as expected  |
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user_story_10a.jpg">
+<img src="docs/testing/user_story_10b.jpg">
+<img src="docs/testing/user_story_10c.jpg">
 </details>
 
 11. As a User, I can Authenticate to be granted access to the app features
