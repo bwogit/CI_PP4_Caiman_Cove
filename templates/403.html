@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container d-flex flex-column justify-content-center align-items-center mt-5">
+    <div class="text-center">
+        <h1 class="mb-3">403</h1>
+        <h2 class="mb-3">PAGE NOT FOUND</h2>
+        <p>Oops! It seems like you've wandered off the culinary path.</p>
+        <p>Indulge in our exquisite Caribbean cuisine while we search for the missing flavor.</p>
+        <a href="{% url 'home' %}" class="btn btn-primary mt-3">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
