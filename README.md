@@ -1255,6 +1255,7 @@ The following devices were used to test my site:
 
 ## Bugs
 
+
 | **Bug** | **Fix** |
 | ------- | ------- |
 | css not loading| ensure DEBUG is set to False before exporting to heroku and turn it back on for testing |
@@ -1266,7 +1267,6 @@ The following devices were used to test my site:
 |"Edit Booking" form did not have the same width as the "Reservation" form, making it look inconsistent|Added container to center the form|
 |Special JavaScript effects were not working as intended| Added the right CDN|
 | username not autopopulated in Booking form|Modified the Bookings view to fetch the user's name from the database using the request.user object|
-
 
 
 
@@ -1511,10 +1511,13 @@ Images used were sourced from Pexels.com
 
 ### Code
 
--[Django tutorials] (https://www.geeksforgeeks.org/django-tutorial/)
--[Github] (https://github.com/topics/booking-system/)
--[Hotel Booking] (https://github.com/topics/hotel-booking?l=python)
--[stackoverflow] (https://stackoverflow.com/)
+- [Django tutorials] (https://www.geeksforgeeks.org/django-tutorial/)
+- [Github] (https://github.com/topics/booking-system/)
+- [Hotel Booking] (https://github.com/topics/hotel-booking?l=python)
+- [stackoverflow] (https://stackoverflow.com/)
+- [Real Python Tutorials](https://realpython.com/)
+- [Django Packages](https://djangopackages.org/)
+- [devgenius](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
 
 
 ##### Back to [top](#table-of-contents)<hr>
@@ -1526,7 +1529,7 @@ Images used were sourced from Pexels.com
 - God, for putting on my path people who want to see me succeed and want me to be happy
 - Myself for this has been a sheer test of endurance and perseverance not to mention that nowhere it is written how tedious the PP4 is. 
 - Code Institute
-- Mo Shami my mentor
+- Last but NOT least Mo Shami my mentor
 
 
 
