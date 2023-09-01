@@ -1259,7 +1259,11 @@ The following devices were used to test my site:
 | css not loading| ensure DEBUG is set to False before exporting to heroku and turn it back on for testing |
 | Dropdown menu not working| wrong version of the bootstrap CDN. Once changed it worked|
 | the nav bar was too clogged| removed the SignUp link which is available when you login|
-model
+model|
+|field table_number did not make sense| Changed it to table_description|
+| sign in button was not centered| wrapped it in a div with class text-centered|
+
+
 
 
 ### Heroku Deployment
