@@ -1338,7 +1338,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 1. Login with your Github account and authorise (authorisation required firsttime only)
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/Cloudinary_1.jpg">
 </details>
 
 2. On the main page select the API Environment
@@ -1346,7 +1346,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - The "CLOUDINARY_URL" value will be required later
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/Cloudinary_2.jpg">
 </details>
 
 
