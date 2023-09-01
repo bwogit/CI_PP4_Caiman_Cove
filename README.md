@@ -224,7 +224,7 @@ The Table Model contains the following fields:
 - table_description
 
 <details><summary>Show model</summary>
-<img src="docs/model_Table.jpg">
+<img src="docs/model_table.jpg">
 </details>
 
 ##### Reservation Model
@@ -296,79 +296,79 @@ The wireframes were created using Balsamiq
 #### home page
 Home page responsive wireframes
 
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_home.jpg">
 </details>
 
 #### Meal/Beverages menu page
 Menus responsive wireframes
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_menu.jpg">
 </details>
 
 #### Book a table page
 Book a table through this responsive and high quality app
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_book.jpg">
 </details>
 
 #### View past and future bookings page (data gathering)
 View bookings
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_bookings.jpg">
 </details>
 
 #### Read the blogs page
 Read the blogs from a variaty of interesting topics page
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_Blog.jpg">
 </details>
 
 #### Contact Us page
 Contact us and we will get backt to you
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_contact_us.jpg">
 </details>
 
 #### Logout page
 You can now log ou in a safe manner. 
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_logout.jpg">
 </details>
 
 #### Login required (booking)
 You have to log in before you book a table
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_book_login_required.jpg">
 </details>
 
 #### Blog (login required)
 Blog log in required
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_Blog_loggedIn.jpg">
 </details>
 
 #### Blog Read more 
 You have found the topic that you want to delve into.
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_Blog_read_more.jpg">
 </details>
 
 #### Contact Us
 Contact Us (loging Required)
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_Enquire_login_required.jpg">
 </details>
 
 #### Log IN
 Responsive LogIn
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_login.jpg">
 </details>
 
 #### Sign up
 Responsive sign up page
-<details><summary></summary>
+<details><summary>Show Wireaframes</summary>
 <img src="docs/wireframes/wireframes_SignUp.jpg">
 </details>
 
