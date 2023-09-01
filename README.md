@@ -99,10 +99,14 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 17.  As an Admin or Privileged User, I can CRUD menus items
 18. As a (Admin User), I can read customers opinions/reclamation/suggestions
 19. As an Admin or Privileged User, I can Filter Bookings by Date to have al bookings of the day
+20. As an Admin or Privileged User, I can disable a users' account
+21. As an admin or Priviledged user i can grant or deny a user's comment on blog
 
 ### Site Owner  
-20. As a site owner, I can ensure reservations are never for a time  prior to the booking creation time
-21. As a site owner, I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time) ever
+22. As a site owner, I can ensure reservations are never for a time  prior to the booking creation time
+23. As a site owner, I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time) ever
+24. As a site owner, I  must ensure that the users can navigate intuitively
+
 
 ### Kanban
 - GitHub Kanban was used to track all open user stories
