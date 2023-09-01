@@ -1277,7 +1277,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 1. Browse to elephatsql and click on "Get a managed database today”
 
 <details><summary></summary>
-<img src="">
+<img src="do">
 </details>
 
 2. Select “Try now for FREE” in the TINY TURTLE database plan
@@ -1350,7 +1350,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 </details>
 
 
-### Heroku deployment
+### Heroku Configuration
 
 [Heroku](https://id.heroku.com/login) (Ctrl + click)
 
@@ -1391,10 +1391,84 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
 - os.environ["CLOUDINARY_URL"] = "cloudinary://** (seen on step 2 of Cloudinary section)
 
-
+<details><summary></summary>
 <img src="">
 <img src="">
 </details>
+
+6. Edit the settings.py 
+
+- Replace links to the SECRET_KEY variable on Heroku
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+- Comment out old Databse secion and add new
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+- Add Cloudinary Libraries to Installed apps
+
+<details><summary></summary>
+<img src="">
+</details>
+
+- Tell Django to use Cloudinary to store media and static files
+
+<details><summary></summary>
+<img src="">
+</details>
+
+- Add Heroku Hostname to ALLOWED_HOSTS
+
+<details><summary></summary>
+<img src="">
+</details>
+
+
+7. create on the root Procfile file
+
+- Add code "web: gunicorn PROJ_NAME.wsgi"
+
+<details><summary></summary>
+<img src="">
+</details>
+
+8. In Heroku
+
+- Add Cloudinary URL to Heroku var
+- Add SECRET_KEY var
+- remove the var DISABLE_COLLECTSTATIC=1
+
+
+<details><summary></summary>
+<img src="">
+</details>
+
+
+### Heroku deployment
+
+- Run "python3 manage.py showmigrations" to check the status of the migrations
+- Run "python3 manage.py migrate" to migrate the database
+
+- Connect the app to GitHub, and enable automatic deploys from main
+
+<details><summary></summary>
+<img src="">
+</details>
+
+- Turn Debug mode off
+
+
+
+
+
+
 
 
 ### Attach the database
