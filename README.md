@@ -1427,6 +1427,7 @@ Add Cloudinary Libraries to Installed apps
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6c.jpg">
+</details>
 
 Tell Django to use Cloudinary to store media and static files
 
@@ -1455,7 +1456,7 @@ Add Cloudinary URL to Heroku var
 Add SECRET_KEY var
 remove the var DISABLE_COLLECTSTATIC=1
 
-<details><summary></summary>
+<details><summary>Shoe Document</summary>
 <img src="docs/deploy/Heroku_deployment_8.jpg">
 </details>
 
