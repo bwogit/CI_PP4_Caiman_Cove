@@ -1256,10 +1256,33 @@ The following devices were used to test my site:
 | css not loading| ensure DEBUG is set to False before exporting to heroku and turn it back on for testing |
 | Dropdown menu not working| wrong version of the bootstrap CDN. Once changed it worked|
 
+### Heroku Deployment
 
 
 
-### test
+[Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
+
+This application has been deployed from Github using Heroku. Here's how:
+
+Note in the inital Django deployment the Database and Cloudinary Libraries were installed with
+
+ - pip3 install dj_database_url==0.5.0 psycopg2
+-  pip3 install dj3-cloudinary-storage
+-  pip3 install urllib3==1.26.15
+
+### Create External database
+
+
+### Create Heroku App
+
+
+### Attach the database
+
+
+
+
+
+
 
 ## Credits
 
