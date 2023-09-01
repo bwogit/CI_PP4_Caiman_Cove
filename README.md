@@ -101,8 +101,8 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 19. As an Admin or Privileged User, I can Filter Bookings by Date to have al bookings of the day
 
 ### Site Owner  
-21. As a Site Owner, I Can Implement Data Validation to Ensure Accurate Submission
-22. As a Site Owner, I Can Offer a Fully Responsive Site for Optimal User Experience
+20. As a site owner, I can ensure reservations are never for a time  prior to the booking creation time
+21. As a site owner, I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time) ever
 
 ### Kanban
 - GitHub Kanban was used to track all open user stories
