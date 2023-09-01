@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import PasswordChangeForm
+from django.shortcuts import render, redirect
+from django.contrib import messages
 
 
 def home(request):
@@ -8,5 +12,18 @@ def home(request):
     return render(request, 'home/index.html')
 
 
-# def custom_404_view(request, exception):
-#     return render(request, '404.html', status=404)
+@login_required
+def password_change_view(request):
+    """
+    A view for changing the password, accessible only for logged-in users
+    """
+    if request.method == 'POST':
+        form = PasswordChangeForm(request.user, request.POST)
+        if form.is_valid():
+            user = form.save()
+            messages.success(request,
+                             'Your password was successfully updated!')
+            return redirect('profile')  # Redirect to the user's profile page
+    else:
+        form = PasswordChangeForm(request.user)
+    return render(request, 'password_change.html', {'form': form})
