@@ -1272,8 +1272,93 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 ### Create External database
 
+[Official Page](https://https://www.elephantsql.com/) (Ctrl + click)
+
+1. Browse to elephatsql and click on "Get a managed database today”
+
+<details><summary></summary>
+<img src="">
+</details>
+
+2. Select “Try now for FREE” in the TINY TURTLE database plan
+
+<details><summary></summary>
+<img src="">
+</details>
+
+3. Select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account
+
+<details><summary></summary>
+<img src="">
+</details>
+
+4. Create new team 
+- Add a team name (your own name is fine)
+- Read and agree to the Terms of Service
+- Select Yes for GDPR
+- Provide your email address
+- Click “Create Team”
+
+5. On the main page select Create New Instance
+
+<details><summary></summary>
+<img src="">
+</details>
+
+6.  Select a plan name such as "caiman_cove" and click select region
+
+<details><summary></summary>
+<img src="">
+</details>
+
+7. select West Europe
+
+<details><summary></summary>
+<img src="">
+</details>
+
+
+8. Create instance
+
+<details><summary></summary>
+<img src="">
+</details>
+
+9. On the main page make note of the URL as it will be required later
+
+<details><summary></summary>
+<img src="">
+</details>
+
+
+### Create a Cloudinary instance
+
+[Cloudinary](https://cloudinary.com/login) (Ctrl + click)
+
+1. Login with your Github account and authorise (authorisation required firsttime only)
+
+<details><summary></summary>
+<img src="">
+</details>
+
+2. On the main page select the API Environment
+
+- The "CLOUDINARY_URL" value will be required later
+
+<details><summary></summary>
+<img src="">
+</details>
+
 
 ### Create Heroku App
+
+[Heroku](https://id.heroku.com/login) (Ctrl + click)
+
+1. sign Up
+
+<details><summary></summary>
+<img src="">
+</details>
 
 
 ### Attach the database
