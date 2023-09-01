@@ -1120,8 +1120,8 @@ Performance, best practices and SEO was tested using Lighthouse.
  |select user|used dropdown action|works as expected|
 
 <details><summary></summary>
-<img src="docs/testing/user_story_19a.jpg">
-<img src="docs/testing/user_story_19a.jpg">
+<img src="docs/testing/user_story_delete.jpg">
+<img src="docs/testing/user_story_delete_b.jpg">
 </details>
 
 21. As an admin or Priviledged user i can grant or deny or remove user's comment on blog
@@ -1132,8 +1132,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |select comment and use dropdown button delete|Deletes comment|works as expected|
 
 <details><summary></summary>
-<img src="docs/testing/user_story_19a.jpg">
-<img src="docs/testing/user_story_19a.jpg">
+<img src="docs/testing/user_story_CRUD_comments.jpg">
 </details>
 
 22. As an admin I can grant or revoke priviledged status
@@ -1145,8 +1144,8 @@ Performance, best practices and SEO was tested using Lighthouse.
  |Change permisions|select the type of permission| works as expected|
 
 <details><summary></summary>
-<img src="docs/testing/user_story_19a.jpg">
-<img src="docs/testing/user_story_19a.jpg">
+<img src="docs/testing/user_story_privileged1.jpg">
+<img src="docs/testing/user_story_privileged2.jpg">
 </details>
 
 #### Site Owner
@@ -1177,7 +1176,20 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_21d.jpg">
 </details>
 
+24. As site owner  I can provide an easy to navigate and intuitive website
 
+| Click on the links in the navigation bar or log | all pages will load| Works as expected |
+|Site is design to be self explanatory|all links explain what to do|work as expected|
+
+
+<details><summary></summary>
+<img src="docs/testing/user_story_1a.jpg">
+<img src="docs/testing/user_story_1b.jpg">
+<img src="docs/testing/user_story_1c.jpg">
+<img src="docs/testing/user_story_1d.jpg">
+<img src="docs/testing/user_story_1e.jpg">
+<img src="docs/testing/user_story_1f.jpg">
+</details>
 
 
 ### Features Manual testing
