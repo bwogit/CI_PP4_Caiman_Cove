@@ -1220,6 +1220,34 @@ Performance, best practices and SEO was tested using Lighthouse.
 |Pagination| Verify that pagination is properly implemented on the blog page|Pagination should divide blog posts into manageable segments for display|
 |Contact Us|Check if registered users can use the message box to contact staff|Registered users should be able to send messages via the contact form|
 
+### Device Testing & Browser compatibility
+
+
+I used BrowserStack to test on real devices[BrowserStack](https://caiman-cove-3c81faa4aa99.herokuapp.com/)  
+
+The following devices were used to test my site:
+
+<details><summary>Xiomi Redmi Note 12 Pro</summary>
+<img src="docs/testing/Xiomi Remi Note 12 pro.jpg">
+</details>
+
+<details><summary>Samsung Galaxy S22 Ultra</summary>
+<img src="docs/testing/Galazy S22 Ultra.jpg">
+</details>
+
+<details><summary>Brave</summary>
+<img src="docs/testing/brave.jpg">
+</details>
+
+<details><summary>Google Chrome</summary>
+<img src="docs/testing/Chrome.jpg">
+</details>
+
+<details><summary>Safari</summary>
+<img src="docs/testing/safari.JPG">
+</details>
+
+
 
 ## Bugs
 
