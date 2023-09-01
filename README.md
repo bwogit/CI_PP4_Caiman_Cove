@@ -1357,13 +1357,13 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 1. sign Up
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/Heroku_deployment_1.jpg">
 </details>
 
 2. Fill out the registration form with your name, surname, email, role region and select I.m not a robot
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/Heroku_deployment_2.jpg">
 </details>
 
 3. Create the Heroku app
@@ -1371,8 +1371,8 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
  - On the main dashboard page click on new and type the name of your project i.e "caiman_cove"
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/deploy/Heroku_deployment_3.jpg">
+<img src="docs/deploy/Heroku_deployment_3a.jpg">
 </details>
 
 4. Attach the database to Heroku
@@ -1381,8 +1381,9 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - add a config var DATABASE_URL (seen in step 9 above)
 
 <details><summary></summary>
-<img src="">
-<img src="">
+</details>
+<img src="docs/deploy/Heroku_deployment_4.jpg">
+<img src="docs/deploy/Heroku_deployment_5.jpg">
 </details>
 
 5. Create new env.py on root directory with the correct values
@@ -1392,8 +1393,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - os.environ["CLOUDINARY_URL"] = "cloudinary://** (seen on step 2 of Cloudinary section)
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/deploy/env_1.jpg.jpg">
 </details>
 
 6. Edit the settings.py 
