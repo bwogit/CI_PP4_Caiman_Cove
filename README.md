@@ -170,7 +170,7 @@ Prominently featured in the footer are essential social media links, enabling us
 [dbdiagram.io](https://dbdiagram.io)
 
 <details><summary>Show diagram</summary>
-<img src="docs/erd_output.png">
+<img src="docs/erd_output.jpg">
 </details>
 
 ##### User Model
@@ -221,7 +221,7 @@ The Table Model contains the following fields:
 - table_id (PrimaryKey)
 - capacity
 - reserved
-- table_number
+- table_description
 
 <details><summary>Show model</summary>
 <img src="docs/model_Table.jpg">
