@@ -1363,7 +1363,7 @@ The "CLOUDINARY_URL" value will be required later
 <img src="docs/deploy/Cloudinary_2.jpg">
 </details>
 
-
+<hr>
 ### Heroku Configuration
 
 [Heroku](https://id.heroku.com/login) (Ctrl + click)
@@ -1460,7 +1460,7 @@ remove the var DISABLE_COLLECTSTATIC=1
 <img src="docs/deploy/Heroku_deployment_8.jpg">
 </details>
 
-
+<hr>
 ### Heroku deployment
 
 Run "python3 manage.py showmigrations" to check the status of the migrations
