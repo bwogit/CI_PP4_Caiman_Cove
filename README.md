@@ -1455,25 +1455,40 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - Connect the app to GitHub, and enable automatic deploys from main
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/Heroku_Final.jpg">
 </details>
+
 
 - Turn Debug mode off
 
+<details><summary></summary>
+<img src="docs/deploy/Heroku_debug.jpg">
+</details>
+
+Click deploy to deploy your application to Heroku for the first time
+
+Click on the link provided to access the application
+
+If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
 
+### Fork Repository
+To fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+<hr>
 
+### Clone Repository
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7.Press Enter to create your local clone.
 
-
-
-
-### Attach the database
-
-
-
-
-
-
+##### Back to [top](#table-of-contents)<hr>
 
 
 
@@ -1495,8 +1510,11 @@ Images used were sourced from Pexels.com
 ## Acknowledgements
 
 ### Special thanks to the following:
+
+- God, for putting on my path people who want to see me succeed and want me to be happy
+- Myself for this has been a sheer test of endurance and perseverance not to mention that nowhere it is written how tedious the PP4 is. 
 - Code Institute
 - Mo Shami my mentor
-- Myself for the perseverance
+
 
 
