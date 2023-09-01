@@ -1350,7 +1350,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 </details>
 
 
-### Create Heroku App
+### Heroku deployment
 
 [Heroku](https://id.heroku.com/login) (Ctrl + click)
 
@@ -1360,8 +1360,46 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 <img src="">
 </details>
 
+2. Fill out the registration form with your name, surname, email, role region and select I.m not a robot
+
+<details><summary></summary>
+<img src="">
+</details>
+
+3. Create the Heroku app
+
+ - On the main dashboard page click on new and type the name of your project i.e "caiman_cove"
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+4. Attach the database to Heroku
+- Open the settings tab 
+- Click reveal config Vars
+- add a config var DATABASE_URL (seen in step 9 above)
+
+<details><summary></summary>
+<img src="">
+<img src="">
+</details>
+
+5. Create new env.py on root directory with the correct values
+- import os
+- os.environ["DATABASE_URL"] = "Paste in ElephantSQL database URL"
+- os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
+- os.environ["CLOUDINARY_URL"] = "cloudinary://** (seen on step 2 of Cloudinary section)
+
+
+<img src="">
+<img src="">
+</details>
+
 
 ### Attach the database
+
+
 
 
 
