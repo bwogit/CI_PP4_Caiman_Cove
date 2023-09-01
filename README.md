@@ -454,6 +454,7 @@ User stories covered: 1, 4, 12, 15
   
  - User stories covered: 14, 15, 22 
 <details><summary>See feature images</summary>
+
 ![Food Menu](docs/feature/feature_meals_menu.jpg)
 </details>
 
@@ -576,7 +577,7 @@ The W3C Markup Validation Service
 <img src="docs/validation/validation_html_index.jpg">
 </details>
 
-<details><summary>SingUp</summary>
+<details><summary>SignUp</summary>
 <img src="docs/validation/validation_html_signup.jpg">
 </details>
 
@@ -766,7 +767,7 @@ WAVE was used to test the websites accessibility.
 </details>
 
 <details><summary>Blog</summary>
-<img src="docs/validation/wave-blog.jpg">
+<img src="docs/validation/wave-blog_list_1.jpg">
 </details>
 
 <details><summary>Blog Detail1</summary>
@@ -798,15 +799,15 @@ WAVE was used to test the websites accessibility.
 </details>
 
 <details><summary>bookings list</summary>
-<img src="docs/validation/wave-reservations_bookings.jpg">
+<img src="docs/validation/wave-Bookings.jpg">
 </details>
 
 <details><summary>Contact Us</summary>
-<img src="docs/validation/wave-reservations_contact_us.jpg">
+<img src="docs/validation/wave-contact_us_login.jpg">
 </details>
 
 <details><summary>Signup</summary>
-<img src="docs/validation/wave-reservations_signup.jpg">
+<img src="docs/validation/wave-signup.jpg">
 </details>
 
 ### Lighthouse
@@ -822,7 +823,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>blog1</summary>
-<img src="docs/validation/performance-blog_list_1.jpg">
+<img src="docs/validation/performance-blog_list.jpg">
 </details>
 
 <details><summary>blog2</summary>
@@ -849,7 +850,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>Contact Us</summary>
-<img src="docs/validation/performance-contact_us.jpg.jpg">
+<img src="docs/validation/performance-contact_us.jpg">
 
 </details>
 
@@ -1394,7 +1395,6 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - add a config var DATABASE_URL (seen in step 9 above)
 
 <details><summary></summary>
-</details>
 <img src="docs/deploy/Heroku_deployment_4.jpg">
 <img src="docs/deploy/Heroku_deployment_5.jpg">
 </details>
