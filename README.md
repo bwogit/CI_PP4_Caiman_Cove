@@ -449,7 +449,7 @@ User stories covered: 1, 4, 12, 15
 - Authorized staff members can edit the menu via the backend admin panel.
 - uthorized staff members can perform actions such as creating, updating, and removing food items using the admin panel.
   
- - User stories covered: 14, 15  
+ - User stories covered: 14, 15, 22 
 <details><summary>See feature images</summary>
 ![Food Menu](docs/feature/feature_meals_menu.jpg)
 </details>
@@ -461,7 +461,7 @@ User stories covered: 1, 4, 12, 15
 - Authorized staff members can edit the menu via the backend admin panel.
 - uthorized staff members can perform actions such as creating, updating, and removing drink items using the admin panel.
 
- - User stories covered: 14, 15
+ - User stories covered: 14, 15, 22
 <details><summary>See feature images</summary>
 
 ![Drinks Menu](docs/feature/feature_drinks_menu.jpg)
@@ -471,7 +471,7 @@ User stories covered: 1, 4, 12, 15
 - User is required to login to reserve a table, view bookings, 
 edit and delete bookings and comment a blog.
 
-- User Stories Associated: 11, 12, 15, 18
+- User Stories covered: 11, 12, 15, 18, 20
 
 <details><summary>See feature images</summary>
 
@@ -482,15 +482,19 @@ edit and delete bookings and comment a blog.
 ### Logout
 - Allows the user to securely log out
 
+- User Stories covered: 12, 
+
 <details><summary>See feature images</summary>
 
 ![Logout](docs/feature/feature_logout.jpg)
 </details>
 
+
 ### Sign up / Register
 - Allow users to create an acoount
 - Use Django built-in authentication. Seameless.
 
+- User Stories covered: 12, 11, 13
 
 <details><summary>See feature images</summary>
 
@@ -539,6 +543,8 @@ edit and delete bookings and comment a blog.
 ### Pagination
 - used on the blog page
 - Ensures the page is kept tidy as only 2 items are displayed per page
+
+- User stories covered:1, 25
   
 <details><summary>See feature images</summary>
 
