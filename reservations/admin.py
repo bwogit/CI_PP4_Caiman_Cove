@@ -8,9 +8,9 @@ class TableAdmin(admin.ModelAdmin):
     Admin configuration for the Table model.
     Displays table information in the admin panel.
     """
-    list_display = ('table_id', 'table_number', 'capacity')
+    list_display = ('table_id', 'table_description', 'capacity')
     list_filter = ('capacity',)
-    search_fields = ('table_number',)
+    search_fields = ('table_description',)
 
 
 @admin.register(Reservation)

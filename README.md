@@ -166,6 +166,9 @@ Prominently featured in the footer are essential social media links, enabling us
 
 - Built with Python Django framework and Postgres for deployement to heroku
 
+- tool used to generate ERD
+[dbdiagram.io](https://dbdiagram.io)
+
 <details><summary>Show diagram</summary>
 <img src="docs/erd_output.png">
 </details>
@@ -1255,9 +1258,11 @@ The following devices were used to test my site:
 | ------- | ------- |
 | css not loading| ensure DEBUG is set to False before exporting to heroku and turn it back on for testing |
 | Dropdown menu not working| wrong version of the bootstrap CDN. Once changed it worked|
+| the nav bar was too clogged| removed the SignUp link which is available when you login|
+model
+
 
 ### Heroku Deployment
-
 
 
 [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)

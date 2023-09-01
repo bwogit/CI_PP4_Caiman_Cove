@@ -31,7 +31,7 @@ class Table(models.Model):
     A class for the Table model(table)
     """
     table_id = models.AutoField(primary_key=True)
-    table_number = models.CharField(
+    table_description = models.CharField(
         max_length=10, default='New Table', unique=True)
     capacity = models.PositiveIntegerField(validators=[MinValueValidator(1)])
     reserved = models.BooleanField(default=False)
@@ -40,7 +40,7 @@ class Table(models.Model):
         ordering = ['-capacity']
 
     def __str__(self):
-        return self.table_number
+        return self.table_description
 
 
 class Reservation(models.Model):
