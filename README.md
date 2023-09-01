@@ -1393,7 +1393,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - os.environ["CLOUDINARY_URL"] = "cloudinary://** (seen on step 2 of Cloudinary section)
 
 <details><summary></summary>
-<img src="docs/deploy/env_1.jpg.jpg">
+<img src="docs/deploy/env_1.jpg">
 </details>
 
 6. Edit the settings.py 
@@ -1401,33 +1401,30 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - Replace links to the SECRET_KEY variable on Heroku
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/deploy/Heroku_deployment_6.jpg">
 </details>
 
 - Comment out old Databse secion and add new
 
 <details><summary></summary>
-<img src="">
-<img src="">
+<img src="docs/deploy/Heroku_deployment_6a.jpg">
 </details>
 
 - Add Cloudinary Libraries to Installed apps
 
 <details><summary></summary>
-<img src="">
-</details>
+<img src="docs/deploy/Heroku_deployment_6c.jpg">
 
 - Tell Django to use Cloudinary to store media and static files
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/Heroku_deployment_6d.jpg">
 </details>
 
 - Add Heroku Hostname to ALLOWED_HOSTS
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/Heroku_deployment_6e.jpg">
 </details>
 
 
@@ -1436,7 +1433,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - Add code "web: gunicorn PROJ_NAME.wsgi"
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/Heroku_deployment_7.jpg">
 </details>
 
 8. In Heroku
@@ -1445,9 +1442,8 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - Add SECRET_KEY var
 - remove the var DISABLE_COLLECTSTATIC=1
 
-
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/Heroku_deployment_8.jpg">
 </details>
 
 
