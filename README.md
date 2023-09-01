@@ -139,7 +139,7 @@ The choice of a dark background for the website draws inspiration from the allur
 
 ### Fonts
 
- The fonts selected were from Google Fonts, Montserrat wits sans-serif as a backup font.
+ The fonts selected were from Google Fonts, Roboto, with sans-serif as a backup font.
 
 ### Structure
 
