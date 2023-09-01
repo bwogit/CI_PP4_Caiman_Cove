@@ -13,9 +13,10 @@ def home(request):
 
 
 @login_required
-def password_change_view(request):
+def change_password(request):
     """
     A view for changing the password, accessible only for logged-in users
+    taken from Django 
     """
     if request.method == 'POST':
         form = PasswordChangeForm(request.user, request.POST)

@@ -27,4 +27,5 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('', include('blog.urls')),
     path('', include('contact_us.urls')),
+    path('change_password/', views.change_password, name='change_password'),
 ]
