@@ -100,12 +100,13 @@ Caribbean Cove is a restaurant. This project is a smart interface which will all
 18. As a (Admin User), I can read customers opinions/reclamation/suggestions
 19. As an Admin or Privileged User, I can Filter Bookings by Date to have al bookings of the day
 20. As an Admin or Privileged User, I can disable a users' account
-21. As an admin or Priviledged user i can grant or deny a user's comment on blog
+21. As an admin or Priviledged user i can grant or deny or remove user's comment on blog
+22. As an admin I can grant or revoke priviledged status
 
 ### Site Owner  
-22. As a site owner, I can ensure reservations are never for a time  prior to the booking creation time
-23. As a site owner, I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time) ever
-24. As a site owner, I  must ensure that the users can navigate intuitively
+23. As a site owner, I can ensure reservations are never for a time  prior to the booking creation time
+24. As a site owner, I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time) ever
+25. As a site owner, I  must ensure that the users can navigate intuitively
 
 
 ### Kanban
@@ -1111,10 +1112,46 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_19a.jpg">
 </details>
 
+20. As an Admin or Privileged User, I can disable a users' account
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |in Django admin select user|Bring the users list|Works as expected|
+ |select user|used dropdown action|works as expected|
+
+<details><summary></summary>
+<img src="docs/testing/user_story_19a.jpg">
+<img src="docs/testing/user_story_19a.jpg">
+</details>
+
+21. As an admin or Priviledged user i can grant or deny or remove user's comment on blog
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |in Django admin select comment|Bring list of comments|Works as expected|
+ |select comment and use dropdown button delete|Deletes comment|works as expected|
+
+<details><summary></summary>
+<img src="docs/testing/user_story_19a.jpg">
+<img src="docs/testing/user_story_19a.jpg">
+</details>
+
+22. As an admin I can grant or revoke priviledged status
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |in Django admin select user|Bring the users list|Works as expected|
+ |select user|brings usersdetails|works as expected|
+ |Change permisions|select the type of permission| works as expected|
+
+<details><summary></summary>
+<img src="docs/testing/user_story_19a.jpg">
+<img src="docs/testing/user_story_19a.jpg">
+</details>
 
 #### Site Owner
 
-20. As a (site owner), I can ensure reservations are never for a time  prior to the bookign creation time
+23. As a (site owner), I can ensure reservations are never for a time  prior to the bookign creation time
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1124,7 +1161,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_20.jpg">
 </details>
 
-21. As a (site owner), I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time combination) ever
+24. As a (site owner), I can ensure there cannot be 2 Reservations with same (Table, Reserved date, slot time combination) ever
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1139,6 +1176,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="docs/testing/user_story_21c.jpg">
 <img src="docs/testing/user_story_21d.jpg">
 </details>
+
+
 
 
 ### Features Manual testing
