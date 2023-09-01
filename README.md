@@ -894,7 +894,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 |Site is design to be self explanatory|all links explain what to do|work as expected|
 
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_1a.jpg">
 <img src="docs/testing/user_story_1b.jpg">
 <img src="docs/testing/user_story_1c.jpg">
@@ -911,7 +911,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  | Scroll to footer at bottom of page | Read information | Works as expected |
  | Scroll to footer at bottom of page | Use social media links | Works as expected |
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_2.jpg">
 </details>
 
@@ -921,7 +921,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  | Click on Contact Us link in the navbar | Fill out form | Works as expected |
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_3.jpg">
 </details>
 
@@ -931,7 +931,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  Scroll to footer at bottom of page | Read information | Works as expected 
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_4.jpg">
 </details>
 
@@ -941,7 +941,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  | Click 'Book' link in the navbar | Form is available | Works as expected |
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_5.jpg">
 </details>
 
@@ -952,7 +952,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  | user must be logged in  | login | works as expected |
  | select a booking Bookings then click on edit | edit previously saved booking  | Works as expected |
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_6a.jpg">
 <img src="docs/testing/user_story_6b.jpg">
 </details>
@@ -964,7 +964,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | this suggest a logged in user | login | works as expected |
 | Click on 'Bookings' then identify the event yuo want to cancel and click 'delete' | confirm or cancel  | Works as expected |
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_7a.jpg">
 <img src="docs/testing/user_story_7b.jpg">
 </details>
@@ -976,7 +976,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  | click on Login in the navbar |the navbar switches to logged in mode | Works as expected |
  | Click Bookings in the navbar | Booking list will display all bookings made| Works as expected |
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_8.jpg">
 </details>
 
@@ -987,7 +987,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  | From booking list delete a booking | a notification message is displayed  |works as expected|
  | Click on logout in the navbar  |a notification message is displayed |works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_9a.jpg">
 <img src="docs/testing/user_story_9b.jpg">
 </details>
@@ -1000,7 +1000,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  | click on sign up  | Bring the sign Up form | Works as expected  |
  | Fill out the form and submit  | Confirmation message | Works as expected  |
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_10a.jpg">
 <img src="docs/testing/user_story_10b.jpg">
 <img src="docs/testing/user_story_10c.jpg">
@@ -1014,7 +1014,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |click on login |brings the login form  | Works as expected |
  |Fill and submit| comfrimation message|works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_11a.jpg">
 <img src="docs/testing/user_story_11b.jpg">
 <img src="docs/testing/user_story_11c.jpg">
@@ -1026,7 +1026,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
 |Scroll up to the navbar bookibng link missing  |default mode lot logged in| Works as expected  |
 |bookings option is available  |Logged in mode activated  |works as expected  |
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_12.jpg">
 </details>
 
@@ -1037,7 +1037,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  | in the nav bar click on blogs| Available blogs are displayed  |Works as expected  |
  |click on Read More |Expends the blog | Works as expected |
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_13.jpg">
 </details>
 
@@ -1047,7 +1047,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  |in the navbar click on menu|Brigs sub menu meal, beverages  | Works as expected |
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_14a.jpg">
 <img src="docs/testing/user_story_14b.jpg">
 </details>
@@ -1062,7 +1062,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |Add "/admin" to home URL|Bring the Django admin loging page|Works as expected|
  |Enter credentials specified during setup|Authetication|Works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_15a.jpg">
 <img src="docs/testing/user_story_15b.jpg">
 <img src="docs/testing/user_story_15c.jpg">
@@ -1078,7 +1078,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |Change reservation | VAlues of field can be changed| Works as expected|
   
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_16a.jpg">
 <img src="docs/testing/user_story_16b.jpg">
 </details>
@@ -1092,7 +1092,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |Select one resernation |brings the reservation details |works as expected |
  |Change reservation | VAlues of field can be changed| Works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_17a.jpg">
 <img src="docs/testing/user_story_17b.jpg">
 </details>
@@ -1105,7 +1105,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |in Django Admin click on Comments  |brings teh list of comments| Works as expected  |
  |select the one comment to change|brings the details of the comment|works as expected"
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_18a.jpg">
 <img src="docs/testing/user_story_18b.jpg">
 <img src="docs/testing/user_story_18c.jpg">
@@ -1117,7 +1117,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  |in Django admin select Reservations|Bring the section of all bookings|Works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_19a.jpg">
 <img src="docs/testing/user_story_19a.jpg">
 </details>
@@ -1129,7 +1129,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |in Django admin select user|Bring the users list|Works as expected|
  |select user|used dropdown action|works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_delete.jpg">
 <img src="docs/testing/user_story_delete_b.jpg">
 </details>
@@ -1141,7 +1141,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |in Django admin select comment|Bring list of comments|Works as expected|
  |select comment and use dropdown button delete|Deletes comment|works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_CRUD_comments.jpg">
 </details>
 
@@ -1153,7 +1153,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |select user|brings usersdetails|works as expected|
  |Change permisions|select the type of permission| works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_privileged1.jpg">
 <img src="docs/testing/user_story_privileged2.jpg">
 </details>
@@ -1166,7 +1166,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  |In navbar select book and select a date for yesterday |Doesn't allow you to select|Works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_20.jpg">
 </details>
 
@@ -1179,7 +1179,7 @@ Performance, best practices and SEO was tested using Lighthouse.
  |as user jeremie-new click on book|brings the booking form  |Works as expected|
  |Create booking date, table, time slot|Error mesage|Works as expected|
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_21a.jpg">
 <img src="docs/testing/user_story_21b.jpg">
 <img src="docs/testing/user_story_21c.jpg">
@@ -1192,7 +1192,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 |Site is design to be self explanatory|all links explain what to do|work as expected|
 
 
-<details><summary></summary>
+<details><summary>See document</summary>
 <img src="docs/testing/user_story_1a.jpg">
 <img src="docs/testing/user_story_1b.jpg">
 <img src="docs/testing/user_story_1c.jpg">
@@ -1260,9 +1260,8 @@ The following devices were used to test my site:
 | css not loading| ensure DEBUG is set to False before exporting to heroku and turn it back on for testing |
 | Dropdown menu not working| wrong version of the bootstrap CDN. Once changed it worked|
 | the nav bar was too clogged| removed the SignUp link which is available when you login|
-model|
-|field table_number did not make sense| Changed it to table_description|
-| sign in button was not centered| wrapped it in a div with class text-centered|
+|field table_number did not make sense|Changed it to table_description|
+|sign in button was not centered| wrapped it in a div with class text-centered|
 |the text in the tables, specifically in the booking status column, was rendered in white and not visible due to the dark background|adding a CSS rule to set the text color to a contrasting color (e.g., black) for the table cells containing booking status|
 |"Edit Booking" form did not have the same width as the "Reservation" form, making it look inconsistent|Added container to center the form|
 |Special JavaScript effects were not working as intended| Added the right CDN|
@@ -1290,19 +1289,19 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 1. Browse to elephatsql and click on "Get a managed database today”
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/elephantsql_1.jpg">
 </details>
 
 2. Select “Try now for FREE” in the TINY TURTLE database plan
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/elephantsql_2.jpg">
 </details>
 
 3. Select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/elephantsql_3.jpg">
 </details>
 
@@ -1315,32 +1314,32 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 5. On the main page select Create New Instance
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/elephantsql_5.jpg">
 </details>
 
 6.  Select a plan name such as "caiman_cove" and click select region
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/elephantsql_7.jpg">
 </details>
 
 7. select West Europe
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/elephantsql_7.jpg">
 </details>
 
 
 8. Create instance
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/elephantsql_8.jpg">
 </details>
 
 9. On the main page make note of the URL as it will be required later
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/elephantsql_9.jpg">
 </details>
 
@@ -1351,7 +1350,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 1. Login with your Github account and authorise (authorisation required firsttime only)
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Cloudinary_1.jpg">
 </details>
 
@@ -1359,7 +1358,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 - The "CLOUDINARY_URL" value will be required later
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Cloudinary_2.jpg">
 </details>
 
@@ -1370,13 +1369,13 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 1. sign Up
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_1.jpg">
 </details>
 
 2. Fill out the registration form with your name, surname, email, role region and select I.m not a robot
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_2.jpg">
 </details>
 
@@ -1384,7 +1383,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
  - On the main dashboard page click on new and type the name of your project i.e "caiman_cove"
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_3.jpg">
 <img src="docs/deploy/Heroku_deployment_3a.jpg">
 </details>
@@ -1394,7 +1393,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - Click reveal config Vars
 - add a config var DATABASE_URL (seen in step 9 above)
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_4.jpg">
 <img src="docs/deploy/Heroku_deployment_5.jpg">
 </details>
@@ -1405,7 +1404,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 - os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
 - os.environ["CLOUDINARY_URL"] = "cloudinary://** (seen on step 2 of Cloudinary section)
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/env_1.jpg">
 </details>
 
@@ -1413,30 +1412,30 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 - Replace links to the SECRET_KEY variable on Heroku
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6.jpg">
 </details>
 
 - Comment out old Databse secion and add new
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6a.jpg">
 </details>
 
 - Add Cloudinary Libraries to Installed apps
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6c.jpg">
 
 - Tell Django to use Cloudinary to store media and static files
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6d.jpg">
 </details>
 
 - Add Heroku Hostname to ALLOWED_HOSTS
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6e.jpg">
 </details>
 
@@ -1445,7 +1444,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 - Add code "web: gunicorn PROJ_NAME.wsgi"
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_7.jpg">
 </details>
 
@@ -1467,14 +1466,14 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 - Connect the app to GitHub, and enable automatic deploys from main
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_Final.jpg">
 </details>
 
 
 - Turn Debug mode off
 
-<details><summary></summary>
+<details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_debug.jpg">
 </details>
 
