@@ -1305,12 +1305,13 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 <img src="docs/deploy/elephantsql_3.jpg">
 </details>
 
-4. Create new team 
-- Add a team name (your own name is fine)
-- Read and agree to the Terms of Service
-- Select Yes for GDPR
-- Provide your email address
-- Click “Create Team”
+4. Create new team
+
+Add a team name (your own name is fine)
+Read and agree to the Terms of Service
+Select Yes for GDPR
+Provide your email address
+Click “Create Team”
 
 5. On the main page select Create New Instance
 
@@ -1356,7 +1357,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 2. On the main page select the API Environment
 
-- The "CLOUDINARY_URL" value will be required later
+The "CLOUDINARY_URL" value will be required later
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Cloudinary_2.jpg">
@@ -1381,7 +1382,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 3. Create the Heroku app
 
- - On the main dashboard page click on new and type the name of your project i.e "caiman_cove"
+On the main dashboard page click on new and type the name of your project i.e "caiman_cove"
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_3.jpg">
@@ -1410,30 +1411,30 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 6. Edit the settings.py 
 
-- Replace links to the SECRET_KEY variable on Heroku
+Replace links to the SECRET_KEY variable on Heroku
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6.jpg">
 </details>
 
-- Comment out old Databse secion and add new
+Comment out old Databse secion and add new
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6a.jpg">
 </details>
 
-- Add Cloudinary Libraries to Installed apps
+Add Cloudinary Libraries to Installed apps
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6c.jpg">
 
-- Tell Django to use Cloudinary to store media and static files
+Tell Django to use Cloudinary to store media and static files
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6d.jpg">
 </details>
 
-- Add Heroku Hostname to ALLOWED_HOSTS
+Add Heroku Hostname to ALLOWED_HOSTS
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6e.jpg">
@@ -1442,7 +1443,7 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 7. create on the root Procfile file
 
-- Add code "web: gunicorn PROJ_NAME.wsgi"
+Add code "web: gunicorn PROJ_NAME.wsgi"
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_7.jpg">
@@ -1450,9 +1451,9 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 8. In Heroku
 
-- Add Cloudinary URL to Heroku var
-- Add SECRET_KEY var
-- remove the var DISABLE_COLLECTSTATIC=1
+Add Cloudinary URL to Heroku var
+Add SECRET_KEY var
+remove the var DISABLE_COLLECTSTATIC=1
 
 <details><summary></summary>
 <img src="docs/deploy/Heroku_deployment_8.jpg">
@@ -1461,17 +1462,15 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 
 ### Heroku deployment
 
-- Run "python3 manage.py showmigrations" to check the status of the migrations
-- Run "python3 manage.py migrate" to migrate the database
-
-- Connect the app to GitHub, and enable automatic deploys from main
+Run "python3 manage.py showmigrations" to check the status of the migrations
+Run "python3 manage.py migrate" to migrate the database
+Connect the app to GitHub, and enable automatic deploys from main
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_Final.jpg">
 </details>
 
-
-- Turn Debug mode off
+Turn Debug mode off
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_debug.jpg">
@@ -1515,6 +1514,7 @@ Images used were sourced from Pexels.com
 -[Django tutorials] (https://www.geeksforgeeks.org/django-tutorial/)
 -[Github] (https://github.com/topics/booking-system/)
 -[Hotel Booking] (https://github.com/topics/hotel-booking?l=python)
+-[stackoverflow] (https://stackoverflow.com/)
 
 
 ##### Back to [top](#table-of-contents)<hr>
