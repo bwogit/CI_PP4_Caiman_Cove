@@ -1262,6 +1262,10 @@ The following devices were used to test my site:
 model|
 |field table_number did not make sense| Changed it to table_description|
 | sign in button was not centered| wrapped it in a div with class text-centered|
+|the text in the tables, specifically in the booking status column, was rendered in white and not visible due to the dark background|adding a CSS rule to set the text color to a contrasting color (e.g., black) for the table cells containing booking status|
+|"Edit Booking" form did not have the same width as the "Reservation" form, making it look inconsistent|Added container to center the form|
+|Special JavaScript effects were not working as intended| Added the right CDN|
+| username not autopopulated in Booking form|Modified the Bookings view to fetch the user's name from the database using the request.user object|
 
 
 
