@@ -1277,19 +1277,19 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 1. Browse to elephatsql and click on "Get a managed database today”
 
 <details><summary></summary>
-<img src="do">
+<img src="docs/deploy/elephantsql_1.jpg">
 </details>
 
 2. Select “Try now for FREE” in the TINY TURTLE database plan
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/elephantsql_2.jpg">
 </details>
 
 3. Select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/elephantsql_3.jpg">
 </details>
 
 4. Create new team 
@@ -1302,32 +1302,32 @@ Note in the inital Django deployment the Database and Cloudinary Libraries were 
 5. On the main page select Create New Instance
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/elephantsql_5.jpg">
 </details>
 
 6.  Select a plan name such as "caiman_cove" and click select region
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/elephantsql_7.jpg">
 </details>
 
 7. select West Europe
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/elephantsql_7.jpg">
 </details>
 
 
 8. Create instance
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/elephantsql_8.jpg">
 </details>
 
 9. On the main page make note of the URL as it will be required later
 
 <details><summary></summary>
-<img src="">
+<img src="docs/deploy/elephantsql_9.jpg">
 </details>
 
 
