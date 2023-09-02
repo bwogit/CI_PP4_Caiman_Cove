@@ -1153,7 +1153,10 @@ Performance, best practices and SEO was tested using Lighthouse.
  |In Django admin page select Reservations  |Brings list of reservations  |works as expected|
  |Select one resernation |brings the reservation details |works as expected |
  |Change reservation | VAlues of field can be changed| Works as expected|
-  
+
+- Acceptance Criteria  
+ - Admin users can create, read, update, and delete (CRUD) reservation records in the backend.
+ - This includes the ability to view and manage reservations made via phone or email.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_16a.jpg">
