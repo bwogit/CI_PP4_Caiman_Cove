@@ -1,10 +1,13 @@
+# Imports
+# 3rd party:
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post, Comment
-from .forms import CommentForm
 from django.views import View
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.core.paginator import Paginator
+# Internals
+from .models import Post, Comment
+from .forms import CommentForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class BlogList(View):

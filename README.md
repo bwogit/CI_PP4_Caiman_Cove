@@ -1308,7 +1308,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 - Acceptance Criteria
  - The website's design and layout are user-friendly and intuitive.
  - Users can easily find essential information, menus, and reservation options without confusion.
- 
+
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_1a.jpg">
 <img src="docs/testing/user_story_1b.jpg">
@@ -1645,6 +1645,9 @@ Images used were sourced from Pexels.com
 - [Real Python Tutorials](https://realpython.com/)
 - [Django Packages](https://djangopackages.org/)
 - [devgenius](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
+ 
+The way the models are delfined especially from the reservation app are largely inspired by the django documentation (https://docs.djangoproject.com/en/4.2/)
+- some code snippet was used but the fields and the views variables were changed to suit my needs  
 
 
 ##### Back to [top](#table-of-contents)<hr>

@@ -1,5 +1,8 @@
-from django.db import models
+# Imports
+# 3rd party:
 from phonenumber_field.modelfields import PhoneNumberField
+#Internals
+from django.db import models
 from django.core.validators import MinValueValidator
 from django.core.validators import EmailValidator
 from django.core.exceptions import ValidationError
