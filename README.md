@@ -1172,7 +1172,9 @@ Performance, best practices and SEO was tested using Lighthouse.
  |Select one resernation |brings the reservation details |works as expected |
  |Change reservation | VAlues of field can be changed| Works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - Admin users can manage menu items, including creating, updating, and deleting food and drink items.
+ - These actions can be performed through the backend admin panel.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_17a.jpg">
