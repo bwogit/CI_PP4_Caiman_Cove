@@ -1276,7 +1276,7 @@ The following devices were used to test my site:
 | Profile tab | Only though about it at the end and I did not have enough time |
 | change password | woudl have been implemented as part of above|
 | Google SSO | not enought time|
-| Add pictures beside teh food or drink description | alter the performance of teh website |
+| Add pictures beside the food or drink description | alter the performance of the website |
 
 ### Heroku Deployment
 
