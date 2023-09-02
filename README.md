@@ -244,7 +244,7 @@ The Reservation Model contains the following fields:
 - seats
 
 <details><summary>Show model</summary>
-<img src="docs/model_reservation.jpg.jpg">
+<img src="docs/model_reservation.jpg">
 </details>
 
 ##### Post Model
