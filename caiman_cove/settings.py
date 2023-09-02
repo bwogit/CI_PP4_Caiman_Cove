@@ -31,7 +31,7 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False 
 
-ALLOWED_HOSTS = ['caiman_cove.herokuapp.com', 'localhost',
+ALLOWED_HOSTS = ['ci_pp4_caiman_cove.herokuapp.com', 'localhost',
                  'caiman-cove-3c81faa4aa99.herokuapp.com',
                 ]
 
