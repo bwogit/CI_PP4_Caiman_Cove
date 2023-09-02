@@ -1,6 +1,9 @@
+# Imports
+# 3rd Party:
 from django.contrib import admin
-from .models import FoodMenuItem, DrinkMenuItem
 from django_summernote.admin import SummernoteModelAdmin
+# Internals
+from .models import FoodMenuItem, DrinkMenuItem
 
 
 @admin.register(FoodMenuItem)

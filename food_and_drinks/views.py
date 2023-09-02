@@ -1,4 +1,8 @@
+# Imports
+# 3rd party
 from django.shortcuts import render
+
+#Internal
 from django.views.generic import ListView
 from .models import FoodMenuItem, DrinkMenuItem
 

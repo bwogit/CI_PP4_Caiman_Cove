@@ -1,4 +1,7 @@
+# Imports
+# 3rd party
 from django.db import models
+# Internal
 from django.core.exceptions import ValidationError
 
 FOOD_ITEM_TYPE = ((0, 'Starters'), (1, 'Mains'),
