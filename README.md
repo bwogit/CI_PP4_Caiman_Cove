@@ -918,6 +918,10 @@ Performance, best practices and SEO was tested using Lighthouse.
  | Scroll to footer at bottom of page | Use social media links | Works as expected |
 
 - Acceptance Criteria
+ - The navigation bar (navbar) is clearly visible at the top of each page.
+ - The navbar contains links to important sections, such as the menu, blog, and contact page.
+ - The footer of each page contains links to the restaurant's social media profiles, email address, phone number, and business  - hours.
+ - The social media icons are easily recognizable and link to the correct URLs.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_2.jpg">
@@ -929,7 +933,11 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  | Click on Contact Us link in the navbar | Fill out form | Works as expected |
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - There is a dedicated "Contact Us" page accessible from the navbar or footer.
+ - On the "Contact Us" page, I can find a contact form or messaging feature.
+ - I can leave suggestions, comments, or inquiries through this form or feature.
+ - Upon submission, I receive confirmation that my message has been sent.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_3.jpg">
