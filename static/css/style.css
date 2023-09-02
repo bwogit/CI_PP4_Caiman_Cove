@@ -9,46 +9,44 @@ body {
 }
 
 .carousel-inner {
-    max-width: 80%; /* Adjust the value as needed */
-    max-height: 60%; /* Adjust the value as needed */
-    margin: 0 auto; /* Center the carousel horizontally */
-    border: 10px solid goldenrod; /* Add a border with a gold color */
+    max-width: 80%; 
+    max-height: 60%; 
+    margin: 0 auto; 
+    border: 10px solid goldenrod; 
 }
 
 #carouselExample {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 100px;
-    margin-bottom: 10px; Add spacing at the bottom */
     padding: 0;
     width: 100%;
     max-width: 100%;
 }
 
 .card {
-    width: 30%; /* Adjust the value as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 300px; /* Set a maximum width */
-    margin: 10px; /* Center the card horizontally */
+    width: 30%; 
+    height: auto; 
+    max-width: 300px; 
+    margin: 10px; 
     border: none;
     background-color:goldenrod;
     color:black;
 }
 .card .card-text {
-    font-size: 18px; /* Adjust the font size for the text content */
+    font-size: 18px; 
 }
 .card img {
-    max-height: 350px; /* Adjust the value as needed */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    margin-top: 10px; /* Add top margin */
+    max-height: 350px; 
+    object-fit: cover; 
+    margin-top: 10px; 
 }
 
 .card-title {
     text-align: center;
 }
 
-/* Optional: Add padding and margin for spacing */
+
 .card-container {
     padding: 20px;
     margin-bottom: 20px;
@@ -61,29 +59,31 @@ body {
 .grow:hover {
     transform: scale(1.1);
 }
-/* Make hamburger menu icon white */
+/*------------------ -------------------Make hamburger menu icon white -------------------------------*/
+
 .navbar-toggler-icon {
     background-color: white;
 }
 
-/* Navigation and Footer Styling */
+/* ---------------------------Navigation and Footer Stylin--------------------------------------- */
+
 .navbar-nav .nav-link {
-    font-size: 20px; /* Adjust the font size as needed */
+    font-size: 20px; 
 }
 
 .navbar-brand {
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px; 
 }
 .bg-lighter {
-    background-color: #070114b7; /* Adjust the color as needed */
+    background-color: #070114b7; 
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-    color: #ffffff; /* White text color */
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    color: #ffffff; 
+    transition: color 0.3s ease-in-out;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #ced4da; /* Lighter color on hover */
+    color: #ced4da; 
 }
 .active-link {
     color: goldenrod;
@@ -100,17 +100,17 @@ body {
   }
 
 footer a {
-    color: #ffffff; /* White link color */
+    color: #ffffff; 
     text-decoration: none;
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    transition: color 0.3s ease-in-out; 
 }
 
 footer a:hover {
-    color: #ced4da; /* Lighter color on hover */
+    color: #ced4da; 
 }
 
 /*---------------------------------Menu---------------------------------------*/
-/* style.css or a new CSS file */
+
 .menu-list {
     list-style: none;
     padding-left: 0;

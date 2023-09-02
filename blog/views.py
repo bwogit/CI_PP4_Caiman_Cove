@@ -13,7 +13,7 @@ class BlogList(View):
     """
     def get(self, request):
         posts = Post.objects.filter(status=1)
-        paginator = Paginator(posts, 2)  # Display 2 posts per page
+        paginator = Paginator(posts, 2)  # Displays 2 posts per page
         page_number = request.GET.get('page')
         page_obj = paginator.get_page(page_number)
         return render(request, 'blog/blog_list.html', {'page_obj': page_obj})
