@@ -1189,7 +1189,9 @@ Performance, best practices and SEO was tested using Lighthouse.
  |in Django Admin click on Comments  |brings teh list of comments| Works as expected  |
  |select the one comment to change|brings the details of the comment|works as expected"|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - Admin users can access and review customer comments, opinions, complaints, and suggestions.
+ - These are viewable from the backend admin panel.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_18a.jpg">
@@ -1203,7 +1205,10 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  |in Django admin select Reservations|Bring the section of all bookings|Works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - Admin users have a filtering mechanism to view all bookings for a specific date.
+ - This allows them to manage reservations effectively.
+
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_19a.jpg">
