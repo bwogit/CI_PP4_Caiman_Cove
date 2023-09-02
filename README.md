@@ -1116,7 +1116,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 - Acceptance Criteria
  - The menu section of the website is easily accessible from the navbar.
- - I can view the menu items categorized into starters, main courses, desserts, and drinks.
+ - I can view the menu items categorized into starters, main courses, desserts, non alcohlic, coctails, beers and rhums.
  - Each menu item displays its name, description, price, and availability status.
  - I can navigate between different menu categories.
 
@@ -1135,7 +1135,9 @@ Performance, best practices and SEO was tested using Lighthouse.
  |Add "/admin" to home URL|Bring the Django admin loging page|Works as expected|
  |Enter credentials specified during setup|Authetication|Works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - Admin users have a separate login page for accessing the backend.
+ - After successful authentication, admin users are directed to the backend dashboard.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_15a.jpg">
