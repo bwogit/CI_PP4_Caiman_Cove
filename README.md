@@ -949,7 +949,10 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  Scroll to footer at bottom of page | Read information | Works as expected|
 
-- Acceptance Criteria 
+- Acceptance Criteria
+ - The restaurant's opening hours are prominently displayed on the website, preferably in the footer.
+ - The website provides easy access to essential information such as email, phone number, and social media links.
+ - I can quickly find this information without navigating through multiple pages.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_4.jpg">
@@ -962,6 +965,9 @@ Performance, best practices and SEO was tested using Lighthouse.
  | Click 'Book' link in the navbar | Form is available | Works as expected |
 
 - Acceptance Criteria
+ - There is a dedicated page or section for making reservations.
+ - On the reservation page, I can select a date and time for my booking.
+ - The available time slots are clearly displayed, and I can choose from them.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_5.jpg">
@@ -974,7 +980,10 @@ Performance, best practices and SEO was tested using Lighthouse.
  | user must be logged in  | login | works as expected |
  | select a booking Bookings then click on edit | edit previously saved booking  | Works as expected |
  
- - Acceptance Criteria
+- Acceptance Criteria
+ - After making a reservation, I have the option to modify it.
+ - I can change the date and time of my booking and confirm the changes
+
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_6a.jpg">
@@ -989,6 +998,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Click on 'Bookings' then identify the event yuo want to cancel and click 'delete' | confirm or cancel  | Works as expected |
 
 - Acceptance Criteria
+ - I can cancel my reservation if I no longer need it.
+ - There is a straightforward process for deleting my booking.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_7a.jpg">
@@ -1002,7 +1013,10 @@ Performance, best practices and SEO was tested using Lighthouse.
  | click on Login in the navbar |the navbar switches to logged in mode | Works as expected |
  | Click Bookings in the navbar | Booking list will display all bookings made| Works as expected |
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - I can access a page or section where I can view my current and past reservations.
+ - Each reservation displays the date, time, and other relevant details.
+ - Past reservations are clearly labeled.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_8.jpg">
