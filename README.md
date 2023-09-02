@@ -1029,7 +1029,10 @@ Performance, best practices and SEO was tested using Lighthouse.
  | From booking list delete a booking | a notification message is displayed  |works as expected|
  | Click on logout in the navbar  |a notification message is displayed |works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - I receive a confirmation email after making a reservation.
+ - If I modify or delete a reservation, I receive a notification confirming the changes.
+ - If there are issues with my reservation, such as overlapping bookings, I receive an error message or notification.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_9a.jpg">
@@ -1044,7 +1047,10 @@ Performance, best practices and SEO was tested using Lighthouse.
  | click on sign up  | Bring the sign Up form | Works as expected  |
  | Fill out the form and submit  | Confirmation message | Works as expected  |
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - There is a "Sign Up" option on the website.
+ - I can create a new account by providing a valid email and password.
+ - After signing up, I receive a confirmation notification
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_10a.jpg">
@@ -1060,7 +1066,9 @@ Performance, best practices and SEO was tested using Lighthouse.
  |click on login |brings the login form  | Works as expected |
  |Fill and submit| comfrimation message|works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - I can log in using my registered email and password.
+ - After successful authentication, I have access to user-specific features.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_11a.jpg">
@@ -1072,10 +1080,13 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|Scroll up to the navbar bookibng link missing  |default mode lot logged in| Works as expected  |
-|bookings option is available  |Logged in mode activated  |works as expected  |
+ |Scroll up to the navbar bookibng link missing  |default mode lot logged in| Works as expected  |
+ |bookings option is available  |Logged in mode activated  |works as expected  |
 
 - Acceptance Criteria
+ - When I am logged in, there is a different navbar behaviour.
+ - When I am logged out, a "Login" option is available.
+
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_12.jpg">
 </details>
@@ -1087,7 +1098,11 @@ Performance, best practices and SEO was tested using Lighthouse.
  | in the nav bar click on blogs| Available blogs are displayed  |Works as expected  |
  |click on Read More |Expends the blog | Works as expected |
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - There is a dedicated "Blog" section accessible from the navbar or homepage.
+ - I can click on individual blog posts to read them.
+ - The blog posts display text content and images.
+ - Pagination is used to limit the number of posts per page
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_13.jpg">
@@ -1099,7 +1114,11 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  |in the navbar click on menu|Brigs sub menu meal, beverages  | Works as expected |
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - The menu section of the website is easily accessible from the navbar.
+ - I can view the menu items categorized into starters, main courses, desserts, and drinks.
+ - Each menu item displays its name, description, price, and availability status.
+ - I can navigate between different menu categories.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_14a.jpg">
