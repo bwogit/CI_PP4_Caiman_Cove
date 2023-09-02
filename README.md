@@ -1222,7 +1222,10 @@ Performance, best practices and SEO was tested using Lighthouse.
  |in Django admin select user|Bring the users list|Works as expected|
  |select user|used dropdown action|works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - Admin users have the authority to disable (deactivate) a user's account if necessary.
+ - A disabled user cannot log in or make reservations.
+
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_delete.jpg">
@@ -1236,7 +1239,9 @@ Performance, best practices and SEO was tested using Lighthouse.
  |in Django admin select comment|Bring list of comments|Works as expected|
  |select comment and use dropdown button delete|Deletes comment|works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - Admin users can moderate user comments on blog posts.
+ - They can approve, deny, or remove comments as needed.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_CRUD_comments.jpg">
@@ -1250,7 +1255,9 @@ Performance, best practices and SEO was tested using Lighthouse.
  |select user|brings usersdetails|works as expected|
  |Change permisions|select the type of permission| works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - Admin users can grant or revoke privileged status to other users.
+ - Privileged users may have additional permissions and access.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_privileged1.jpg">
@@ -1265,7 +1272,9 @@ Performance, best practices and SEO was tested using Lighthouse.
 ------------ | ------------ | ------------ |
  |In navbar select book and select a date for yesterday |Doesn't allow you to select|Works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - Reservations cannot be made for a time earlier than the current time.
+ - This validation is in place to prevent bookings in the past.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_20.jpg">
@@ -1280,7 +1289,9 @@ Performance, best practices and SEO was tested using Lighthouse.
  |as user jeremie-new click on book|brings the booking form  |Works as expected|
  |Create booking date, table, time slot|Error mesage|Works as expected|
 
- - Acceptance Criteria
+- Acceptance Criteria
+ - The system prevents the creation of multiple reservations with identical attributes, including table, reserved date, and time slot.
+ - This ensures that each table and time slot is reserved only once.
 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_21a.jpg">
@@ -1291,10 +1302,13 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 24. As site owner  I can provide an easy to navigate and intuitive website
 
-| Click on the links in the navigation bar or log | all pages will load| Works as expected |
-|Site is design to be self explanatory|all links explain what to do|work as expected|
+ | Click on the links in the navigation bar or log | all pages will load| Works as expected |
+ |Site is design to be self explanatory|all links explain what to do|work as expected|
 
-
+- Acceptance Criteria
+ - The website's design and layout are user-friendly and intuitive.
+ - Users can easily find essential information, menus, and reservation options without confusion.
+ 
 <details><summary>Show document</summary>
 <img src="docs/testing/user_story_1a.jpg">
 <img src="docs/testing/user_story_1b.jpg">
