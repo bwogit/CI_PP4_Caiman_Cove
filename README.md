@@ -31,6 +31,7 @@
     - [Tests on various devices](#tests-on-various-devices)
     - [Browser compatibility](#browser-compatibility)
   - [Bugs](#bugs)
+  - [Future Development](#future-development)
   - [Heroku Deployment](#heroku-deployment)
   - [Credits](#credits)
   - [Acknowledgements](#acknowledgements)
@@ -1268,7 +1269,14 @@ The following devices were used to test my site:
 |Special JavaScript effects were not working as intended| Added the right CDN|
 | username not autopopulated in Booking form|Modified the Bookings view to fetch the user's name from the database using the request.user object|
 
+## Future development
 
+| Feature | Reason it was not implented|
+| ------- | -------------------------- |
+| Profile tab | Only though about it at the end and I did not have enough time |
+| change password | woudl have been implemented as part of above|
+| Google SSO | not enought time|
+| Add pictures beside teh food or drink description | alter the performance of teh website |
 
 ### Heroku Deployment
 
