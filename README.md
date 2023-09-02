@@ -1390,6 +1390,7 @@ On the main dashboard page click on new and type the name of your project i.e "c
 </details>
 
 4. Attach the database to Heroku
+
 - Open the settings tab 
 - Click reveal config Vars
 - add a config var DATABASE_URL (seen in step 9 above)
@@ -1400,6 +1401,7 @@ On the main dashboard page click on new and type the name of your project i.e "c
 </details>
 
 5. Create new env.py on root directory with the correct values
+
 - import os
 - os.environ["DATABASE_URL"] = "Paste in ElephantSQL database URL"
 - os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
@@ -1411,31 +1413,31 @@ On the main dashboard page click on new and type the name of your project i.e "c
 
 6. Edit the settings.py 
 
-Replace links to the SECRET_KEY variable on Heroku
+- Replace links to the SECRET_KEY variable on Heroku
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6.jpg">
 </details>
 
-Comment out old Databse secion and add new
+- Comment out old Databse secion and add new
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6a.jpg">
 </details>
 
-Add Cloudinary Libraries to Installed apps
+- Add Cloudinary Libraries to Installed apps
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6c.jpg">
 </details>
 
-Tell Django to use Cloudinary to store media and static files
+- Tell Django to use Cloudinary to store media and static files
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6d.jpg">
 </details>
 
-Add Heroku Hostname to ALLOWED_HOSTS
+- Add Heroku Hostname to ALLOWED_HOSTS
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6e.jpg">
@@ -1444,7 +1446,7 @@ Add Heroku Hostname to ALLOWED_HOSTS
 
 7. create on the root Procfile file
 
-Add code "web: gunicorn PROJ_NAME.wsgi"
+- Add code "web: gunicorn PROJ_NAME.wsgi"
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_7.jpg">
@@ -1463,9 +1465,9 @@ remove the var DISABLE_COLLECTSTATIC=1
 <hr>
 ### Heroku deployment
 
-Run "python3 manage.py showmigrations" to check the status of the migrations
-Run "python3 manage.py migrate" to migrate the database
-Connect the app to GitHub, and enable automatic deploys from main
+- Run "python3 manage.py showmigrations" to check the status of the migrations
+- Run "python3 manage.py migrate" to migrate the database
+- Connect the app to GitHub, and enable automatic deploys from main
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_Final.jpg">
@@ -1477,11 +1479,11 @@ Turn Debug mode off
 <img src="docs/deploy/Heroku_debug.jpg">
 </details>
 
-Click deploy to deploy your application to Heroku for the first time
+- Click deploy to deploy your application to Heroku for the first time
 
-Click on the link provided to access the application
+- Click on the link provided to access the application
 
-If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+- If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
 
 ### Fork Repository
@@ -1493,8 +1495,8 @@ To fork the repository by following these steps:
 ### Clone Repository
 You can clone the repository by following these steps:
 1. Go to the GitHub repository 
-2. Locate the Code button above the list of files and click it 
-3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+2. Locate the Code button above the number of commits 
+3. Select cloning using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
 4. Open Git Bash
 5. Change the current working directory to the one where you want the cloned directory
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
@@ -1531,6 +1533,3 @@ Images used were sourced from Pexels.com
 - Myself for this has been a sheer test of endurance and perseverance not to mention that nowhere it is written how tedious the PP4 is. 
 - Code Institute
 - Last but NOT least Mo Shami my mentor
-
-
-
